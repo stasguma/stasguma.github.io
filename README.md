@@ -1,1 +1,0 @@
-# stasguma.github.io
