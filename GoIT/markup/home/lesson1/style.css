@@ -60,7 +60,9 @@ body {
 }
 
 .fp{
-   height: 268px;
+  width: 514px;
+	border-bottom: 1px solid grey;
+	padding-bottom: 23px;
 }
 .fp h1{
     font-size: 25px;
@@ -76,8 +78,10 @@ body {
 }
 
 .sp{
-   height: 125px; 
+	width: 514px;
    margin-top: 23px;
+	 padding-bottom: 20px;
+	 border-bottom: 1px solid grey;
 }
 
 .sp ul{
@@ -90,17 +94,19 @@ body {
 }
 
 .tp{
-    height: 135px;
+    width: 514px;
     margin-top: 21px;
     line-height: 26px;
+		padding-bottom: 20px;
+    border-bottom: 1px solid grey;
 }
 
 .tp .vk{
    margin-top: 25px;
 }
 
-.fp{
-    height: 100%;
-    margin-top: 23px;
-    line-height: 23px;
+.four-p{
+	width: 514px;
+	margin-top: 23px;
+	line-height: 23px;
 }
