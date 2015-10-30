@@ -1,0 +1,165 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	color: #e6e6e6;
+	font: 16px/18px Tahoma, sans-serif;
+}
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+	padding: 52px 73px 30px 70px;
+	background: url(../img/background.jpg) 0 0 no-repeat;
+}
+
+/*///////////////////////////////////////
+////////////    HEADER     ///////////
+/////////////////////////////////////*/
+header{
+	width: 816px;
+	height: 150px;
+	position: relative;
+}
+
+.logo{
+	width: 269px;
+	height: 150px;
+	float: left;
+	background: url(../img/logo.png) left top no-repeat;
+}
+
+.logo > p{
+	line-height: 260px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.contact {
+	display: inline-block;
+	margin-top: 105px;
+	margin-left: 445px;
+	line-height: 10px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.contact p a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.contact p a:hover{
+	color: lightblue;
+	text-decoration: underline;
+}
+
+.contact p:not(.one){
+	font-weight: normal;
+}
+
+.one{
+	margin-bottom: 5px;
+}
+
+/*///////////////////////////////////////
+/////////   content-imgs   ///////////
+/////////////////////////////////////*/
+.content-imgs{
+	width: 960px;
+}
+
+.box1 img{
+	width: 260px;
+	height: 178px;
+	margin: 2px 8px 2px 0;
+	border: 4px ridge #959595;
+	border-radius: 3px;
+}
+
+.box1 ~ p:nth-child(2),
+.box1 ~ p:nth-child(3),
+.box1 ~ p:nth-child(4) {
+		display: inline-block;
+		margin-right: 110px;
+		margin-left: 116px;
+}
+
+.box2 img{
+	width: 260px;
+	height: 178px;
+	border: 4px ridge #959595;
+	border-radius: 3px;
+	margin: 50px 8px 2px 0;
+}
+
+.box2 ~ p:nth-child(6),
+.box2 ~ p:nth-child(7),
+.box2 ~ p:nth-child(8) {
+		display: inline-block;
+		margin-right: 100px;
+		margin-left: 116px;
+}
+
+/*///////////////////////////////////////
+////////////    FOOTER     ///////////
+/////////////////////////////////////*/
+.footer p {
+	margin-top: 182px;
+	text-align: center;
+	font-size: 10px;
+}
