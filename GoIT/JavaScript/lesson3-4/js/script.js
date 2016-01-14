@@ -3,15 +3,20 @@ var app = {
     var element = document.createElement(params.tagName);
 
     if (params.inputType) {
-        element.setAttribute('type', params.inputType);
+      element.setAttribute('type', params.inputType);
     }
 
-    // if (params.inputType === 'checkbox') {
-    //     element.setAttribute('type', params.inputType);
-    // }
+    if (params.inputValue) {
+      element.setAttribute('value', params.inputValue);
+    }
 
-    element.className = params.className;
-    element.innerHTML = params.textHtml;
+    if (params.className) {
+      element.className = params.className;
+    }
+
+    if (params.textHtml) {
+      element.innerHTML = params.textHtml;
+    }
 
     if (params.parentElement) {
       params.parentElement.appendChild(element);
@@ -24,34 +29,35 @@ var app = {
 
       var ol = document.body.querySelector('ol');
 
-      this.createElement({
+      var li = this.createElement({
         tagName: 'li',
-        className: '',
         textHtml: 'Вопрос №' + i,
         parentElement: ol
       });
 
       for (var j = 1; j < answer + 1; j++) {
 
-      var li = document.body.querySelector('li');
-
-        this.createElement({
+        var label = this.createElement({
           tagName: 'label',
-          className: '',
           textHtml: 'Вариант ответа №' + j,
           parentElement: li
         });
 
-      // var label = document.body.querySelectorAll('label');
-      //
-      //   this.createElement({
-      //     tagName: 'input',
-      //     inputType: 'checkbox',
-      //     className: '',
-      //     textHtml: '',
-      //     parentElement: label
-      // });
+        label.style.display = 'block';
+        label.style.width = '152px';
+        label.style.marginLeft = '6px';
 
+        var checkbox = this.createElement({
+          tagName: 'input',
+          inputType: 'checkbox',
+          parentElement: label
+        });
+
+        checkbox.style.position = 'relative';
+        checkbox.style.top = '2px';
+        checkbox.style.right = '4px';
+
+        label.insertAdjacentElement('afterBegin', checkbox);
       }
     }
   }
@@ -59,38 +65,37 @@ var app = {
 
 var body = document.querySelector('body');
 
-app.createElement({
-  tagName: 'div',
-  className: 'wrapper container-fluid',
-  textHtml: '',
-  parentElement: body
+var wrapper = app.createElement({
+    tagName: 'div',
+    className: 'wrapper container-fluid',
+    parentElement: body
 });
 
-var wrapper = document.body.querySelector('div');
-
-app.createElement({
+var h1 = app.createElement({
   tagName: 'h1',
-  className: 'text-center',
+  className: 'text-left',
   textHtml: 'Тест по программированию',
   parentElement: wrapper
 });
+h1.style.fontSize = '22px';
+h1.style.marginLeft = '37px';
+h1.style.marginBottom = '20px';
 
 app.createElement({
   tagName: 'ol',
-  className: '',
-  textHtml: '',
   parentElement: wrapper
 });
 
-app.createElement({
+var input = app.createElement({
   tagName: 'input',
   inputType: 'submit',
-  className: '',
-  textHtml: '',
+  inputValue: 'Проверить мои результаты',
   parentElement: wrapper
 });
+input.style.marginLeft = '76px';
+input.style.marginTop = '20px';
 
-app.questions(3, 4);
+app.questions(3, 3);
 
 
 
