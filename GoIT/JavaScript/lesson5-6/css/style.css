@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+  margin-top: 16%;
+}
+
+.stopwatch {
+  margin-bottom: 20px;
+  font: 70px "Open Sans Light", Ebrima, "Times New Roman", sans-serif;
+}
+
+.clearBtn {
+  margin-left: 78px;
+}
