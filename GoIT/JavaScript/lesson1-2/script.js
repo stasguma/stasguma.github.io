@@ -66,28 +66,3 @@ if (flag) {
 
   alert("Пользователя, " + userName + ", не существует");
 }
-
- var names = [];
-
- for (var i = 0; i < 5; i++) {
-   names[i] = prompt('Введите имя');
- }
-
- console.log(names);
-
- var userName = prompt('Введите имя пользователя');
- var flag = false;
-
- for (var i = 0; i < names.length; i++) {
-   if (names[i].indexOf( userName ) === 0) {
-     flag = true;
-     break;
-   }
- }
-
- if (flag) {
-   alert(userName + ", вы успешно вошли");
- } else {
-
-   alert("Пользователя, " + userName + ", не существует");
- }
