@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*//////////////////////////////////////
+///////////////   TABS   //////////////
+////////////////////////////////////*/
+
+#tabs {
+  width: 700px;
+  padding: 6px;
+  border: 1px solid #908c8c;
+}
+
+#tabs ul {
+  background: linear-gradient(to bottom, #317F00 0%, #71CC39 100%);
+  border-radius: 6px 0 0 6px;
+}
+
+#tabs li {
+  display: inline-block;
+}
+
+#tabs li:first-of-type a {
+  border-bottom-left-radius: 6px;
+}
+
+.tabs {
+  display: inline-block;
+  width: 100px;
+  height: 36px;
+  border-radius: 6px 6px 0 0;
+  border: 1px solid #227d14;
+  border-bottom: none;
+  text-align: center;
+  line-height: 34px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#tab2, #tab3 {
+  display: none;
+}
+
+#hover-tab {
+  background: linear-gradient(to bottom, #f1f1f1 55%, #ffffff 100%);
+  border: 1px solid #777171;
+  color: #000;
+  text-decoration: none;
+  opacity: 0;
+}
+
+#hover-tab--pink {
+  background: linear-gradient(to bottom, #ff4085 0%, #ffffff 100%);
+  border-bottom: none;
+  color: #000;
+  text-decoration: none;
+}
+
+/*//////////////////////////////////////////////
+///////////////   FORM   /////////////////////
+///////////////////////////////////////////*/
+
+form {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+label {
+  font: 17px "Centure Gothic", Arial, sans-serif;
+  font-weight: normal;
+}
+
+fieldset > div {
+  margin-bottom: 10px;
+}
+
+#firstname {
+  margin-left: 32px;
+}
+
+#lastname {
+  margin-left: 10px;
+}
+
+#adress {
+  margin-left: 19px;
+}
+
+fieldset div:nth-child(1) label {
+  margin-left: 17px;
+}
+
+fieldset div:nth-child(3) label {
+  margin-left: 14px;
+}
+
+div > span {
+  display: none;
+}
+
+.titletip {
+  display: none;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  box-shadow: 0 0 10px rgba(154, 154, 154, 0.7);
+  font-size: 11px;
+}
