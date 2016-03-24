@@ -54,8 +54,8 @@ console.log( pow() );
 // var userName = prompt('Введите имя пользователя');
 // var flag = false;
 //
-// for (var i = 0; i < names.length; i++) {
-//   if (names[i].indexOf( userName ) === 0) {
+// for (var i = 0; i < names.indexOf( userName ); i++) {
+//   if (names[i] !== -1) {
 //     flag = true;
 //     break;
 //   }
