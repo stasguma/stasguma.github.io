@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: padding-box;
+  list-style: none;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+.wrapper {
+  margin-top: 50px;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 550px;
+    height: 300px;
+    border: 10px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    margin: 0 auto;
+}
+
+.jcarousel ul {
+    position: relative;
+    width: 20000em;
+    height: 300px;
+}
+
+.jcarousel li {
+    float: left;
+    width: 550px;
+}
+
+.jcarousel li img {
+    width: 550px;
+}
+
+.jcarousel-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 280px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.jcarousel-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 280px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.jcarousel-prev span, .jcarousel-next span {
+  display: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  padding-top: 2px;
+  border-radius: 50%;
+  background: rgba(100, 100, 100, .5);
+  font: bold 20px Calibri, Arial, sans-serif;
+  color: rgba(255, 255, 255, .9);
+}
+
+.jcarousel-prev span {
+  top: 50%;
+  left: 0;
+  margin-left: 10px;
+  padding-left: 8px;
+}
+
+.jcarousel-next span {
+  top: 50%;
+  right: 0;
+  margin-right: 10px;
+  padding-left: 11px;
+}
+
+.wrapper2 {
+  position: relative;
+  width: 320px;
+  height: 68px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.jcarousel-pagination {
+  position: relative;
+  overflow: hidden;
+}
+
+.jcarousel-pagination ul {
+  position: relative;
+  width: 20000em;
+  height: 60px;
+}
+
+.jcarousel-pagination li {
+  float: left;
+  width: 100px;
+  height: 60px;
+  margin-right: 5px;
+}
+
+.jcarousel-pagination img {
+  width: 100px;
+  height: 60px;
+}
+
+.page-next, .page-prev {
+  /*display: none;*/
+  position: absolute;
+  top: 420px;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  padding-top: 2px;
+  border-radius: 50%;
+  background: rgba(100, 100, 100, .8);
+  color: rgba(255, 255, 255, .9);
+  text-decoration: none;
+  font: 20px Calibri, Arial, sans-serif;
+  z-index: 1;
+}
+
+.page-next {
+  right: 36.22%;
+  padding-left: 16px;
+}
+
+.page-prev {
+  left: 36.22%;
+  padding-left: 5px;
+}
+
+.active {
+   border: 5px solid #ccc;
+}
+
+select {
+   /*margin-bottom: 180px;*/
+}
+
+select option:first-of-type {
+   font-style: italic;
+   font-weight: bold;
+}
+
+label {
+   display: block;
+   width: 146px;
+   margin-bottom: 5px;
+}
+
+.checkboxes {
+   margin: 50px 0 20px 0;
+}
+
+label:nth-child(1) div {
+   position: relative;
+   margin-left: 8px;
+}
+
+label:nth-child(2) div {
+   margin-left: 11px;
+}
+
+label:nth-child(3) div {
+   margin-left: 13px;
+}
+
+.jq-selectbox {
+   margin-bottom: 155px;
+}
