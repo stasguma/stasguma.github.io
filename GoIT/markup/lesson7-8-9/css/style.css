@@ -1,0 +1,819 @@
+@import url('768px.css');
+@import url('480px.css');
+@import url('320px.css');
+
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-regular.eot');
+    src: url('../fonts/leaguegothic-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular.woff2') format('woff2'),
+         url('../fonts/leaguegothic-regular.woff') format('woff'),
+         url('../fonts/leaguegothic-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/open_sans_light.eot');
+    src: url('../fonts/open_sans_light.eot?#iefix') format('embedded-../fonts/opentype'),
+         url('../fonts/open_sans_light.woff2') format('woff2'),
+         url('../fonts/open_sans_light.woff') format('woff'),
+         url('../fonts/open_sans_light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Extrabold';
+    src: url('../fonts/opensans_extrabold.eot');
+    src: url('../fonts/opensans_extrabold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans_extrabold.woff2') format('woff2'),
+         url('../fonts/opensans_extrabold.woff') format('woff'),
+         url('../fonts/opensans_extrabold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+   width: 100%;
+   background: url(../img/background_body.jpg) center top no-repeat,
+               url(../img/footer_bg2.jpg) center 104% no-repeat;
+}
+
+.wrapper {
+   position: relative;
+   width: 960px;
+   z-index: 2;
+   margin: 0 auto;
+   padding-top: 70px;
+   font: 14px Arial, sans-serif;
+}
+
+/*///////////////////////////////////
+////////////   HEADER    ///////////
+/////////////////////////////////*/
+
+.header {
+  width: 100%;
+  height: 206px;
+}
+
+.header .logo {
+  display: inline-block;
+  width: 152px;
+  height: 39px;
+}
+
+.header .logo a{
+  position: relative;
+  display: inline-block;
+  width: 152px;
+  height: 39px;
+  background: url(../img/logo_header.png) 0 0 no-repeat;
+  transition: transform .3s;
+}
+
+.header .logo a:hover{
+  transform: translateY(-10px);
+}
+
+.header > a {
+   display: none;
+}
+
+.logo a:before {
+   position: absolute;
+   bottom: -9px;
+   left: 9%;
+   width: 83%;
+   height: 10px;
+   z-index: 1;
+   content: '';
+   pointer-events: none;
+   opacity: 0;
+   background: -webkit-radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+   background:         radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+   -webkit-transition: opacity .3s, transform .3s;
+           transition: opacity .3s, transform .3s;
+}
+
+.logo a:hover:before,
+.logo a:focus:before {
+   opacity: 1;
+   transform: translateY(10px);
+}
+
+.menu {
+   float: right;
+   font-size: 0;
+}
+
+.menu__item {
+  display: inline-block;
+  margin: 3px 41px 0 0;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link {
+  position: relative;
+  padding: 0 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  letter-spacing: .1;
+  font: 24px/25px "League Gothic", Arial, sans-serif;
+  color: #fff;
+}
+
+.menu__link:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  content: "";
+  background-color: #ba8acd;
+  transition: width 0.2s;
+}
+
+.menu__link:hover:after {
+  width: 100%;
+}
+
+/*/////////////////////////////////////////////
+////////////////   SLIDER   //////////////////
+///////////////////////////////////////////*/
+
+.bg2 {
+   position: absolute;
+   top: 277px;
+   width: 100%;
+   height: 400px;
+   background: rgba(0, 0, 0, .2);
+}
+
+.slider {
+  position: relative;
+  width: 95%;
+  height: 400px;
+}
+
+.slides {
+  position: relative;
+  height: 400px;
+}
+
+.inner {
+  width: 400%;
+}
+
+.inner:after {
+   display: block;
+   clear: both;
+   content: "";
+}
+
+.overflow {
+   position: absolute;
+   top: -19px;
+   overflow: hidden;
+}
+
+.page {
+  float: left;
+  width: 25%;
+}
+
+.page img {
+  float: right;
+  width: 266px;
+  height: 374px;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+
+.text {
+  display: inline-block;
+  width: 498px;
+  margin-top: 102px;
+  text-shadow: 0px 2px 2px rgba(0,0,0,.3);
+}
+
+.text__h1 {
+  color: #fefefe;
+  font: 60px/55px "League Gothic", Arial, sans-serif;
+}
+
+.text__h2 {
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  color: #edbfff;
+  font: 32px/36px "League Gothic", Arial, sans-serif;
+}
+
+.text__p {
+  color: #fff;
+  font: 17px/22px "Open Sans Light", Arial, sans-serif;
+}
+
+.slider input {
+	display: none;
+}
+
+.controls {
+  position: absolute;
+  top: 1px;
+  width: 100%;
+}
+
+.controls label {
+  display: none;
+  cursor: pointer;
+  opacity: .5;
+}
+
+#slider__slide1:checked ~ .controls label:nth-child(4),
+#slider__slide2:checked ~ .controls label:nth-child(1),
+#slider__slide3:checked ~ .controls label:nth-child(2),
+#slider__slide4:checked ~ .controls label:nth-child(3) {
+	display: block;
+	float: right;
+   width: 55px;
+   height: 400px;
+	margin-right: -55px;
+	background: url('../img/arrow_next.png') 18px 200px no-repeat;
+   transition: background-color 200ms, opacity 200ms;
+}
+
+#slider__slide1:checked ~ .controls label:nth-child(2),
+#slider__slide2:checked ~ .controls label:nth-child(3),
+#slider__slide3:checked ~ .controls label:nth-child(4),
+#slider__slide4:checked ~ .controls label:nth-child(1) {
+   display: block;
+   float: left;
+   width: 55px;
+   height: 400px;
+   margin-left: -55px;
+   background: url('../img/arrow_prev.png') 11px 200px no-repeat;
+   transition: background-color 200ms, opacity 200ms;
+}
+
+#slider__slide1:checked ~ .controls label:nth-child(2):hover,
+#slider__slide2:checked ~ .controls label:nth-child(3):hover,
+#slider__slide3:checked ~ .controls label:nth-child(4):hover,
+#slider__slide4:checked ~ .controls label:nth-child(1):hover {
+   background-color: rgba(167, 85, 232, 0.3);
+   opacity: .9;
+}
+
+#slider__slide1:checked ~ .controls label:nth-child(4):hover,
+#slider__slide2:checked ~ .controls label:nth-child(1):hover,
+#slider__slide3:checked ~ .controls label:nth-child(2):hover,
+#slider__slide4:checked ~ .controls label:nth-child(3):hover {
+   background-color: rgba(167, 85, 232, 0.3);
+   opacity: .9;
+}
+
+#slider__slide4:checked ~ .slides .inner { margin-left:0; }
+#slider__slide3:checked ~ .slides .inner { margin-left:-100%; }
+#slider__slide2:checked ~ .slides .inner { margin-left:-200%; }
+#slider__slide1:checked ~ .slides .inner { margin-left:-300%; }
+
+.active {
+   margin: 96px 163px 0 0;
+}
+
+.active label {
+  position: relative;
+  float: right;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 6px;
+  margin-bottom: 59px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, .2);
+  transition: background .2s;
+}
+
+.active label:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#slider__slide1:checked ~ .active label:nth-child(1):after,
+#slider__slide2:checked ~ .active label:nth-child(2):after,
+#slider__slide3:checked ~ .active label:nth-child(3):after,
+#slider__slide4:checked ~ .active label:nth-child(4):after {
+   position: absolute;
+   left: 3px;
+   top: 3px;
+   display: inline-block;
+   width: 9px;
+   height: 9px;
+   border-radius: 50%;
+   content: "";
+   background: #ddd;
+}
+
+.slides .inner {
+  -webkit-transition: all .8s ease-in-out;
+          transition: all .8s ease-in-out;
+}
+
+/*///////////////////////////////////////
+//////////////   ABOUT   ///////////////
+/////////////////////////////////////*/
+
+.bg3 {
+  position: absolute;
+  top: 846px;
+  width: 100%;
+  height: 342px;
+  border-top: 1px solid #33253a;
+  background: linear-gradient(to top, #322539, #745083 100%);
+  box-shadow: 0 8px 15px -10px black;
+}
+
+.about {
+   clear: both;
+   width: 960px;
+   margin: 0 auto;
+   padding: 80px 0 69px 11px;
+}
+
+.company {
+  position: relative;
+  display: inline-block;
+  width: 279px;
+  margin-right: 52px;
+  padding-left: 53px;
+}
+
+.company:last-child {
+  margin-right: 0;
+}
+
+.company__h3 {
+   margin-bottom: 15px;
+   text-transform: uppercase;
+   text-shadow: 1px 1px 0 black;
+   color: #fff;
+   font: 30px/24px "League Gothic", Arial, sans-serif;
+}
+
+.company__p {
+   margin-bottom: 18px;
+   text-shadow: 1px 1px 0 black;
+   color: #fff;
+   font: 16px/24px "Open Sans Light", Arial, sans-serif;
+}
+
+.company__link {
+  float: right;
+  margin-right: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 black;
+  letter-spacing: .5px;
+  color: #fff;
+  font: 18px/14px "League Gothic", Arial, sans-serif;
+}
+
+.company__link:hover {
+  text-shadow: 0 0 8px white;
+}
+
+.company:before {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  display: inline-block;
+  content: '';
+  width: 28px;
+  height: 29px;
+  background: url(../img/icons_sprite.png) -52px 0 no-repeat;
+}
+
+.company:nth-child(2):before {
+   width: 30px;
+   height: 26px;
+   content: '';
+   background: url(../img/icons_sprite.png) -24px 0 no-repeat;
+}
+
+.company:last-child:before {
+   width: 27px;
+   content: '';
+   background: url(../img/icons_sprite.png) 2px 0 no-repeat;
+}
+
+/*///////////////////////////////////////
+/////////////   Section   //////////////
+/////////////////////////////////////*/
+
+.bg4 {
+   position: absolute;
+   top: 1157px;
+   z-index: -1;
+   width: 100%;
+   height: 636px;
+   background-color: #f9f9f9;
+}
+
+section {
+   height: 608px;
+   padding-top: 103px;
+}
+
+.start {
+   position: relative;
+   display: inline-block;
+   width: 426px;
+   height: 272px;
+   margin: 0 55px 0 22px;
+   padding: 27px 39px 33px 37px;
+   background-color: #fff;
+   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+           box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.start:after {
+   position: absolute;
+   right: 40px;
+   bottom: -12px;
+   border: 12px solid transparent;
+   border-right: 12px solid #fff;
+   content: '';
+}
+
+.page2 h3 {
+   position: relative;
+   margin-bottom: 6px;
+   text-transform: uppercase;
+   text-shadow: none;
+   color: #eec3ff;
+   font: 30px "League Gothic", Arial, sans-serif;
+}
+
+.start:before {
+   position: absolute;
+   top: 16px;
+   left: -23px;
+   display: inline-block;
+   width: 49px;
+   height: 49px;
+   content: url(../img/face.png);
+}
+
+.page2 p {
+   text-shadow: none;
+   font: 16px/24px "Open Sans Light", Arial, sans-serif;
+}
+
+.page2 span {
+   color: #454545;
+}
+
+.updates {
+   position: relative;
+   top: -25px;
+   display: inline-block;
+   width: 438px;
+}
+
+.updates h3 {
+   margin-bottom: 15px;
+   text-transform: uppercase;
+   color: #454545;
+   font: 30px "League Gothic", Arial, sans-serif;
+}
+
+.updates h4 {
+   color: #454545;
+   font: 16px/24px "Open Sans Extrabold", Arial, sans-serif;
+}
+
+.updates p {
+   font: 16px/24px "Open Sans Light", Arial, sans-serif;
+}
+
+.update1, .update2, .update3 {
+   position: relative;
+   padding-left: 58px;
+}
+
+.update2, .update3 {
+   margin-top: 16px;
+}
+
+.update1:before,
+.update2:before,
+.update3:before {
+   position: absolute;
+   top: -3px;
+   left: 0px;
+   display: inline-block;
+   width: 49px;
+   height: 49px;
+}
+
+.update1:before {content: url(../img/update1.png);}
+.update2:before {content: url(../img/update2.png);}
+.update3:before {content: url(../img/update3.png);}
+
+.updates a {
+   float: right;
+   margin-top: 20px;
+   margin-right: 13px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #454545;
+   font: 18px "League Gothic", Arial, sans-serif;
+}
+
+.updates a:hover {
+   text-shadow: 0 0 12px #650d66;
+}
+
+/*/////////////////////////////////////////////
+/////////////   START SLIDER   ///////////////
+///////////////////////////////////////////*/
+
+.slides2 {
+  position: relative;
+  height: 100%;
+}
+
+.inner2 {
+  width: 400%;
+}
+
+.inner2:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.overflow2 {
+  position: absolute;
+  top: -14px;
+  overflow: hidden;
+}
+
+.page2 {
+   float: left;
+   display: inline-block;
+   width: 25%;
+   margin-top: 13px;
+   text-shadow: 0px 2px 2px rgba(0,0,0,.3);
+}
+
+.start input {
+	display: none;
+}
+
+.controls2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.controls2 label {
+  display: none;
+  cursor: pointer;
+  opacity: .5;
+}
+
+#slider2__slide4:checked ~ .slides2 .inner2 { margin-left:0; }
+#slider2__slide3:checked ~ .slides2 .inner2 { margin-left:-100%; }
+#slider2__slide2:checked ~ .slides2 .inner2 { margin-left:-200%; }
+#slider2__slide1:checked ~ .slides2 .inner2 { margin-left:-300%; }
+
+.active2 {
+  margin: 55px 120px 0 0;
+}
+
+.active2 label {
+  position: relative;
+  float: right;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid #e6e6e6;
+  margin-right: 6px;
+  margin-bottom: 59px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, .9);
+  transition: background .2s;
+}
+
+#slider2__slide1:checked ~ .active2 label:nth-child(1):after,
+#slider2__slide2:checked ~ .active2 label:nth-child(2):after,
+#slider2__slide3:checked ~ .active2 label:nth-child(3):after,
+#slider2__slide4:checked ~ .active2 label:nth-child(4):after {
+   position: absolute;
+   left: 2px;
+   top: 2px;
+   display: inline-block;
+   width: 11px;
+   height: 11px;
+   border-radius: 50%;
+   content: "";
+   background: #585858;
+}
+
+.slides2 .inner2 {
+  -webkit-transition: all .8s ease-in-out;
+          transition: all .8s ease-in-out;
+}
+
+/*/////////////////////////////////////////////
+//////////////////   LOGOS   /////////////////
+///////////////////////////////////////////*/
+
+.logos {
+   position:relative;
+   height: 120px;
+   margin-top: 58px;
+   padding: 33px 0 0 85px;
+}
+
+.lines {
+   position: relative;
+   top: 516px;
+   z-index: 5;
+   height: 120px;
+   border-top: 1px solid #d8d8d8;
+   border-bottom: 1px solid #d8d8d8;
+}
+
+.lines:before {
+   position:absolute;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   display:block;
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #fff;
+   content:"";
+}
+
+.logos div {
+   display: inline-block;
+   height: 65px;
+   margin-right: 64px;
+   background: url(../img/logos-sprite.png) 0 0 no-repeat;
+}
+
+.logos div:first-child {
+   width: 70px;
+}
+
+.logos div:nth-child(2) {
+   width: 74px;
+   background-position: -70px 0;
+}
+
+.logos div:nth-child(3) {
+   width: 66px;
+   background-position: -143px 0;
+}
+
+.logos div:nth-child(4) {
+   width: 53px;
+   background-position: -209px 0;
+}
+
+.logos div:nth-child(5) {
+   width: 106px;
+   background-position: -261px 0;
+}
+
+.logos div:nth-child(6) {
+   width: 80px;
+   background-position: -370px 0;
+}
+
+/*/////////////////////////////////////////////
+//////////////   PRE-FOOTER   ////////////////
+///////////////////////////////////////////*/
+
+.bg5 {
+   position: absolute;
+   top: 1793px;
+   width: 100%;
+   height: 398px;
+   background-color: #ececec;
+}
+
+.bg5:before, .bg5:after {
+	content: "";
+   position: absolute;
+   top: 50%;
+   bottom: 0;
+   left: 10px;
+   right: 10px;
+   z-index: -1;
+   border-radius: 351px / 96px;
+   box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.pre-footer {
+   height: 397px;
+   padding: 98px 0 95px 0;
+   background: #ececec;
+}
+
+.pre-footer div {
+   display: inline-block;
+   width: 277px;
+   height: 201px;
+   overflow: hidden;
+}
+
+.pre-footer div:not(:last-child) {
+   margin-right: 60px;
+}
+
+.pre-footer div:first-child p:first-of-type {
+   margin: 14px 0 8px 0;
+   text-shadow: 1px 1px 1px #fff;
+   color: #c5c5c5;
+   font: italic 16px "Georgia", Arial,sans-serif;
+}
+
+.pre-footer div:first-child p:last-of-type,
+.pre-footer div:not(:first-child) p{
+   /*text-overflow: clip;*/
+   color: #787878;
+   font: 16px/23px "Open Sans Light", Arial,sans-serif;
+}
+
+.pre-footer div h4 {
+   margin-bottom: 6px;
+   text-transform: uppercase;
+   color: #454545;
+   font: 30px "League Gothic", Arial, sans-serif;
+}
+
+/*/////////////////////////////////////////////
+/////////////////   FOOTER   /////////////////
+///////////////////////////////////////////*/
+
+.footer {
+   height: 114px;
+   padding-top: 39px;
+}
+
+.menu--font-size {
+  float: left;
+}
+
+.menu__item {
+  display: inline-block;
+  margin: 3px 41px 0 0;
+}
+
+.menu--font-size .menu__link {
+  position: relative;
+  padding: 0 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  letter-spacing: .1;
+  color: #fff;
+  font: 20px/25px "League Gothic", Arial, sans-serif;
+}
+
+.menu--font-size > :first-child > a {
+   padding-left: 0;
+}
+
+.menu__item--margin {
+   margin-right: 34px;
+}
+
+.menu--font-size .menu__link:after {
+  content: none;
+}
+
+.footer p {
+   float: right;
+   margin-top: 9px;
+   text-shadow: 1px 2px 2px #000;
+   color: #fff;
+   font: 12px "Open Sans Light", Arial, sans-serif;
+}
+
+.footer p span {
+   text-shadow: 1px 2px 2px #000;
+   color: #fff;
+   font: 12px "Open Sans Extrabold", Arial, sans-serif;
+}
