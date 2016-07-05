@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: padding-box;
+  /*list-style: none;*/
+}
+
+.wrapper > h1 {
+   margin-bottom: 20px;
+   margin-left: 37px;
+   font-size: 22px;
+}
+
+.wrapper > input {
+   margin-left: 76px;
+   margin-top: 20px;
+}
+
+ol {
+   padding-left: 40px;
+}
+
+li > label {
+   display: block;
+   width: 154px;
+   margin-left: 6px;
+}
+
+input[type='checkbox'] {
+   position: relative;
+   top: 2px;
+   right: 4px;
+}
+
+input[type='submit'] {
+   margin-top: 20px;
+   margin-left: 76px;
+   /*padding: 1px 6px;*/
+}

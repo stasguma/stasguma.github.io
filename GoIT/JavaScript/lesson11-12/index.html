@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS by Stas Guma</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.js"></script> -->
+  <script src="js/lodash.js"></script>
+  <script src="js/jquery.carousel.js" defer></script>
+  <!-- <script src="js/script.js" defer></script> -->
+</head>
+<body>
+   <div class="carousel-arrow-left"><span>Влево</span></div>
+   <div class="carousel-hider">
+      <ul class="carousel-list">
+         <li class="carousel-element"><img src="img/space1.jpg" alt="space1"></li>
+         <li class="carousel-element"><img src="img/space2.jpg" alt="space2"></li>
+         <li class="carousel-element"><img src="img/space3.jpg" alt="space3"></li>
+         <li class="carousel-element"><img src="img/space4.jpg" alt="space4"></li>
+         <li class="carousel-element"><img src="img/space5.jpg" alt="space5"></li>
+         <li class="carousel-element"><img src="img/space6.jpg" alt="space6"></li>
+         <li class="carousel-element"><img src="img/space1.jpg" alt="space1"></li>
+         <li class="carousel-element"><img src="img/space2.jpg" alt="space2"></li>
+         <li class="carousel-element"><img src="img/space3.jpg" alt="space3"></li>
+         <li class="carousel-element"><img src="img/space4.jpg" alt="space4"></li>
+         <li class="carousel-element"><img src="img/space5.jpg" alt="space5"></li>
+         <li class="carousel-element"><img src="img/space6.jpg" alt="space6"></li>
+      </ul>
+   </div>
+   <div class="carousel-arrow-right"><span>Вправо</span></div>
+
+   <script type="text/html" id="template">
+      <div class="wrapper">
+         <div class="<%=firstBlock%>">
+           <h1><%=name%></h1>
+           <img src="images/ava.jpg" alt="logo">
+           <p><%=status%></p>
+         </div>
+         <div class="<%=secondBlock%>">
+             <p><%=frontEnd%></p>
+                <ul>
+                   <% for (var i = 1; i < 4 i++) { %>
+                      <li><%=interesting%></li>
+                   <% } %>
+                </ul>
+         </div>
+         <div class="<%=thirdBlock%>">
+             <p><%=myContact%></p>
+             <a href="<%=callTo%>"><%=number%></a>
+             <p class="vk"><%=profile%></p>
+             <a href="https://vk.com/tolnoj" target="_blank">vk.com</a>
+         </div>
+         <div class="<%=fourthBlock%>">
+             <p><%=feedback%></p>
+             <p><%=smthWritten%></p>
+         </div>
+      </div>
+   </script>
+   <script src="js/script.js"></script>
+</body>
+</html>
