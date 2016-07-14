@@ -4,17 +4,17 @@ $(function () {
 
    var questionsGen = [
       {
-         question: "Столица Украины",
+         question: "Столица Украины?",
          answers: ["Киев", "Харьков", "Одесса"],
          correctAnswer: "Киев"
       },
       {
-         question: "Численность населения",
+         question: "Численность населения?",
          answers: ["50 млн", "43 млн", "35 млн"],
          correctAnswer: "43 млн"
       },
       {
-         question: "Территория",
+         question: "Территория Украины?",
          answers: ["453 549 км²", "603 549 км²", "403 549 км²"],
          correctAnswer: "603 549 км²"
       }
