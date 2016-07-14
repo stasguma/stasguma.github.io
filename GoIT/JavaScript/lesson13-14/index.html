@@ -15,46 +15,14 @@
       <div class="wrapper container-fluid">
          <h1 class="text-left">Тест по программированию</h1>
          <ol>
-            <% console.log(obj.questionsGen.length); %>
-            <% for (var i = 0; i < obj.questionsGen.length; i++) { %>
-               <li><% for (var k = 0; k < obj.questionsGen[i].answers.length; k++) { %>
-                  <label><input type="checkbox"><% obj.questionsGen[i].answers[k] %></label>
+
+            <% for (var i = 0; i < questionsGen.length; i++) { %>
+               <li><%= questionsGen[i].question %>
+                   <% for (var k = 0; k < questionsGen[i].answers.length; k++) { %>
+                  <label><input type="checkbox" value="<%= questionsGen[i].answers[k] %>"><%= questionsGen[i].answers[k] %></label>
                   <% }; %>
                </li>
             <% }; %>
-            <!-- <li>Вопрос №1
-               <label>
-                  <input type="checkbox">Вариант ответа №1
-               </label>
-               <label>
-                  <input type="checkbox">Вариант ответа №2
-               </label>
-               <label>
-                  <input type="checkbox">Вариант ответа №3
-               </label>
-            </li>
-            <li>Вопрос №2
-               <label>
-                  <input type="checkbox">Вариант ответа №1
-               </label>
-               <label>
-                  <input type="checkbox">Вариант ответа №2
-               </label>
-               <label>
-                  <input type="checkbox">Вариант ответа №3
-               </label>
-            </li>
-            <li>Вопрос №3
-               <label>
-                  <input type="checkbox">Вариант ответа №1
-               </label>
-               <label>
-                  <input type="checkbox">Вариант ответа №2
-               </label>
-               <label>
-                  <input type="checkbox">Вариант ответа №3
-               </label>
-            </li> -->
          </ol>
          <input type="submit" value="Проверить мои результаты">
       </div>
