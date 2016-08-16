@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/open_sans_light.eot');
+    src: url('../fonts/open_sans_light.eot?#iefix') format('embedded-../fonts/opentype'),
+         url('../fonts/open_sans_light.woff2') format('woff2'),
+         url('../fonts/open_sans_light.woff') format('woff'),
+         url('../fonts/open_sans_light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Extrabold';
+    src: url('../fonts/opensans_extrabold.eot');
+    src: url('../fonts/opensans_extrabold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans_extrabold.woff2') format('woff2'),
+         url('../fonts/opensans_extrabold.woff') format('woff'),
+         url('../fonts/opensans_extrabold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.todo-list {
+    width: 300px;
+    margin: 0px auto;
+}
+
+.inner {
+    padding: 50% 0;
+}
+
+.menu {
+    background-color: #b84444;
+}
+
+.addPanel {
+    margin-top: 10px;
+}
+
+.menu__input-text {
+    display: inline-block;
+    width: 65%;
+    height: 40px;
+    margin-right: 3%;
+    padding: 10px;
+    font: 15px "Open Sans Light", Arial, sans-serif;
+}
+
+.menu__btn {
+    position: relative;
+    top: -1px;
+    width: 30%;
+    padding: 10px 30px;
+
+}
+
+.menu__list-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    cursor: default;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);;
+    color: #1B2F33;
+    font: 18px "Open Sans Extrabold", Arial, sans-serif;
+}
+
+.menu__list-item span {
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.menu__list-item:hover {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: #2FCFEF;
+    color: #163c38;
+}
+
+.menu__list-item a {
+    display: none;
+    transition: all 1s;
+}
+
+.menu__list-item:hover a {
+    display: inline-block;
+    height: 100%;
+    cursor: pointer;
+}
+
+.menu__list-item:hover a:first-of-type {
+    margin-right: 10px;
+    margin-left: 7px;
+}
