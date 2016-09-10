@@ -4,90 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final exam by Stas Guma</title>
-    <link rel="stylesheet" href="css/dist/style.css">
-    <!--[if gte IE 9]
-        <style type="text/css">
-            .gradient {
-            filter: none;
-            }
-        </style>
-    <![endif]-->
+    <link rel="stylesheet" href="css/dist/main.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://use.fontawesome.com/648c0a4557.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js"></script> -->
-    <!-- <script src="js/jquery-3.1.0.js"></script> -->
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/lodash-4.15.0.js"></script>
-    <!-- <script defer src="js/dist/script.js"></script> -->
+    <script src="js/lory.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js"></script>
+    <script defer src="js/dist/main.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
+        <!-- ///////////////////
+        /////// HEADER
+        ////////////////// -->
         <header class="header">
-            <div class="authenticate">
+            <form class="authenticate" disabled action="#">
                 <button class="authenticate__login" type="submit">Log in</button>
                 <button class="authenticate__signup" type="submit">Sign up</button>
-            </div>
-            <h2 class="header__site-name">URLAUBSGLÜCK</h2>
+            </form>
+            <h2 class="header__site-name">
+                <a href="#">URLAUBSGLÜCK</a>
+            </h2>
             <h1 class="header__title">Share your holiday dreams</h1>
             <p class="header__title-to">And find the perfect partner to fullfill it</p>
             <button class="header__find-btn" type="submit">Find your holiday partner</button>
         </header>
+        <!-- ///////////////////
+        /////// MAIN
+        ////////////////// -->
         <main class="main">
             <h2 class="main__title">How Urlaubsglück works?</h2>
-            <section class="section gradient">
-                <img class="section__img" src="img/how_it_works_img1.jpg">
-                <span class="section__step">Step 1</span>
-                <h3 class="section__title">Sed leo enim, condimentum</h3>
-                <p class="section__describe">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-            </section>
-            <section class="section gradient">
-                <img class="section__img" src="img/how_it_works_img2.jpg">
-                <span class="section__step">Step 2</span>
-                <h3 class="section__title">Morbi velit risus</h3>
-                <p class="section__describe">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-            </section>
-            <section class="section gradient">
-                <img class="section__img" src="img/how_it_works_img3.jpg">
-                <span class="section__step">Step 3</span>
-                <h3 class="section__title">Sed leo enim, condimentum</h3>
-                <p class="section__describe">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-            </section>
+            <div class="slider js_percentage">
+                <div class="frame js_frame">
+                    <ul class="slides js_slides">
+                        <li class="js_slide">
+                            <span class="slides__bg"></span>
+                            <img class="slides__img" src="img/dist/how_it_works_img1.jpg">
+                            <span class="slides__step">Step 1</span>
+                            <h3 class="slides__title">Sed leo enim, condimentum</h3>
+                            <p class="slides__describe">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                        </li>
+                        <li class="js_slide">
+                            <span class="slides__bg"></span>
+                            <img class="slides__img" src="img/dist/how_it_works_img2.jpg">
+                            <span class="slides__step">Step 2</span>
+                            <h3 class="slides__title">Morbi velit risus</h3>
+                            <p class="slides__describe">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+                        </li>
+                        <li class="js_slide">
+                            <span class="slides__bg"></span>
+                            <img class="slides__img" src="img/dist/how_it_works_img3.jpg">
+                            <span class="slides__step">Step 3</span>
+                            <h3 class="slides__title">Sed leo enim, condimentum</h3>
+                            <p class="slides__describe">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                        </li>
+                    </ul>
+                </div>
+                <span class="js_prev prev">
+                    <i class="fa fa-angle-left fa-5x" aria-hidden="true"></i>
+                </span>
+                <span class="js_next next">
+                    <i class="fa fa-angle-right fa-5x" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="slider js_percentage">
+                <div class="frame js_frame">
+                    <ul class="slides js_slides">
+                        <li class="js_slide">
+                            <span class="slides__bg"></span>
+                            <img class="slides__img" src="img/dist/how_it_works_img2.jpg">
+                            <span class="slides__step">Step 2</span>
+                            <h3 class="slides__title">Morbi velit risus</h3>
+                            <p class="slides__describe">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+                        </li>
+                        <li class="js_slide">
+                            <span class="slides__bg"></span>
+                            <img class="slides__img" src="img/dist/how_it_works_img3.jpg">
+                            <span class="slides__step">Step 3</span>
+                            <h3 class="slides__title">Sed leo enim, condimentum</h3>
+                            <p class="slides__describe">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                        </li>
+                        <li class="js_slide">
+                            <span class="slides__bg"></span>
+                            <img class="slides__img" src="img/dist/how_it_works_img1.jpg">
+                            <span class="slides__step">Step 1</span>
+                            <h3 class="slides__title">Sed leo enim, condimentum</h3>
+                            <p class="slides__describe">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                        </li>
+                    </ul>
+                </div>
+                <span class="js_prev prev">
+                    <i class="fa fa-angle-left fa-5x" aria-hidden="true"></i>
+                </span>
+                <span class="js_next next">
+                    <i class="fa fa-angle-right fa-5x" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="slider js_percentage">
+                <div class="frame js_frame">
+                    <ul class="slides js_slides">
+                        <li class="js_slide">
+                            <span class="slides__bg"></span>
+                            <img class="slides__img" src="img/dist/how_it_works_img3.jpg">
+                            <span class="slides__step">Step 3</span>
+                            <h3 class="slides__title">Sed leo enim, condimentum</h3>
+                            <p class="slides__describe">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                        </li>
+                        <li class="js_slide">
+                            <span class="slides__bg"></span>
+                            <img class="slides__img" src="img/dist/how_it_works_img1.jpg">
+                            <span class="slides__step">Step 1</span>
+                            <h3 class="slides__title">Sed leo enim, condimentum</h3>
+                            <p class="slides__describe">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                        </li>
+                        <li class="js_slide">
+                            <span class="slides__bg"></span>
+                            <img class="slides__img" src="img/dist/how_it_works_img2.jpg">
+                            <span class="slides__step">Step 2</span>
+                            <h3 class="slides__title">Morbi velit risus</h3>
+                            <p class="slides__describe">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+                        </li>
+                    </ul>
+                </div>
+                <span class="js_prev prev">
+                    <i class="fa fa-angle-left fa-5x" aria-hidden="true"></i>
+                </span>
+                <span class="js_next next">
+                    <i class="fa fa-angle-right fa-5x" aria-hidden="true"></i>
+                </span>
+            </div>
         </main>
+        <!-- ///////////////////
+        /////// PARTNERS
+        ////////////////// -->
         <div class="partners">
             <h2 class="partners__title">Meet a partner for your best holiday</h2>
             <section class="partner">
                 <span class="addition1">
-                    <img src="img/partner_1.jpg" class="partner__img">
+                    <img src="img/dist/partner_1.jpg" class="partner__img">
                 </span>
                 <h4 class="partner__name">Bradley Hunter</h4>
                 <p class="partner__describe">Based in Chicago. I love playing tennis and loud music.</p>
             </section>
             <section class="partner">
                 <span class="addition2">
-                    <img src="img/partner_2.jpg" class="partner__img">
+                    <img src="img/dist/partner_2.jpg" class="partner__img">
                 </span>
                 <h4 class="partner__name">Lucas Marsha</h4>
                 <p class="partner__describe">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
             </section>
             <section class="partner">
                 <span class="addition3">
-                    <img src="img/partner_3.jpg" class="partner__img">
+                    <img src="img/dist/partner_3.jpg" class="partner__img">
                 </span>
                 <h4 class="partner__name">Heather Walker</h4>
                 <p class="partner__describe">I'm a happy person that loves cats and climbing on mountains.</p>
             </section>
             <section class="partner">
                 <span class="addition4">
-                    <img src="img/partner_4.jpg" class="partner__img">
+                    <img src="img/dist/partner_4.jpg" class="partner__img">
                 </span>
                 <h4 class="partner__name">Bradley Hunter</h4>
                 <p class="partner__describe">Based in Chicago. I love playing tennis and loud music.</p>
             </section>
             <button class="partners__btn" type="button">See other partners</button>
         </div>
+        <!-- ///////////////////
+        /////// DALLE
+        ////////////////// -->
         <div class="dalle">
             <h2 class="dalle__title">Discover holiday activity ideas</h2>
             <div class="grid"></div>
@@ -98,9 +184,15 @@
                 <input class="form__submit" type="submit" value="Search partners">
             </form>
         </div>
+        <!-- ///////////////////
+        /////// LINE
+        ////////////////// -->
         <div class="line"></div>
+        <!-- ///////////////////
+        /////// FOOTER
+        ////////////////// -->
         <footer class="footer">
-            <h2 class="footer__title">URLAUBSGLÜCK</h2>
+            <h2 class="footer__title"><a href="#">URLAUBSGLÜCK</a></h2>
             <ul class="footer-menu">
                 <li class="footer-menu__title">Company</li>
                 <li class="footer-menu__item">
@@ -132,18 +224,21 @@
                 </li>
             </ul>
             <span class="footer__designed">Designed by</span>
-            <img class="footer__img" src="img/designed_by.png">
+            <img class="footer__img" src="img/dist/designed_by.png">
         </footer>
     </div>
+    <!-- ///////////////////
+    /////// TEMPLATE
+    ////////////////// -->
     <script type="html/template" id="template">
         <div class="grid-sizer"></div>
         <% for (var i = 0; i < data.hits.length; i++) {%>
-        <div class="grid-item">
+        <div class="grid-item<%
+        if (i === 4 || i === 5 ) { %> grid-item--width2 <% } %>">
             <img class="grid-item__img" src="<%= data.hits[i].webformatURL %>">
             <h3 class="grid-item__title"><%= data.hits[i].tags %></h3>
         </div>
         <% } %>
     </script>
-    <script defer src="js/dist/script.js"></script>
 </body>
 </html>
