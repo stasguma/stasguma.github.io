@@ -1,0 +1,21 @@
+{
+  "name": "StasGuma_resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "latest",
+    "gulp-rename": "latest",
+    "gulp-concat-css": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-uncss": "latest",
+    "gulp-uglify": "latest",
+    "pump": "latest",
+    "gulp-imagemin": "latest",
+    "gulp.spritesmith": "latest",
+    "gulp-watch": "latest"
+  }
+}
