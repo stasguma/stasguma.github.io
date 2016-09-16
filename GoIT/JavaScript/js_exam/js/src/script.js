@@ -65,12 +65,12 @@
     //////////////////////////////////
     /////// REQUEST ON BUTTON  //////
     ////////////////////////////////
-    document.querySelector('.form__submit').addEventListener('click', function (e) {
+    document.querySelector('#dalle-form').addEventListener('submit', function (e) {
         e.preventDefault();
 
         getRequest();
 
-        document.body.querySelector('.form__input').value = "";
+        this.querySelector('.form__input').value = "";
 
     });
 

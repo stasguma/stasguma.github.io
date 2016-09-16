@@ -1,26 +1,35 @@
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    rename = require('gulp-rename'),
+    autoprefixer = require('autoprefixer'),
     concatCSS = require('gulp-concat-css'),
     cleanCSS = require('gulp-clean-css'),
     concat = require('gulp-concat'),
+    imagemin = require('gulp-imagemin'),
+    postcss = require('gulp-postcss'),
+    pump = require('pump'),
+    rename = require('gulp-rename'),
+    sass = require('gulp-sass'),
+    spritesmith = require('gulp.spritesmith'),
     uncss = require('gulp-uncss'),
     uglify = require('gulp-uglify'),
-    pump = require('pump'),
-    imagemin = require('gulp-imagemin'),
-    spritesmith = require('gulp.spritesmith'),
     watch = require('gulp-watch');
 
+
 gulp.task('css', function() {
-   return gulp.src('css/style.scss')
+    var processors = [
+        autoprefixer({browsers: ['last 4 version']})
+    ];
+
+   return gulp.src('css/src/main.scss')
    .pipe(sass().on('error', sass.logError))
    // .pipe(concatCSS('main.css'))
    // .pipe(uncss({
    //      html: ['index.html']
    //  }))
+   .pipe(gulp.dest('css/src/'))
+   .pipe(postcss(processors))
    .pipe( cleanCSS() )
-   .pipe(rename ('main.min.css') )
-   .pipe(gulp.dest('css/dist'));
+   .pipe(rename ('main.min.css'))
+   .pipe(gulp.dest('css/dist/'));
 });
 
 gulp.task('scripts', function() {
@@ -32,9 +41,9 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('imagemin', function() {
-    gulp.src('img/*')
+    gulp.src('img/*.*')
         .pipe(imagemin())
-        .pipe(gulp.dest('img/dist'));
+        .pipe(gulp.dest('img/dist/'));
 });
 
 gulp.task('watch', function () {
