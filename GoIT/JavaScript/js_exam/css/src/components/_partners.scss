@@ -1,0 +1,119 @@
+.partners {
+    width: 100%;
+    text-align: center;
+
+    .partners__title {
+        margin-top: 37px;
+        color: $black-light;
+        @include font-default(1.57rem);
+
+        @include breakpoint-m {
+            margin-top: 93px;
+            margin-bottom: 5px;
+        }
+
+    }
+
+    .partner {
+
+        @include breakpoint-m {
+            display: inline-block;
+            width: 34%;
+            vertical-align: top;
+        }
+
+        @include breakpoint-l {
+            width: 24.69%;
+        }
+
+
+
+        &:first-of-type {
+            margin-top: -14px;
+
+            @include breakpoint-m {
+                margin-top: 0;
+            }
+        }
+
+        .addition1 {
+            @extend %addition;
+            &:after {
+                content: url(../../img/dist/partners_addition1.png);
+            }
+        }
+
+        .addition2 {
+            @extend %addition;
+            &:after {
+                content: url(../../img/dist/partners_addition2.png);
+            }
+        }
+
+        .addition3 {
+            @extend %addition;
+            &:after {
+                content: url(../../img/dist/partners_addition3.png);
+            }
+        }
+        .addition4 {
+            @extend %addition;
+            &:after {
+                content: url(../../img/dist/partners_addition4.png);
+            }
+        }
+
+        .partner__img {
+            position: relative;
+            margin-top: 27px;
+            border-radius: 50%;
+        }
+
+        .partner__name {
+            margin-top: 16px;
+            color: $black-light;
+            @include font-default;
+        }
+
+        .partner__describe {
+            margin-top: 10px;
+            padding: 0 42px;
+            color: $grey-hard;
+            @include f-roboto-light(1rem);
+
+            @include breakpoint-m {
+                padding: 0 18px;
+            }
+        }
+    }
+
+    .partners__btn {
+        width: 100%;
+        margin-top: 24px;
+        cursor: pointer;
+        padding: 10px 10px;
+        border-radius: 18px;
+        border: 2px solid $light-pink;
+        outline: none;
+        background: none;
+        color: $light-pink;
+        @include font-default;
+
+        &:active {
+            color: $white;
+            background-color: $light-pink;
+        }
+
+        @include breakpoint-m {
+            display: block;
+            width: 26%;
+            margin-top: 36px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @include breakpoint-l {
+            width: 20.5%;
+        }
+    }
+}

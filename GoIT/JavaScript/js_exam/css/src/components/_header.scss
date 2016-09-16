@@ -1,0 +1,152 @@
+.header {
+    width: 100%;
+    text-align: center;
+
+    .authenticate {
+        text-align: center;
+
+        button {
+            margin-top: 20px;
+            padding: 8px 18px;
+            background-color: transparent;
+            border: 2px solid transparent;
+            border-radius: 21px;
+            font: inherit;
+            font-size: inherit;
+            color: $white;
+            cursor: pointer;
+            transition: .3s all;
+
+            &:hover {
+                border: 2px solid $white;
+            }
+
+            &:focus {
+                outline: none;
+            }
+            &:active {
+                color: $light-pink;
+                border-color: $light-pink;
+            }
+        }
+
+        @include clearfix;
+
+        @include breakpoint-m {
+            float: right;
+            margin-top: 18px;
+            margin-right: 39px;
+        }
+
+        @include breakpoint-l {
+            margin-right: 0px;
+        }
+
+    }
+
+    .header__site-name {
+        margin-top: 116px;
+        text-transform: uppercase;
+        @include font-default(1.43rem);
+
+        @include clearfix;
+
+        @include breakpoint-m {
+            display: inline-block;
+            margin-top: 47px;
+            margin-left: 48px;
+        }
+
+        @include breakpoint-l {
+            margin-left: 0;
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+
+    }
+
+    .header__title {
+        margin-top: 39px;
+        line-height: 37px;
+        @include font-default(30px);
+
+        text-transform: uppercase;
+
+        &:before {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        @include breakpoint-m {
+            margin-top: 151px;
+            padding: 0 125px;
+            line-height: 1.2;
+            text-align: center;
+            font-size: 3.71rem;
+        }
+
+        @include breakpoint-l {
+            margin-top: 146px;
+            padding: 0 205px;
+        }
+    }
+
+    .header__title-to {
+        width: 79%;
+        margin: 7px auto 0 auto;
+        @include f-roboto-light(18px);
+        color: rgba(255, 255, 255, .8);
+
+        @include breakpoint-m {
+            margin-top: 27px;
+            text-align: center;
+            font-size: 1.71rem;
+        }
+
+        @include breakpoint-l {
+            margin-top: 20px;
+        }
+    }
+
+    .header__find-btn {
+        width: 96%;
+        margin-top: 18px;
+        margin-bottom: 138px;
+        padding: 13px 0;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 21px;
+        background-color: $light-pink;
+        color: $white;
+        @include font-default;
+        font-weight: normal;
+
+        @include breakpoint-m {
+            display: block;
+            width: auto;;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        @include breakpoint-l {
+            margin-top: 31px;
+        }
+
+        &:active {
+            background-color: #e74e50;
+        }
+    }
+
+    @include breakpoint-m {
+        padding-bottom: 233px;
+        text-align: left;
+    }
+}

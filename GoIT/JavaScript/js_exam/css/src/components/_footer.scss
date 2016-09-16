@@ -1,0 +1,112 @@
+.footer {
+    padding-bottom: 12px;
+    text-align: center;
+
+    @include breakpoint-m {
+        padding-top: 40px;
+        padding-bottom: 31px;
+        text-align: left;
+    }
+
+    @include breakpoint-l {
+        padding-right: 0;
+    }
+
+    .footer__title {
+        margin-top: 20px;
+        color: $light-pink;
+        text-transform: uppercase;
+        @include font-default(1.14rem);
+
+        @include breakpoint-m {
+            float: left;
+            display: inline-block;
+            margin-right: 84px;
+            margin-left: 30px;
+            margin-top: 2px;
+        }
+
+        @include breakpoint-l {
+            margin-right: 98px;
+            margin-left: 0;
+        }
+
+        a {
+            color: $light-pink;
+            text-decoration: none;
+        }
+    }
+
+    .footer-menu {
+        margin-top: 13px;
+
+        @include breakpoint-m {
+            display: inline-block;
+            margin-right: 100px;
+            margin-top: 0;
+        }
+
+        .footer-menu__title {
+            display: block;
+            color: $black-light;
+
+            @include breakpoint-m {
+                margin-bottom: 11px;
+            }
+        }
+
+        .footer-menu__item {
+            display: inline-block;
+
+            @include breakpoint-m {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+
+            .footer-menu__link {
+                color: $grey-hard;
+                text-decoration: none;
+                @include f-roboto-light(1rem);
+
+                &:active {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .footer__designed {
+        display: block;
+        margin-top: 17px;
+        color: $grey-light;
+        font: 0.71rem "Montserrat Bold", Arial,sans-serif;
+        font-size: 0.71rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        @include breakpoint-m {
+            float: right;
+            margin-top: 0;
+        }
+    }
+
+    .footer__img {
+        margin-top: 5px;
+        margin-left: -6px;
+
+        @include breakpoint-m {
+            float: right;
+            margin-top: -105px;
+        }
+
+        @include breakpoint-l {
+            margin-top: 20px;
+            margin-right: -81px;
+        }
+
+    }
+}

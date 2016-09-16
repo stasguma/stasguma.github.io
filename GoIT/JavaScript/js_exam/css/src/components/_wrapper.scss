@@ -1,0 +1,12 @@
+.wrapper {
+    width: 300px;
+    margin: 0 auto;
+
+    @include breakpoint-m {
+        width: 749px;
+    }
+
+    @include breakpoint-l {
+        width: 940px;
+    }
+}

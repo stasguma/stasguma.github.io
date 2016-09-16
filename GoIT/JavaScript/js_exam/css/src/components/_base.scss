@@ -1,0 +1,18 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    @include font-default;
+    color: $white;
+    background: url(../../img/dist/bg_header.jpg) 52% top no-repeat, $white;
+    background-size: auto 13.86%;
+
+    @include breakpoint-m {
+        background-size: auto 19.35%;
+    }
+
+    @include breakpoint-l {
+        background-size: auto 20.53%;
+    }
+}

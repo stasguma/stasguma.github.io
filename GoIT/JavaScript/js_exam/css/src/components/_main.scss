@@ -1,0 +1,202 @@
+.main {
+    width: 100%;
+
+    .main__title {
+        margin-top: 39px;
+        color: $black-light;
+        @include font-default(1.57rem);
+        text-align: center;
+
+        @include breakpoint-m {
+            margin-top: 96px;
+        }
+
+        @include breakpoint-l {
+            margin-bottom: 25px;
+        }
+    }
+
+    .slider {
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 240px;
+        margin-top: 10px;
+        border-radius: 4px;
+
+        @include breakpoint-m {
+            width: 31.7%;
+            height: 400px;
+
+            &:not(:last-child) {
+                margin-right: 1.9%;
+            }
+        }
+
+        @include breakpoint-l {
+            width: 31.78%;
+        }
+
+        .frame {
+            position: relative;
+            height: 100%;
+            line-height: 0;
+            white-space: nowrap;
+            font-size: 0;
+
+            .slides {
+                display: inline-block;
+                height: 100%;
+
+                li {
+                    position: relative;
+                    display: inline-block;
+                    height: 100%;
+
+                    .slides__bg {
+                        position: absolute;
+                        left: -29px;
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+
+                        background: rgba(0,0,0, .5);
+                        background: -webkit-gradient(left bottom, left top, color-stop(0%, rgba(0,0,0,0.6)), color-stop(100%, rgba(0,0,0,0)));
+                        background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+                        background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+
+                        @include breakpoint-m {
+                            left: -149px;
+                        }
+                    }
+
+                    .slides__img {
+                        max-height: 100%;
+                        margin-left: -29px;
+
+                        @include breakpoint-m {
+                            margin-left: -149px;
+                        }
+                    }
+
+                    .slides__step {
+                        position: absolute;
+                        top: 70px;
+                        left: 20px;
+                        padding: 6px 13px;
+                        border-radius: 12px;
+                        background-color: $light-pink;
+                        text-transform: uppercase;
+                        @include font-default(0.71rem);
+                        font-weight: normal;
+                        letter-spacing: 3px;
+
+                        @include breakpoint-m {
+                            top: 204px;
+                        }
+                    }
+
+                    .slides__title {
+                        position: absolute;
+                        top: 107px;
+                        left: 20px;
+                        white-space: normal;
+                        letter-spacing: 1px;
+                        @include font-default(1.71rem);
+
+                        @include breakpoint-m {
+                            top: 245px;
+                            padding-right: 212px;
+                        }
+                    }
+
+                    .slides__describe {
+                        position: absolute;
+                        top: 165px;
+                        left: 20px;
+                        padding-right: 40px;
+                        white-space: normal;
+                        color: $grey-light;
+                        @include f-roboto-light(1rem);
+
+                        @include breakpoint-m {
+                            top: 310px;
+                            padding-right: 212px;
+                        }
+
+                        @include breakpoint-l {
+                            padding-right: 165px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .prev {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            width: 25%;
+            height: 100%;
+            cursor: pointer;
+            transition: all .3s;
+
+            @media screen and (min-width: 850px) {
+                &:hover {
+                    background-color: transparentize(#000, .8);
+
+                    i {
+                        color: transparentize($white, .2);
+                    }
+                }
+            }
+
+
+            i {
+                position: absolute;
+                top: 5%;
+                left: 20%;
+                color: transparentize($white, .5);
+
+                @include breakpoint-m {
+                    top: 20%;
+                }
+            }
+        }
+
+        .next {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            width: 25%;
+            height: 100%;
+            cursor: pointer;
+            transition: all .3s;
+
+            @media screen and (min-width: 850px) {
+                &:hover {
+                    background-color: transparentize(#000, .8);
+
+                    i {
+                        color: transparentize($white, .2);
+                    }
+                }
+            }
+
+            i {
+                position: absolute;
+                top: 5%;
+                right: 20%;
+                color: transparentize($white, .5);
+
+                @include breakpoint-m {
+                    top: 20%;
+                }
+            }
+
+        }
+    }
+}

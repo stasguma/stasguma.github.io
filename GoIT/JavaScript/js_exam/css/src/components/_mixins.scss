@@ -1,0 +1,44 @@
+@mixin breakpoint-m {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-l {
+    @media screen and (min-width: 960px) {
+        @content;
+    }
+}
+
+@mixin font-default($size: 1rem) {
+    font: bold $size "Montserrat Regular", Arial,sans-serif;
+    font-size: $size;
+}
+
+@mixin f-roboto-light($size) {
+    font: $size "Roboto Light", Arial,sans-serif;
+    font-size: $size;
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+%addition {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        bottom: 0;
+        right: 3px;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border: 3px solid $white;
+        border-radius: 50%;
+    }
+}
