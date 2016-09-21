@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stas Guma resume</title>
-    <link rel="stylesheet" href="css/dist/style.css">
+    <link rel="stylesheet" href="css/dist/main.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://use.fontawesome.com/648c0a4557.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js"></script>
     <!-- <script defer src="js/dist/main.min.js"></script> -->
-    <script defer src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script defer src="js/src/main.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -20,14 +20,32 @@
             <h1 class="header__name">GUMENYUK   A.</h1>
             <h2 class="header__position">JUNIOR FRONT-END DEVELOPER</h2>
             <div class="contacts">
-                <a class="contacts__phone" href="tel:+380508008686">+380-50-800-86-86</a>
-                <a class="contacts__mail" href="mailto:stas_guma@mail.ua">stas_guma@mail.ua</a>
-                <a class="contacts__site" href="https://sitename.com">sitename.com</a>
-                <span class="contacts__location">Kyiv, Ukraine</span>
+                <ul class="contacts__wrapper">
+                    <li class="info">
+                        <a class="info__phone" href="tel:+380508008686">
+                            <i class="fa fa-phone fa-lg" aria-hidden="true"></i>&nbsp;+380-50-800-86-86
+                        </a>
+                    </li>
+                    <li class="info">
+                        <a class="info__mail" href="mailto:stas_guma@mail.ua">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;stas_guma@mail.ua
+                        </a>
+                    </li>
+                    <li class="info">
+                        <a class="info__skype" href="skype:gumabmx?call">
+                            <i class="fa fa-skype" aria-hidden="true"></i>&nbsp;gumabmx
+                        </a>
+                    </li>
+                    <li class="info">
+                        <span class="info__location">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Kyiv, Ukraine
+                        </span>
+                    </li>
+                </ul>
             </div>
         </header>
         <div class="main-left">
-            <section class="about-me">
+            <section class="about-me wow fadeInLeft" data-wow-offset="100" data-wow-delay="1s">
                 <h3 class="about-me__title">About Me</h3>
                 <div class="inner-left">
                     <h4 class="inner-left__title">Name:</h4>
@@ -42,14 +60,16 @@
                     <p class="inner-right__title">Ukraine</p>
                 </div>
             </section>
-            <section class="my-skills">
-                <h3 class="my-skills__title">My Skills</h3>
-                <h4 class="my-skills__technologies">Technologies:</h4>
+            <section class="my-skills wow fadeInLeft" data-wow-offset="100">
+                <h3 class="my-skills__main-title">My Skills</h3>
+                <h4 class="my-skills__title">Technologies:</h4>
                 <p class="my-skills__describe">
-                    HTML5, CSS3(Sass, SCSS), JavaScript, jQuery, Git, GitHub, Bootstrap, Pure, Grunt, Gulp, RESTful API, Adaptive design, Template engines.
+                    HTML5, CSS3(Sass, SCSS, PostCSS), JavaScript, jQuery, Git, GitHub, Adaptive design, Bootstrap, Grunt, Gulp, RESTful API, Template engines.
                 </p>
+                <h4 class="my-skills__title">Methodology:</h4>
+                <span class="my-skills__describe">BEM.</span>
             </section>
-            <section class="languages">
+            <section class="languages wow fadeInLeft" data-wow-offset="100">
                 <h3 class="languages__title">Languages</h3>
                 <div class="inner-left">
                     <h4 class="inner-left__title">Russian</h4>
@@ -64,13 +84,13 @@
             </section>
         </div>
         <div class="main-right">
-            <section class="objective">
+            <section class="objective wow fadeInRight" data-wow-offset="100" data-wow-delay="1s">
                 <h3 class="objective__title">Objective</h3>
                 <p class="objective__describe">
                     To obtain the position of Junior Front-end developer. Find a company which interested in career growth of its employees.
                 </p>
             </section>
-            <section class="courses">
+            <section class="courses wow fadeInRight" data-wow-offset="100">
                 <h3 class="courses__title">Courses</h3>
                 <div class="inner-left">
                     <h4 class="inner-left__title">Jul 2015 – Aug 2015</h4>
@@ -87,7 +107,7 @@
                     <p class="inner-right__describe">Junior Front-end developer.</p>
                 </div>
             </section>
-            <section class="education">
+            <section class="education wow fadeInRight" data-wow-offset="100">
                 <h3 class="education__title">Education</h3>
                 <div class="inner-left">
                     <h4 class="inner-left__title">BACHELOR OF SCIENCE DEGREE</h4>

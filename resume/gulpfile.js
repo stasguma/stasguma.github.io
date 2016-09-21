@@ -12,19 +12,19 @@ var gulp = require('gulp'),
     watch = require('gulp-watch');
 
 gulp.task('css', function() {
-   return gulp.src('css/style.scss')
+   return gulp.src('css/src/style.scss')
    .pipe(sass().on('error', sass.logError))
    // .pipe(concatCSS('main.css'))
    // .pipe(uncss({
    //      html: ['index.html']
    //  }))
-   // .pipe( cleanCSS() )
-   .pipe(rename ('style.css') )
+   .pipe( cleanCSS() )
+   .pipe(rename ('main.min.css') )
    .pipe(gulp.dest('css/dist'));
 });
 
 gulp.task('scripts', function() {
-  return gulp.src('js/src/*.js')
+  return gulp.src('js/src/main.js')
     // .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(rename('main.min.js'))
@@ -38,7 +38,7 @@ gulp.task('imagemin', function() {
 });
 
 gulp.task('watch', function () {
-        gulp.watch('css/style.scss', ['css']);
+        gulp.watch(['css/src/style.scss', 'js/src/main.js'], ['css', 'scripts']);
 });
 
-gulp.task('default', ['css', 'watch']);
+gulp.task('default', ['css', 'scripts', 'watch']);
