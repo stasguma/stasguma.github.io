@@ -614,54 +614,58 @@ body {
   @media screen and (min-width: 960px) {
     .footer {
       padding-right: 0; } }
-  .footer .footer__title {
+  .footer .footer__logo {
     margin-top: 20px;
     color: #ff4e50;
     text-transform: uppercase;
     font: bold 1.14rem "Montserrat Regular", Arial, sans-serif;
     font-size: 1.14rem; }
     @media screen and (min-width: 768px) {
-      .footer .footer__title {
+      .footer .footer__logo {
         float: left;
         display: inline-block;
         margin-right: 84px;
         margin-left: 30px;
         margin-top: 2px; } }
     @media screen and (min-width: 960px) {
-      .footer .footer__title {
+      .footer .footer__logo {
         margin-right: 98px;
         margin-left: 0; } }
-    .footer .footer__title a {
+    .footer .footer__logo a {
       color: #ff4e50;
       text-decoration: none; }
-  .footer .footer-menu {
+  .footer .footer-links {
     margin-top: 13px; }
     @media screen and (min-width: 768px) {
-      .footer .footer-menu {
+      .footer .footer-links {
         display: inline-block;
         margin-right: 100px;
         margin-top: 0; } }
-    .footer .footer-menu .footer-menu__title {
-      display: block;
+    .footer .footer-links .footer-links__title {
+      display: inline-block;
       color: #333333; }
       @media screen and (min-width: 768px) {
-        .footer .footer-menu .footer-menu__title {
+        .footer .footer-links .footer-links__title {
           margin-bottom: 11px; } }
-    .footer .footer-menu .footer-menu__item {
+    .footer .footer-links .footer-list .footer-list__item {
       display: inline-block; }
       @media screen and (min-width: 768px) {
-        .footer .footer-menu .footer-menu__item {
+        .footer .footer-links .footer-list .footer-list__item {
           display: block;
           margin-bottom: 5px; } }
-      .footer .footer-menu .footer-menu__item:not(:last-child) {
+      .footer .footer-links .footer-list .footer-list__item:not(:last-child) {
         margin-right: 8px; }
-      .footer .footer-menu .footer-menu__item .footer-menu__link {
+      .footer .footer-links .footer-list .footer-list__item .footer-list__link {
+        border-bottom: transparent;
         color: #666666;
         text-decoration: none;
         font: 1rem "Roboto Light", Arial, sans-serif;
-        font-size: 1rem; }
-        .footer .footer-menu .footer-menu__item .footer-menu__link:active {
-          text-decoration: underline; }
+        font-size: 1rem;
+        transition: all .3s; }
+        .footer .footer-links .footer-list .footer-list__item .footer-list__link:hover {
+          border-bottom: 1px dotted #ff4e50; }
+        .footer .footer-links .footer-list .footer-list__item .footer-list__link:active {
+          border-bottom: 1px dotted #ff4e50; }
   .footer .footer__designed {
     display: block;
     margin-top: 17px;

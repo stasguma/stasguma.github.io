@@ -12,7 +12,7 @@
         padding-right: 0;
     }
 
-    .footer__title {
+    .footer__logo {
         margin-top: 20px;
         color: $light-pink;
         text-transform: uppercase;
@@ -37,7 +37,7 @@
         }
     }
 
-    .footer-menu {
+    .footer-links {
         margin-top: 13px;
 
         @include breakpoint-m {
@@ -46,8 +46,8 @@
             margin-top: 0;
         }
 
-        .footer-menu__title {
-            display: block;
+        .footer-links__title {
+            display: inline-block;
             color: $black-light;
 
             @include breakpoint-m {
@@ -55,25 +55,35 @@
             }
         }
 
-        .footer-menu__item {
-            display: inline-block;
+        .footer-list {
 
-            @include breakpoint-m {
-                display: block;
-                margin-bottom: 5px;
-            }
+            .footer-list__item {
+                display: inline-block;
 
-            &:not(:last-child) {
-                margin-right: 8px;
-            }
+                @include breakpoint-m {
+                    display: block;
+                    margin-bottom: 5px;
+                }
 
-            .footer-menu__link {
-                color: $grey-hard;
-                text-decoration: none;
-                @include f-roboto-light(1rem);
+                &:not(:last-child) {
+                    margin-right: 8px;
+                }
 
-                &:active {
-                    text-decoration: underline;
+                .footer-list__link {
+                    border-bottom: transparent;
+                    color: $grey-hard;
+                    text-decoration: none;
+                    @include f-roboto-light(1rem);
+                    transition: all .3s;
+
+                    &:hover {
+                        border-bottom: 1px dotted $light-pink;
+                    }
+
+                    &:active {
+                        border-bottom: 1px dotted $light-pink;
+                    }
+
                 }
             }
         }

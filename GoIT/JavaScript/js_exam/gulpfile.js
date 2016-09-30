@@ -47,7 +47,7 @@ gulp.task('imagemin', function() {
 });
 
 gulp.task('watch', function () {
-        gulp.watch('css/style.scss', ['css', 'scripts']);
+        gulp.watch(['css/src/**/*.scss', 'js/src/*.js'], ['css', 'scripts']);
 });
 
 gulp.task('default', ['css', 'scripts', 'imagemin', 'watch']);
