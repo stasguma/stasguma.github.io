@@ -14,17 +14,14 @@
         var target = event.target;
         var icon = target.firstElementChild;
 
-        if (icon.tagName === 'I') {
+        if (icon !== null && icon.tagName === 'I') {
 
             icon.classList.add("animated", "bounceCustom");
 
-            contacts.addEventListener('mouseout', function (event) {
-
-                var icon = event.target.firstElementChild;
+            contacts.addEventListener('mouseout', function () {
                 icon.classList.remove("animated", "bounceCustom");
             });
         }
-
     });
 
 }());

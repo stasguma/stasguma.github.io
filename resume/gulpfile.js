@@ -13,22 +13,18 @@ var gulp = require('gulp'),
 
 gulp.task('css', function() {
    return gulp.src('css/src/style.scss')
-   .pipe(sass().on('error', sass.logError))
-   // .pipe(concatCSS('main.css'))
-   // .pipe(uncss({
-   //      html: ['index.html']
-   //  }))
-   .pipe( cleanCSS() )
-   .pipe(rename ('main.min.css') )
-   .pipe(gulp.dest('css/dist'));
+       .pipe(sass().on('error', sass.logError))
+       .pipe(gulp.dest('css/src'))
+       .pipe( cleanCSS() )
+       .pipe(rename ('main.min.css') )
+       .pipe(gulp.dest('css/dist'));
 });
 
 gulp.task('scripts', function() {
-  return gulp.src('js/src/main.js')
-    // .pipe(concat('main.js'))
-    .pipe(uglify())
-    .pipe(rename('main.min.js'))
-    .pipe(gulp.dest('js/dist'));
+    return gulp.src('js/src/main.js')
+        .pipe(uglify())
+        .pipe(rename('main.min.js'))
+        .pipe(gulp.dest('js/dist'));
 });
 
 gulp.task('imagemin', function() {
@@ -38,7 +34,7 @@ gulp.task('imagemin', function() {
 });
 
 gulp.task('watch', function () {
-        gulp.watch(['css/src/style.scss', 'js/src/main.js'], ['css', 'scripts']);
+    gulp.watch(['css/src/style.scss', 'js/src/main.js'], ['css', 'scripts']);
 });
 
 gulp.task('default', ['css', 'scripts', 'watch']);
