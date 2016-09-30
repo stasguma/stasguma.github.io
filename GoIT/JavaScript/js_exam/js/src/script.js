@@ -74,6 +74,9 @@
 
     });
 
+    //////////////////////////////////
+    //////////// SCROLL  ////////////
+    ////////////////////////////////
     document.querySelector('.header__find-btn').onclick = function () {
         scrollTo(document.body, 2500, 1250);
     };
