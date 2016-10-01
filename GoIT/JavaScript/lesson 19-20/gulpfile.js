@@ -12,12 +12,10 @@ var gulp = require('gulp'),
     watch = require('gulp-watch');
 
 gulp.task('css', function() {
-   return gulp.src('css/*.scss')
+   return gulp.src('css/src/*.scss')
    .pipe(sass().on('error', sass.logError))
    .pipe(concatCSS('main.css'))
-   // .pipe(uncss({
-   //      html: ['index.html']
-   //  }))
+   .pipe(gulp.dest('css/dist/'))
    .pipe( cleanCSS() )
    .pipe(rename ('main.min.css') )
    .pipe(gulp.dest('css/dist'));
@@ -26,6 +24,7 @@ gulp.task('css', function() {
 gulp.task('scripts', function() {
   return gulp.src('js/src/*.js')
     .pipe(concat('main.js'))
+    .pipe(gulp.dest('js/dist'))
     .pipe(uglify())
     .pipe(rename('main.min.js'))
     .pipe(gulp.dest('js/dist'));
@@ -37,16 +36,8 @@ gulp.task('imagemin', function() {
         .pipe(gulp.dest('img/dist'));
 });
 
-// gulp.task('sprite', function () {
-//   var spriteData = gulp.src('img/*').pipe(spritesmith({
-//     imgName: 'sprite.png',
-//     cssName: 'sprite.css'
-//   }));
-//   return spriteData.pipe(gulp.dest('sprites/'));
-// });
-
 gulp.task('watch', function () {
-        gulp.watch('css/style.scss', ['css', 'script']);
+        gulp.watch(['css/style.scss', 'js/src/*.js'], ['css', 'scripts']);
 });
 
 gulp.task('default', ['css', 'scripts', 'imagemin', 'watch']);

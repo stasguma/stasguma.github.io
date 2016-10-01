@@ -1,6 +1,18 @@
-console.log('script loaded!!!');
-
 $(function () {
+
+    var $menuItem = $('.nav-menu__item');
+    console.log($menuItem);
+
+    for (var i = 0; i < $menuItem.length; i++) {
+        $menuItem[i].addEventListener('click', function (event) {
+            $menuItem.removeClass('active');
+            $(this).addClass('active');
+        });
+    }
+
+    // menuItem.addEventListener('click', function (event) {
+    //     $(this).addClass('active');
+    // });
 /////////////
 //////////// CAROUSEL
 ///////////
