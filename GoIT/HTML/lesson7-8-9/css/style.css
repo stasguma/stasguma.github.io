@@ -1,7 +1,4 @@
-@import url('768px.css');
-@import url('480px.css');
-@import url('320px.css');
-
+@import url('reset.css');
 
 @font-face {
     font-family: 'League Gothic';
@@ -38,14 +35,10 @@
 
 body {
    width: 100%;
-   background: url(../img/background_body.jpg) center top no-repeat,
-               url(../img/footer_bg2.jpg) center 104% no-repeat;
 }
 
 .wrapper {
-   position: relative;
    width: 960px;
-   z-index: 2;
    margin: 0 auto;
    padding-top: 70px;
    font: 14px Arial, sans-serif;
@@ -60,13 +53,23 @@ body {
   height: 206px;
 }
 
-.header .logo {
+.header .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 260%;
+    background: url(../img/background_body.jpg) center top no-repeat;
+}
+
+.header__logo {
   display: inline-block;
   width: 152px;
   height: 39px;
 }
 
-.header .logo a{
+.header__logo div{
   position: relative;
   display: inline-block;
   width: 152px;
@@ -75,15 +78,11 @@ body {
   transition: transform .3s;
 }
 
-.header .logo a:hover{
+.header__logo div:hover{
   transform: translateY(-10px);
 }
 
-.header > a {
-   display: none;
-}
-
-.logo a:before {
+.header__logo div:before {
    position: absolute;
    bottom: -9px;
    left: 9%;
@@ -99,38 +98,45 @@ body {
            transition: opacity .3s, transform .3s;
 }
 
-.logo a:hover:before,
-.logo a:focus:before {
+.header__logo div:hover:before,
+.header__logo div:focus:before {
    opacity: 1;
    transform: translateY(10px);
 }
 
-.menu {
-   float: right;
+.hidden-menu {
+   display: none;
+}
+
+.navigation {
+    float: right;
+}
+
+.nav-menu {
    font-size: 0;
 }
 
-.menu__item {
+.nav-menu__item {
   display: inline-block;
   margin: 3px 41px 0 0;
 }
 
-.menu__item:last-child {
+.nav-menu__item:last-child {
   margin-right: 0;
 }
 
-.menu__link {
+.nav-menu__link {
   position: relative;
   padding: 0 5px;
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px rgba(0,0,0,.4);
   letter-spacing: .1;
-  font: 24px/25px "League Gothic", Arial, sans-serif;
   color: #fff;
+  font: 24px/25px "League Gothic", Arial, sans-serif;
 }
 
-.menu__link:after {
+.nav-menu__link:after {
   display: block;
   position: absolute;
   left: 0;
@@ -142,7 +148,7 @@ body {
   transition: width 0.2s;
 }
 
-.menu__link:hover:after {
+.nav-menu__link:hover:after {
   width: 100%;
 }
 
@@ -150,18 +156,23 @@ body {
 ////////////////   SLIDER   //////////////////
 ///////////////////////////////////////////*/
 
-.bg2 {
+.slider .background {
    position: absolute;
-   top: 277px;
+   /*top: 277px;*/
+   left: 0;
    width: 100%;
    height: 400px;
    background: rgba(0, 0, 0, .2);
 }
 
 .slider {
-  position: relative;
-  width: 95%;
+  width: 88%;
   height: 400px;
+  margin: 0 auto;
+}
+
+.slider .content {
+    position: relative;
 }
 
 .slides {
@@ -228,7 +239,7 @@ body {
 
 .controls {
   position: absolute;
-  top: 1px;
+  top: 0;
   width: 100%;
 }
 
@@ -242,26 +253,26 @@ body {
 #slider__slide2:checked ~ .controls label:nth-child(1),
 #slider__slide3:checked ~ .controls label:nth-child(2),
 #slider__slide4:checked ~ .controls label:nth-child(3) {
-	display: block;
-	float: right;
-   width: 55px;
-   height: 400px;
-	margin-right: -55px;
-	background: url('../img/arrow_next.png') 18px 200px no-repeat;
-   transition: background-color 200ms, opacity 200ms;
+    display: block;
+    float: right;
+    width: 55px;
+    height: 400px;
+    margin-right: -55px;
+    background: url('../img/arrow_next.png') 18px 200px no-repeat;
+    transition: background-color 200ms, opacity 200ms;
 }
 
 #slider__slide1:checked ~ .controls label:nth-child(2),
 #slider__slide2:checked ~ .controls label:nth-child(3),
 #slider__slide3:checked ~ .controls label:nth-child(4),
 #slider__slide4:checked ~ .controls label:nth-child(1) {
-   display: block;
-   float: left;
-   width: 55px;
-   height: 400px;
-   margin-left: -55px;
-   background: url('../img/arrow_prev.png') 11px 200px no-repeat;
-   transition: background-color 200ms, opacity 200ms;
+    display: block;
+    float: left;
+    width: 55px;
+    height: 400px;
+    margin-left: -55px;
+    background: url('../img/arrow_prev.png') 11px 200px no-repeat;
+    transition: background-color 200ms, opacity 200ms;
 }
 
 #slider__slide1:checked ~ .controls label:nth-child(2):hover,
@@ -290,16 +301,16 @@ body {
 }
 
 .active label {
-  position: relative;
-  float: right;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  margin-right: 6px;
-  margin-bottom: 59px;
-  cursor: pointer;
-  background: rgba(0, 0, 0, .2);
-  transition: background .2s;
+    position: relative;
+    float: right;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-bottom: 43px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, .2);
+    transition: background .2s;
 }
 
 .active label:hover {
@@ -310,15 +321,15 @@ body {
 #slider__slide2:checked ~ .active label:nth-child(2):after,
 #slider__slide3:checked ~ .active label:nth-child(3):after,
 #slider__slide4:checked ~ .active label:nth-child(4):after {
-   position: absolute;
-   left: 3px;
-   top: 3px;
-   display: inline-block;
-   width: 9px;
-   height: 9px;
-   border-radius: 50%;
-   content: "";
-   background: #ddd;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    content: "";
+    background: #ddd;
 }
 
 .slides .inner {
@@ -330,21 +341,23 @@ body {
 //////////////   ABOUT   ///////////////
 /////////////////////////////////////*/
 
-.bg3 {
-  position: absolute;
-  top: 846px;
-  width: 100%;
-  height: 342px;
-  border-top: 1px solid #33253a;
-  background: linear-gradient(to top, #322539, #745083 100%);
-  box-shadow: 0 8px 15px -10px black;
+.about {
+    width: 100%;
+    clear: both;
 }
 
-.about {
-   clear: both;
-   width: 960px;
-   margin: 0 auto;
-   padding: 80px 0 69px 11px;
+.about .background {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 342px;
+    border-top: 1px solid #33253a;
+    background: linear-gradient(to top, #322539, #745083 100%);
+    box-shadow: 0 8px 15px -10px black;
+}
+
+.about .content {
+    padding: 97px 0 54px 11px;
 }
 
 .company {
@@ -392,7 +405,7 @@ body {
 .company:before {
   position: absolute;
   left: 0;
-  top: 6px;
+  top: 0;
   display: inline-block;
   content: '';
   width: 28px;
@@ -417,18 +430,23 @@ body {
 /////////////   Section   //////////////
 /////////////////////////////////////*/
 
-.bg4 {
-   position: absolute;
-   top: 1157px;
-   z-index: -1;
-   width: 100%;
-   height: 636px;
-   background-color: #f9f9f9;
+section:after {
+   content: "";
+   display: inline-block;
+   clear: both;
 }
 
-section {
-   height: 608px;
-   padding-top: 103px;
+section .background {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 667px;
+    background-color: #f9f9f9;
+}
+
+section .content {
+    padding-top: 118px;
 }
 
 .start {
@@ -481,10 +499,16 @@ section {
 }
 
 .updates {
-   position: relative;
-   top: -25px;
+   float: right;
+   margin-top: 25px;
    display: inline-block;
    width: 438px;
+}
+
+.updates:after {
+    content: "";
+    display: inline-block;
+    clear: both;
 }
 
 .updates h3 {
@@ -638,125 +662,153 @@ section {
 ///////////////////////////////////////////*/
 
 .logos {
-   position:relative;
    height: 120px;
-   margin-top: 58px;
-   padding: 33px 0 0 85px;
+   margin-top: 140px;
 }
 
-.lines {
-   position: relative;
-   top: 516px;
-   z-index: 5;
-   height: 120px;
-   border-top: 1px solid #d8d8d8;
-   border-bottom: 1px solid #d8d8d8;
+.logos .background {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
 }
 
-.lines:before {
-   position:absolute;
-   top:0;
-   left:0;
-   right:0;
-   bottom:0;
-   display:block;
-   border-top: 1px solid #fff;
-   border-bottom: 1px solid #fff;
-   content:"";
+.logos .background:before {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display:block;
+    content:"";
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
-.logos div {
+.logos .content {
+    padding: 33px 0 0 85px;
+}
+
+.logos .content span {
    display: inline-block;
+   overflow: hidden;
    height: 65px;
-   margin-right: 64px;
-   background: url(../img/logos-sprite.png) 0 0 no-repeat;
 }
 
-.logos div:first-child {
-   width: 70px;
+.logos .content span:not(:last-of-type) {
+    margin-right: 64px;
 }
 
-.logos div:nth-child(2) {
-   width: 74px;
-   background-position: -70px 0;
+.logos .content span:first-child {
+    position: relative;
+    width: 70px;
 }
 
-.logos div:nth-child(3) {
-   width: 66px;
-   background-position: -143px 0;
+.logos .content span:nth-child(2) {
+    position: relative;
+    width: 74px;
 }
 
-.logos div:nth-child(4) {
-   width: 53px;
-   background-position: -209px 0;
+.logos .content span:nth-child(3) {
+    position: relative;
+    width: 66px;
 }
 
-.logos div:nth-child(5) {
-   width: 106px;
-   background-position: -261px 0;
+.logos .content span:nth-child(4) {
+    position: relative;
+    width: 53px;
 }
 
-.logos div:nth-child(6) {
-   width: 80px;
-   background-position: -370px 0;
+.logos .content span:nth-child(5) {
+    position: relative;
+    width: 106px;
+}
+
+.logos .content span:nth-child(6) {
+    position: relative;
+    width: 80px;
+}
+
+.logos .content span:first-child  img{
+    position: absolute;
+    left: 0;
+}
+
+.logos .content span:nth-child(2) img {
+    position: absolute;
+    left: -70px;
+}
+
+.logos .content span:nth-child(3) img {
+    position: absolute;
+    left: -144px;
+}
+
+.logos .content span:nth-child(4) img {
+    position: absolute;
+    left: -209px;
+}
+
+.logos .content span:nth-child(5) img {
+    position: absolute;
+    left: -261px;
+}
+
+.logos .content span:nth-child(6) img {
+    position: absolute;
+    left: -370px;
 }
 
 /*/////////////////////////////////////////////
 //////////////   PRE-FOOTER   ////////////////
 ///////////////////////////////////////////*/
 
-.bg5 {
-   position: absolute;
-   top: 1793px;
-   width: 100%;
-   height: 398px;
-   background-color: #ececec;
-}
-
-.bg5:before, .bg5:after {
-	content: "";
-   position: absolute;
-   top: 50%;
-   bottom: 0;
-   left: 10px;
-   right: 10px;
-   z-index: -1;
-   border-radius: 351px / 96px;
-   box-shadow: 0 0 20px rgba(0,0,0,0.8);
-}
-
 .pre-footer {
-   height: 397px;
-   padding: 98px 0 95px 0;
-   background: #ececec;
+    height: 100%;
+    background: #ececec;
 }
 
-.pre-footer div {
+.pre-footer .background {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 397px;
+    z-index: -1;
+    background-color: #ececec;
+}
+
+.pre-footer .content {
+    padding: 98px 0 95px 0;
+}
+
+.pre-footer .content div {
    display: inline-block;
    width: 277px;
    height: 201px;
    overflow: hidden;
 }
 
-.pre-footer div:not(:last-child) {
+.pre-footer .content div:not(:last-child) {
    margin-right: 60px;
 }
 
-.pre-footer div:first-child p:first-of-type {
+.pre-footer .content div:first-child p:first-of-type {
    margin: 14px 0 8px 0;
    text-shadow: 1px 1px 1px #fff;
    color: #c5c5c5;
    font: italic 16px "Georgia", Arial,sans-serif;
 }
 
-.pre-footer div:first-child p:last-of-type,
-.pre-footer div:not(:first-child) p{
+.pre-footer .content div:first-child p:last-of-type,
+.pre-footer .content div:not(:first-child) p{
    /*text-overflow: clip;*/
    color: #787878;
    font: 16px/23px "Open Sans Light", Arial,sans-serif;
 }
 
-.pre-footer div h4 {
+.pre-footer .content div h4 {
    margin-bottom: 6px;
    text-transform: uppercase;
    color: #454545;
@@ -769,42 +821,50 @@ section {
 
 .footer {
    height: 114px;
-   padding-top: 39px;
 }
 
-.menu--font-size {
+.footer .background {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 114px;
+    z-index: -1;
+    background: url(../img/footer_bg2.jpg) center bottom no-repeat;
+}
+
+.footer .content {
+    height: 100%;
+    padding-top: 39px;
+}
+
+.footer .content:after,
+.footer .content:before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav-menu--float {
   float: left;
 }
 
-.menu__item {
-  display: inline-block;
-  margin: 3px 41px 0 0;
+.nav-menu__item--margin {
+    margin-right: 34px;
 }
 
-.menu--font-size .menu__link {
-  position: relative;
-  padding: 0 5px;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 2px rgba(0,0,0,.4);
-  letter-spacing: .1;
-  color: #fff;
-  font: 20px/25px "League Gothic", Arial, sans-serif;
+.nav-menu__link--font-size {
+  font-size: 24px;
 }
 
-.menu--font-size > :first-child > a {
+.nav-menu__link--font-size:after {
+    content: none;
+}
+
+.nav-menu__item--margin:first-child > a {
    padding-left: 0;
 }
 
-.menu__item--margin {
-   margin-right: 34px;
-}
-
-.menu--font-size .menu__link:after {
-  content: none;
-}
-
-.footer p {
+.footer .designed {
    float: right;
    margin-top: 9px;
    text-shadow: 1px 2px 2px #000;
@@ -812,7 +872,14 @@ section {
    font: 12px "Open Sans Light", Arial, sans-serif;
 }
 
-.footer p span {
+.footer .designed:after {
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+
+.designed span {
    text-shadow: 1px 2px 2px #000;
    color: #fff;
    font: 12px "Open Sans Extrabold", Arial, sans-serif;
