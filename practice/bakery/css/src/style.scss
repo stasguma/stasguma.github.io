@@ -1,0 +1,967 @@
+@import "reset", "fonts";
+
+$white: #fff;
+$grey: #56534c;
+$white-grey: #c2beba;
+$brown: #a47d5e;
+$white-brown: #dfc691;
+$golden: #c9b176;
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin playfair-display-b ($size) {
+    font: $size "Playfair Display Bold", Arial, sans-serif;
+}
+@mixin scriptina ($size) {
+    font: $size "Scriptina", Arial, sans-serif;
+}
+@mixin proxima-nova ($size) {
+    font: $size "Proxima Nova", Arial, sans-serif;
+}
+@mixin alegreya ($size) {
+    font: $size "Alegreya", Arial, sans-serif;
+}
+
+html {
+    font: 14px "Alegreya Bold", Arial, sans-serif;
+}
+
+body {
+    background: url(../../img/bg_header.jpg) top center no-repeat;
+}
+
+.content {
+    width: 1260px;
+    height: 100%;
+    margin: 0 auto;
+    // outline: 1px solid red;
+}
+
+.header {
+    height: 70px;
+    background-color: rgba(0, 0, 0, .33);
+
+    .logo {
+        display: inline-block;
+        height: 100%;
+
+        .logo__text {
+            color: $white;
+            text-decoration: none;
+            letter-spacing: 9px;
+            @include scriptina(2.14rem);
+            line-height: 3.8rem;
+        }
+    }
+
+    .navigation {
+        display: inline-block;
+        margin-left: 4.2rem;
+
+        .menu {
+            font-size: 0;
+
+            .menu__item {
+                position: relative;
+                display: inline-block;
+                margin: 0 32px;
+                color: $white;
+                letter-spacing: 5px;
+                @include alegreya(1rem);
+
+                &:not(:last-child):after {
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    right: -35px;
+                    content: "~";
+                    // @include alegreya(1rem);
+                }
+
+                .menu__link {
+                    padding: 3px 5px;
+                    text-decoration: none;
+                    color: $white;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .socials {
+        display: inline-block;
+        float: right;
+        height: 100%;
+        line-height: 5;
+
+        .socials__link {
+            margin-left: 2rem;
+
+            .icon {
+                width: 18px;
+                height: 18px;
+                vertical-align: middle;
+                fill: transparentize($white, .2);
+                transition: all .5s;
+            }
+
+            .icon:hover {
+                fill: $white;
+            }
+        }
+
+    }
+}
+
+.our-menu {
+    height: 100%;
+    border-bottom: 10px solid $white;
+    text-align: center;
+
+    .content {
+        position: relative;
+        padding-top: 202px;
+
+        .our-menu__title {
+            color: $white;
+            @include playfair-display-b(6.57rem);
+
+            &:after {
+                position: relative;
+                top: 37px;
+                display: block;
+                line-height: 0;
+                content: url(../../img/dashed-line.png);
+            }
+        }
+
+        .our-menu__text {
+            margin-top: 7rem;
+            padding: 0 24rem;
+            color: $white;
+            letter-spacing: 3px;
+            @include proxima-nova(1.71rem);
+            line-height: 1.5;
+        }
+
+        .our-menu__btn {
+            margin-top: 60px;
+            margin-bottom: 231px;
+            padding: 17px 54px 14px;
+            border: 1px dashed #9e9c93;
+            color: $white;
+            outline: none;
+            background-color: transparentize($grey, .5);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font: inherit;
+        }
+
+        .our-menu__circle {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -48px;
+            display: block;
+            margin: 0 auto;
+            z-index: 5;
+            content: "";
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: #fff;
+
+            .bread {
+                position: absolute;
+                top: -17px;
+                left: -15px;
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+}
+
+.art-of-cake {
+    height: 100%;
+    background: url(../../img/bg_cakes.jpg) center no-repeat;
+
+    .content {
+        padding-top: 100px;
+        padding-bottom: 88px;
+
+        .left-block {
+            position: relative;
+            top: -32px;
+            display: inline-block;
+            width: 49.9%;
+            text-align: center;
+
+            .art-of-cake__title {
+                color: $grey;
+                font-family: inherit;
+                font-size: 3.43rem;
+            }
+
+            .art-of-cake__describe {
+                margin-top: 10px;
+                color: $brown;
+                text-transform: uppercase;
+                font-family: inherit;
+                font-size: 1rem;
+            }
+
+            .art-of-cake__text {
+                margin-top: 63px;
+                padding: 0 40px;
+                color: $grey;
+                letter-spacing: 2px;
+                @include proxima-nova(1rem);
+                line-height: 1.8;
+            }
+
+            .art-of-cake__chefcook {
+                margin-top: 35px;
+                padding-right: 12px;
+                color: $grey;
+                font-family: inherit;
+                font-size: 1.71rem;
+            }
+
+            .chef-box {
+                margin-top: 30px;
+
+                .chef-box__name {
+                    padding: 15px 24px;
+                    border-top: 1px solid #d7d5ca;
+                    border-bottom: 1px solid #d7d5ca;
+                    color: $grey;
+                    @include alegreya(1.71rem);
+                }
+
+                .chef-box__photo {
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 115px;
+                    height: 115px;
+                    margin: 0 20px;
+                    vertical-align: middle;
+                    border: 5px solid $white;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, .1);
+
+                    img {
+                        position: relative;
+                        top: -3px;
+                        left: -41px;
+                        width: 168%;
+                    }
+                }
+            }
+
+            .art-of-cake__comment {
+                display: block;
+                margin-top: 10px;
+                color: $brown;
+                @include scriptina(1.71rem);
+
+                &:before,
+                &:after {
+                    color: transparentize($grey, .5);
+                    font-size: 4.29rem;
+                    font-family: "Times New Roman";
+                }
+
+                &:before {
+                    content: "\201C";
+                    margin-right: 40px;
+                }
+
+                &:after {
+                    content: "\201E";
+                    margin-left: 40px;
+                }
+            }
+        }
+
+        .right-block {
+            position: relative;
+            top: 18px;
+            display: inline-block;
+            width: 49.9%;
+
+            .art-of-cake__pic {
+                display: inline-block;
+                width: 47%;
+                height: 250px;
+                margin: 0px 8px 16px;
+                padding: 0;
+                border: 6px solid transparent;
+                box-shadow: inset 0 0 0 6px $white;
+
+                &:nth-child(1) {
+                    background:  url(../../img/cake.jpg) center/auto 106% no-repeat;
+                }
+                &:nth-child(2) {
+                    background:  url(../../img/cake2.jpg) center/auto 106% no-repeat;
+                }
+                &:nth-child(3) {
+                    background:  url(../../img/cake3.jpg) center/106% auto no-repeat;
+                }
+                &:nth-child(4) {
+                    background:  url(../../img/cake4.jpg) center/auto 106% no-repeat;
+                }
+            }
+
+            .art-of-cake__patch {
+                position: absolute;
+                top: 134px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 250px;
+                height: 250px;
+                background: url(../../img/svg/patch.svg) 0 0 no-repeat;
+                text-align: center;
+
+                &:before {
+                    position: absolute;
+                    top: 100px;
+                    left: 11px;
+                    content: "Tastes so good!";
+                    color: $golden;
+                    text-transform: uppercase;
+                    @include alegreya(2.14rem);
+                }
+            }
+        }
+    }
+}
+
+.meals {
+    height: 100%;
+    background: url(../../img/bg_slider.jpg) center top / 121% auto no-repeat;
+
+    .content {
+        position: relative;
+        padding: 112px 0 105px 90px;
+
+        .slider-meal {
+            width: 1071px;
+            height: 556px;
+
+            .slick-list {
+                height: 100%;
+
+                .slick-track {
+                    top: auto;
+                    bottom: -44px;
+                    height: 100%;
+
+                    .slide1,
+                    .slide2,
+                    .slide3,
+                    .slide4 {
+                        height: 512px;
+                        outline: none;
+
+                        .pic-left-block {
+                            float: left;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: 39%;
+                            height: 100%;
+
+                            .pic-left-block__img {
+                                position: relative;
+                                left: -332px;
+                                max-height: 100%;
+                            }
+                        }
+
+                        .text-right-block {
+                            position: relative;
+                            float: left;
+                            display: inline-block;
+                            width: 51%;
+                            height: 100%;
+                            padding-left: 47px;
+                            background: $white url(../../img/windmill.png) right bottom no-repeat;
+
+                            .ready-in {
+                                position: absolute;
+                                top: -42px;
+                                right: -100px;
+                                width: 201px;
+                                height: 201px;
+                                box-shadow: -14px 11px 36px 0px rgba(0,0,0, .2);
+                                background: white url(../../img/svg/ready_in.svg) 0 0 no-repeat;
+                                text-align: center;
+
+                                .ready-in__title {
+                                    margin-top: 31px;
+                                    color: $brown;
+                                    font-family: inherit;
+                                    font-size: 1.29rem;
+                                    letter-spacing: 1px;
+                                    text-transform: uppercase;
+                                }
+
+                                .ready-in__time {
+                                    color: $white-brown;
+                                    font-family: inherit;
+                                    font-size: 6.57rem;
+                                    letter-spacing: 8px;
+                                }
+
+                                .ready-in__time-to {
+                                    color: #979285;
+                                    font-family: inherit;
+                                    font-size: 1.29rem;
+                                    letter-spacing: 2px;
+                                    text-transform: lowercase;
+                                }
+                            }
+
+                            .text-right-block__title {
+                                margin-top: 66px;
+                                color: $grey;
+                                font-family: inherit;
+                                font-size: 3.43rem;
+                                line-height: 1.5;
+                            }
+
+                            .text-right-block__title-addon {
+                                margin-bottom: 60px;
+                                color: $brown;
+                                font-family: inherit;
+                                font-size: 1rem;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                            }
+
+                            .text-right-block__describe {
+                                padding-right: 50px;
+                                color: $grey;
+                                letter-spacing: 2px;
+                                @include proxima-nova(1rem);
+                                line-height: 1.7;
+                            }
+                        }
+                    }
+
+                    .slide3 .pic-left-block__img {
+                        left: -40px !important;
+                    }
+
+                    .slide4 .pic-left-block__img {
+                        left: -115px !important;
+                    }
+                }
+
+            }
+
+        }
+
+        .nav-menu-slider {
+            position: absolute;
+            right: 290px;
+            bottom: 138px;
+            width: 340px;
+
+            .slick-prev,
+            .slick-next {
+                overflow: hidden;
+                display: inline-block;
+                position: absolute;
+                top: 32px;
+                width: 35px;
+                height: 35px;
+                border: 2px solid $grey;
+                border-radius: 50%;
+                cursor: pointer;
+                outline: none;
+                background-color: transparent;
+                transition: all .3s;
+
+                &:before {
+                    position: absolute;
+                    top: 5px;
+                    font-size: 1.2rem;
+                }
+
+                &:hover {
+                    color: #d9bda5;
+                    border-color: #d9bda5;
+                }
+            }
+
+            .slick-prev {
+                left: -50px;
+
+                &:before {
+                    left: 11px;
+                    content: "\2329";
+                }
+            }
+
+            .slick-next {
+                right: -31px;
+
+                &:before {
+                    right: 11px;
+                    content: "\232A";
+
+                }
+            }
+
+            .nav-menu-slider__thumbnail {
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                width: 94px;
+                height: 94px;
+                border-radius: 50%;
+                cursor: pointer;
+                outline: none;
+                background: black;
+
+                &:not(:last-of-type) {
+                    margin-right: 20px;
+                }
+
+                .nav-menu-slider__img {
+                    position: absolute;
+                    left: -45px;
+                    max-height: 126%;
+                }
+            }
+        }
+    }
+}
+
+.breakfast {
+    background: url(../../img/bg_breakfast.jpg) center -117px / auto 150% no-repeat;
+
+    .content {
+        padding-bottom: 54px;
+
+        .left-block {
+            display: inline-block;
+            width: 50%;
+            padding-left: 97px;
+            text-align: center;
+
+            .title {
+
+                .title__top {
+                    margin-top: 127px;
+                    color: $white;
+                    letter-spacing: 4px;
+                    font-family: inherit;
+                    font-size: 4.29rem;
+                }
+
+                .title__bottom {
+                    color: #c8a593;
+                    letter-spacing: 1px;
+                    line-height: 1.3;
+                    font-family: inherit;
+                    font-size: 1.29rem;
+                    text-transform: uppercase;
+                }
+            }
+
+            .price {
+                position: relative;
+
+                &:not(:last-of-type):after {
+                    position: absolute;
+                    bottom: -38px;
+                    left: 0;
+                    right: 0;
+                    content: url(../../img/svg/branch.svg);
+                    display: inline-block;
+                    width: 97px;
+                    height: 34px;
+                    margin: 0 auto;
+                }
+
+                .price__title-top {
+                    margin-top: 50px;
+                    color: $white;
+                    font-family: inherit;
+                    font-size: 2.14rem;
+                    line-height: 1.7;
+                    letter-spacing: 2px;
+                }
+
+                .price__describe {
+                    color: $white-grey;
+                    @include proxima-nova(1.14rem);
+                    letter-spacing: 1px;
+                }
+
+                .price__number {
+                    color: $white-brown;
+                    @include alegreya(2.57rem);
+                    line-height: 2;
+                }
+            }
+        }
+
+        .right-block {
+            position: relative;
+            top: -22px;
+            display: inline-block;
+            width: 49.81%;
+
+            .menu {
+                position: relative;
+                float: right;
+                display: inline-block;
+                width: 440px;
+                height: 600px;
+                z-index: 10;
+                box-shadow: 6px -6px 22px 0px rgba(0, 0, 0, 0.3);
+                background: url(../../img/breakfast_menu.png) 0 0 no-repeat;
+                text-align: center;
+
+                // &:before {
+                //     content: "";
+                //     display: block;
+                //     clear: both;
+                // }
+                // &:after {
+                //     content: "";
+                //     display: block;
+                //     clear: both;
+                // }
+
+                &:nth-child(2) {
+                    position: absolute;
+                    top: 25px;
+                    right: -11px;
+                    z-index: 9;
+                    height: 550px;
+                }
+                &:nth-child(3) {
+                    position: absolute;
+                    top: 50px;
+                    right: -22px;
+                    z-index: 8;
+                    height: 500px;
+                }
+
+                .menu__title {
+                    margin-top: 211px;
+                    padding: 0 30px;
+                    color: $grey;
+                    font-family: inherit;
+                    font-size: 3.14rem;
+                    letter-spacing: 1px;
+                    line-height: 1.3;
+                }
+
+                .menu__describe {
+                    margin-top: 24px;
+                    padding: 0 60px;
+                    color: $grey;
+                    @include proxima-nova(1rem);
+                    line-height: 2;
+                }
+
+                .menu__btn {
+                    margin-top: 47px;
+                    padding: 10px 66px;
+                    border: 1px solid #9e9c93;
+                    cursor: pointer;
+                    background-color: transparent;
+                    color: $brown;
+                    outline: none;
+                    text-transform: uppercase;
+                    font-family: inherit;
+                    font-size: 1.29rem;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
+
+.sandwich {
+    background: #f3f1e9 url(../../img/svg/town.svg) center top / 700px 144px no-repeat;
+
+    .content {
+        padding-top: 96px;
+        padding-bottom: 64px;
+
+        .sandwich__title{
+            color: $grey;
+            font-family: inherit;
+            font-size: 3.43rem;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .sandwich__describe {
+            color: $brown;
+            text-transform: uppercase;
+            font-family: inherit;
+            font-size: 1rem;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .left-block {
+            display: inline-block;
+            width: 23.3%;
+            text-align: center;
+
+            .ingredient-block {
+                margin-bottom: 48px;
+
+                .ingredient-block__img-wrapper {
+                    position: relative;
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 103px;
+                    height: 103px;
+                    border-radius: 50%;
+
+                    .ingredient-block__img {
+                        position: absolute;
+                        top: 0;
+                        left: -34px;
+                        max-height: 100%;
+                    }
+                }
+
+                .ingredient-block__title {
+                    margin-top: 20px;
+                    color: $brown;
+                    font-size: 2.14rem;
+                    font-family: inherit;
+                }
+
+                .ingredient-block__describe {
+                    margin-top: 21px;
+                    color: $grey;
+                    @include proxima-nova(1rem);
+                    line-height: 1.4;
+                }
+            }
+        }
+
+        .right-block {
+            display: inline-block;
+            float: right;
+            width: 76.5%;
+
+            .full-recipe {
+                position: relative;
+                top: 80px;
+                right: -143px;
+                width: 820px;
+                height: 536px;
+                border-radius: 1px;
+                border: 10px solid $white;
+                background: url(../../img/footer_full-recipe.jpg) center / 100% auto no-repeat;
+
+                .prep {
+                    position: absolute;
+                    top: -34px;
+                    right: 0;
+                    width: 201px;
+                    height: 198px;
+                    box-shadow: 0 10px 17px 0px rgba(0, 0, 0, 0.1);
+                    background-color: transparentize($white, .2);
+                    text-align: center;
+
+                    .prep__title {
+                        margin-top: 50px;
+                        color: $brown;
+                        font-family: inherit;
+                        font-size: 1.29rem;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+
+                    .prep__time {
+                        margin-top: 8px;
+                        color: $grey;
+                        font-family: inherit;
+                        font-size: 4.29rem;
+                        letter-spacing: 8px;
+                    }
+
+                    .prep__time-to {
+                        margin-top: 9px;
+                        color: #979285;
+                        font-family: inherit;
+                        font-size: 1.29rem;
+                        letter-spacing: 2px;
+                        text-transform: lowercase;
+                    }
+                }
+
+                .cook {
+                    position: absolute;
+                    top: 165px;
+                    right: 0;
+                    width: 201px;
+                    height: 198px;
+                    box-shadow: 0 10px 17px 0px rgba(0, 0, 0, 0.1);
+                    background-color: transparentize($white, .2);
+                    text-align: center;
+
+                    .cook__title {
+                        margin-top: 50px;
+                        color: $brown;
+                        font-family: inherit;
+                        font-size: 1.29rem;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+
+                    .cook__time {
+                        margin-top: 8px;
+                        color: $grey;
+                        font-family: inherit;
+                        font-size: 4.29rem;
+                        letter-spacing: 8px;
+                    }
+
+                    .cook__time-to {
+                        margin-top: 9px;
+                        color: #979285;
+                        font-family: inherit;
+                        font-size: 1.29rem;
+                        letter-spacing: 2px;
+                        text-transform: lowercase;
+                    }
+                }
+
+                .ready-in {
+                    position: absolute;
+                    top: 363px;
+                    right: 0;
+                    width: 201px;
+                    height: 185px;
+                    box-shadow: 0 10px 17px 0px rgba(0, 0, 0, 0.1);
+                    background: white url(../../img/svg/ready_in.svg) center / 100% auto no-repeat;
+                    text-align: center;
+
+                    .ready-in__title {
+                        margin-top: 31px;
+                        color: $brown;
+                        font-family: inherit;
+                        font-size: 1.29rem;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+
+                    .ready-in__time {
+                        color: $white-brown;
+                        font-family: inherit;
+                        font-size: 6.57rem;
+                        letter-spacing: 8px;
+                    }
+
+                    .ready-in__time-to {
+                        color: #979285;
+                        font-family: inherit;
+                        font-size: 1.29rem;
+                        letter-spacing: 2px;
+                        text-transform: lowercase;
+                    }
+                }
+
+                .full-recipe__btn {
+                    position: absolute;
+                    bottom: -27px;
+                    left: -32px;
+                    padding: 18px 28px;
+                    border: 1px dashed $white-brown;
+                    cursor: pointer;
+                    background-color: $white;
+                    color: $white-brown;
+                    outline: none;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-family: inherit;
+                    font-size: 1.29rem;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #f3f1e9;
+
+    .content {
+        padding-bottom: 40px;
+
+        .nav-footer {
+            position: relative;
+            top: -29px;
+            display: inline-block;
+            // width: 41%;
+            // border-top: 1px solid $white-grey;
+            // border-bottom: 1px solid $white-grey;
+
+            .menu {
+                font-size: 0;
+
+                .menu__item {
+                    position: relative;
+                    display: inline-block;
+                    padding: 24px 0;
+                    border-top: 1px solid $white-grey;
+                    border-bottom: 1px solid $white-grey;
+                    color: $grey;
+                    @include alegreya(1rem);
+                    letter-spacing: 3px;
+
+                    &:not(:last-of-type):after {
+                        display: inline-block;
+                        position: absolute;
+                        top: 24px;
+                        right: -5px;
+                        content: "~";
+                    }
+
+                    .menu__link {
+                        margin: 0 40px;
+                        padding: 2px 4px;
+                        color: $grey;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .logo {
+            display: inline-block;
+            overflow: hidden;
+            margin: 4px 46px 0;
+
+            .logo__text {
+                display: inline-block;
+                color: $grey;
+                text-decoration: none;
+                letter-spacing: 9px;
+                @include scriptina(2.14rem);
+                line-height: 2.2;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-concat-css": "latest",
+    "gulp-connect": "^5.0.0",
+    "gulp-imagemin": "latest",
+    "gulp-live-server": "0.0.30",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-uncss": "latest",
+    "gulp-watch": "latest",
+    "gulp.spritesmith": "latest",
+    "pump": "latest"
+  }
+}
