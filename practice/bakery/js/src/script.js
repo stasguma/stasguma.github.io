@@ -1,5 +1,7 @@
 $(function () {
-
+// =====================
+// ======= SLIDER ======
+// =====================
     $('.slider-meal').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -20,5 +22,16 @@ $(function () {
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>'
 
+    });
+
+    // =======================
+    // ==== SCROLL TO TOP ====
+    // =======================
+    
+    $(".footer .logo").click(function (e) {
+        var $body = $('body');
+
+        $body.animate({scrollTop: 0}, 1200, 'easeOutCubic');
+        return false;
     });
 });
