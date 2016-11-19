@@ -78,7 +78,8 @@
     //////////// SCROLL  ////////////
     ////////////////////////////////
     document.querySelector('.header__find-btn').onclick = function () {
-        scrollTo(document.body, 2500, 1250);
+        scrollTo(document.body, 2540, 1250);
+        // document.querySelector('.form').scrollIntoView(false);
     };
 
     function scrollTo(element, to, duration) {
