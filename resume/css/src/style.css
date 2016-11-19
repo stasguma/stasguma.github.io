@@ -84,279 +84,173 @@ body {
   transition: all .3s;
   font: 15px "Montserrat Light", Arial, sans-serif; }
 
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 .wrapper {
   width: 960px;
   margin: 0 auto;
   padding-bottom: 28px; }
-  .wrapper .header {
+
+.header {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 89px;
+  text-align: center; }
+  .header .header__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding-top: 150px;
-    padding-bottom: 90px;
-    text-align: center; }
-    .wrapper .header .header__bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 469px;
-      z-index: -1;
-      background: #333333; }
-    .wrapper .header .header__name {
-      display: inline-block;
-      padding: 9px 86px;
-      border: 2px solid #d2a84b;
-      color: #fff;
-      white-space: pre-wrap;
-      text-transform: uppercase;
-      font: 60px "Montserrat Light", Arial, sans-serif; }
-    .wrapper .header .header__position {
-      margin-top: 17px;
-      color: #fff;
-      text-transform: uppercase;
-      letter-spacing: 6px;
-      font: 20px "Montserrat Light", Arial, sans-serif; }
-    .wrapper .header .contacts {
-      margin-top: 73px;
-      font-size: 0; }
-      .wrapper .header .contacts .info {
-        display: inline-block;
-        padding-left: 10px;
-        padding-right: 10px; }
-        .wrapper .header .contacts .info:not(:last-child) {
-          border-right: 1px solid #fff; }
-        .wrapper .header .contacts .info a {
-          color: #fff;
-          text-decoration: none;
-          letter-spacing: 1px;
-          font: 16px "Open Sans Light", Arial,sans-serif; }
-        .wrapper .header .contacts .info__location {
-          color: #fff;
-          letter-spacing: 1px;
-          cursor: default;
-          font: 16px "Open Sans Light", Arial,sans-serif; }
-  .wrapper .main-left {
+    height: 469px;
+    z-index: -1;
+    background: #333333; }
+  .header .header__name {
     display: inline-block;
-    width: 30%;
-    margin-top: 33px;
-    padding-right: 27px;
-    padding-bottom: 20px;
-    border-right: 2px solid rgba(34, 34, 34, 0.7); }
-    .wrapper .main-left .about-me {
-      position: relative;
-      width: 100%; }
-      .wrapper .main-left .about-me .about-me__title {
-        margin-bottom: 15px;
-        padding: 16px 0;
-        border-bottom: 1px solid #d2a84b;
+    padding: 9px 86px;
+    border: 2px solid #d2a84b;
+    color: #fff;
+    white-space: pre-wrap;
+    text-transform: uppercase;
+    font: 60px "Montserrat Light", Arial, sans-serif; }
+  .header .header__position {
+    margin-top: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font: 20px "Montserrat Light", Arial, sans-serif; }
+  .header .contacts {
+    margin-top: 73px;
+    font-size: 0; }
+    .header .contacts .info {
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px; }
+      .header .contacts .info:not(:last-child) {
+        border-right: 1px solid #fff; }
+      .header .contacts .info a {
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font: 16px "Open Sans Light", Arial,sans-serif; }
+      .header .contacts .info__location {
+        color: #fff;
+        letter-spacing: 1px;
+        cursor: default;
+        font: 16px "Open Sans Light", Arial,sans-serif; }
+
+.main-left {
+  float: left;
+  display: inline-block;
+  width: 30%;
+  margin-top: 33px;
+  padding-right: 27px;
+  padding-bottom: 70px;
+  border-right: 2px solid rgba(34, 34, 34, 0.7); }
+  .main-left .info-block {
+    position: relative;
+    width: 100%; }
+    .main-left .info-block .info-block__title {
+      margin-bottom: 15px;
+      padding: 16px 0;
+      border-bottom: 1px solid #d2a84b;
+      color: #d2a84b;
+      text-transform: uppercase;
+      font: 22px "Montserrat Light", Arial, sans-serif; }
+      .main-left .info-block .info-block__title:after {
+        content: "+";
+        position: absolute;
+        top: 17px;
+        right: 0;
         color: #d2a84b;
-        text-transform: uppercase;
-        font: 22px "Montserrat Light", Arial, sans-serif; }
-        .wrapper .main-left .about-me .about-me__title:after {
-          content: "+";
-          position: absolute;
-          top: 17px;
-          right: 0;
-          color: #d2a84b;
-          font: 22px Arial, sans-serif; }
-      .wrapper .main-left .about-me .inner-left {
-        display: inline-block;
-        width: 40%; }
-        .wrapper .main-left .about-me .inner-left .inner-left__title {
-          margin-bottom: 10px;
-          color: #222222;
-          font: 13px "Montserrat Regular", Arial, sans-serif; }
-      .wrapper .main-left .about-me .inner-right {
-        display: inline-block;
-        position: relative;
-        top: -3px;
-        width: 58%; }
-        .wrapper .main-left .about-me .inner-right .inner-right__title {
-          margin-bottom: 10px;
-          color: #222222;
-          font: 13px "Montserrat Light", Arial, sans-serif; }
-    .wrapper .main-left .my-skills {
-      position: relative;
-      width: 100%;
-      margin-top: 28px; }
-      .wrapper .main-left .my-skills .my-skills__main-title {
-        margin-bottom: 15px;
-        padding: 16px 0;
-        border-bottom: 1px solid #d2a84b;
-        color: #d2a84b;
-        text-transform: uppercase;
-        font: 22px "Montserrat Light", Arial, sans-serif; }
-        .wrapper .main-left .my-skills .my-skills__main-title:after {
-          content: "+";
-          position: absolute;
-          top: 17px;
-          right: 0;
-          color: #d2a84b;
-          font: 22px Arial, sans-serif; }
-      .wrapper .main-left .my-skills .my-skills__title {
-        display: inline-block;
+        font: 22px Arial, sans-serif; }
+    .main-left .info-block .info-block__subtitle {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: #222222;
+      font: 13px "Montserrat Regular", Arial, sans-serif; }
+    .main-left .info-block .info-block__describe {
+      margin-bottom: 10px;
+      color: #222222;
+      line-height: 18px;
+      font: 13px "Montserrat Light", Arial, sans-serif; }
+    .main-left .info-block .inner-left {
+      display: inline-block;
+      width: 40%; }
+      .main-left .info-block .inner-left .inner-left__title {
         margin-bottom: 10px;
         color: #222222;
         font: 13px "Montserrat Regular", Arial, sans-serif; }
-      .wrapper .main-left .my-skills .my-skills__describe {
+    .main-left .info-block .inner-right {
+      display: inline-block;
+      position: relative;
+      top: -3px;
+      width: 58%; }
+      .main-left .info-block .inner-right .inner-right__title {
         margin-bottom: 10px;
         color: #222222;
-        line-height: 18px;
         font: 13px "Montserrat Light", Arial, sans-serif; }
-    .wrapper .main-left .languages {
-      position: relative;
-      width: 100%;
-      margin-top: 28px; }
-      .wrapper .main-left .languages .languages__title {
-        margin-bottom: 15px;
-        padding: 16px 0;
-        border-bottom: 1px solid #d2a84b;
-        color: #d2a84b;
-        text-transform: uppercase;
-        font: 22px "Montserrat Light", Arial, sans-serif; }
-        .wrapper .main-left .languages .languages__title:after {
-          content: "+";
-          position: absolute;
-          top: 17px;
-          right: 0;
-          color: #d2a84b;
-          font: 22px Arial, sans-serif; }
-      .wrapper .main-left .languages .inner-left {
-        display: inline-block;
-        width: 40%; }
-        .wrapper .main-left .languages .inner-left .inner-left__title {
-          margin-bottom: 10px;
-          color: #222222;
-          font: 13px "Montserrat Regular", Arial, sans-serif; }
-      .wrapper .main-left .languages .inner-right {
-        display: inline-block;
-        position: relative;
-        top: -3px;
-        width: 58%; }
-        .wrapper .main-left .languages .inner-right .inner-right__title {
-          margin-bottom: 10px;
-          color: #222222;
-          text-align: right;
-          font: 13px "Montserrat Light", Arial, sans-serif; }
-          .wrapper .main-left .languages .inner-right .inner-right__title:last-child {
-            padding-right: 6px; }
-  .wrapper .main-right {
+
+.main-right {
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: 69%;
+  margin-top: 33px;
+  padding-left: 27px;
+  padding-right: 65px; }
+  .main-right .info-block {
     position: relative;
-    top: -89px;
-    display: inline-block;
-    width: 69%;
-    padding-left: 27px;
-    padding-right: 65px; }
-    .wrapper .main-right .objective {
-      position: relative;
-      width: 100%; }
-      .wrapper .main-right .objective .objective__title {
-        margin-bottom: 15px;
-        padding: 16px 0;
-        border-bottom: 1px solid #d2a84b;
+    width: 100%; }
+    .main-right .info-block .info-block__title {
+      margin-bottom: 15px;
+      padding: 16px 0;
+      border-bottom: 1px solid #d2a84b;
+      color: #d2a84b;
+      text-transform: uppercase;
+      font: 22px "Montserrat Light", Arial, sans-serif; }
+      .main-right .info-block .info-block__title:after {
+        content: "+";
+        position: absolute;
+        top: 17px;
+        right: 0;
         color: #d2a84b;
-        text-transform: uppercase;
-        font: 22px "Montserrat Light", Arial, sans-serif; }
-        .wrapper .main-right .objective .objective__title:after {
-          content: "+";
-          position: absolute;
-          top: 17px;
-          right: 0;
-          color: #d2a84b;
-          font: 22px Arial, sans-serif; }
-      .wrapper .main-right .objective .objective__describe {
-        margin-bottom: 10px;
-        color: #222222;
-        line-height: 18px;
-        font: 13px "Montserrat Light", Arial, sans-serif; }
-    .wrapper .main-right .courses {
-      position: relative;
-      width: 100%;
-      margin-top: 28px; }
-      .wrapper .main-right .courses .courses__title {
-        margin-bottom: 15px;
-        padding: 16px 0;
-        border-bottom: 1px solid #d2a84b;
-        color: #d2a84b;
-        text-transform: uppercase;
-        font: 22px "Montserrat Light", Arial, sans-serif; }
-        .wrapper .main-right .courses .courses__title:after {
-          content: "+";
-          position: absolute;
-          top: 17px;
-          right: 0;
-          color: #d2a84b;
-          font: 22px Arial, sans-serif; }
-      .wrapper .main-right .courses .inner-left {
+        font: 22px Arial, sans-serif; }
+    .main-right .info-block .info-block__describe {
+      margin-bottom: 10px;
+      color: #222222;
+      line-height: 18px;
+      font: 13px "Montserrat Light", Arial, sans-serif; }
+    .main-right .info-block .inner-row {
+      margin-bottom: 13px; }
+      .main-right .info-block .inner-row .inner-left {
+        float: left;
         display: inline-block;
-        position: relative;
-        top: -20px;
         width: 33%; }
-        .wrapper .main-right .courses .inner-left .inner-left__title {
-          margin-bottom: 52px;
+        .main-right .info-block .inner-row .inner-left .inner-left__title {
           color: #222222;
           font: 14px "Montserrat Semibold", Arial, sans-serif; }
-      .wrapper .main-right .courses .inner-right {
+      .main-right .info-block .inner-row .inner-right {
         display: inline-block;
-        width: 66%; }
-        .wrapper .main-right .courses .inner-right .inner-right__title {
+        width: 66%;
+        padding-left: 64px; }
+        .main-right .info-block .inner-row .inner-right .inner-right__title {
           margin-bottom: 0;
           color: #222222;
           font: 15px "Montserrat Semibold", Arial, sans-serif; }
-          .wrapper .main-right .courses .inner-right .inner-right__title:last-child {
+          .main-right .info-block .inner-row .inner-right .inner-right__title:last-child {
             padding-right: 6px; }
-          .wrapper .main-right .courses .inner-right .inner-right__title a {
+          .main-right .info-block .inner-row .inner-right .inner-right__title a {
             transition: color .3s;
             background-color: #222222;
             color: #fff;
             text-decoration: none; }
-            .wrapper .main-right .courses .inner-right .inner-right__title a:hover {
+            .main-right .info-block .inner-row .inner-right .inner-right__title a:hover {
               background: none;
               color: #d2a84b;
               text-decoration: underline; }
-        .wrapper .main-right .courses .inner-right .inner-right__describe {
-          margin-bottom: 36px;
-          color: #222222;
-          font: 14px "Montserrat Light", Arial, sans-serif; }
-    .wrapper .main-right .education {
-      position: relative;
-      width: 100%; }
-      .wrapper .main-right .education .education__title {
-        margin-bottom: 15px;
-        padding: 16px 0;
-        border-bottom: 1px solid #d2a84b;
-        color: #d2a84b;
-        text-transform: uppercase;
-        font: 22px "Montserrat Light", Arial, sans-serif; }
-        .wrapper .main-right .education .education__title:after {
-          content: "+";
-          position: absolute;
-          top: 17px;
-          right: 0;
-          color: #d2a84b;
-          font: 22px Arial, sans-serif; }
-      .wrapper .main-right .education .inner-left {
-        display: inline-block;
-        width: 28%; }
-        .wrapper .main-right .education .inner-left .inner-left__title {
-          color: #222222;
-          line-height: 20px;
-          font: 14px "Montserrat Semibold", Arial, sans-serif; }
-        .wrapper .main-right .education .inner-left .inner-left__date {
-          color: #222222;
-          font: 13px "Montserrat Light", Arial, sans-serif; }
-      .wrapper .main-right .education .inner-right {
-        display: inline-block;
-        position: relative;
-        top: -15px;
-        width: 71%;
-        padding-left: 20px; }
-        .wrapper .main-right .education .inner-right .inner-right__title {
-          margin-bottom: 0;
-          color: #222222;
-          font: 15px "Montserrat Semibold", Arial, sans-serif; }
-          .wrapper .main-right .education .inner-right .inner-right__title:last-child {
-            padding-right: 6px; }
-        .wrapper .main-right .education .inner-right .inner-right__describe {
-          margin-bottom: 36px;
+        .main-right .info-block .inner-row .inner-right .inner-right__describe {
           color: #222222;
           font: 14px "Montserrat Light", Arial, sans-serif; }

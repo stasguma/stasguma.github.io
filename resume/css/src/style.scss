@@ -24,296 +24,206 @@ body {
     @include f-montserrat-light(15px);
 }
 
+.clearfix {
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
 .wrapper {
     width: 960px;
     margin: 0 auto;
     padding-bottom: 28px;
+}
 
-    .header {
+.header {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 89px;
+    text-align: center;
+    // outline: 1px solid yellow;
+
+    .header__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        padding-top: 150px;
-        padding-bottom: 90px;
-        text-align: center;
-        // outline: 1px solid yellow;
+        height: 469px;
+        z-index: -1;
+        background: #333333;
+    }
 
-        .header__bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 469px;
-            z-index: -1;
-            background: #333333;
-        }
+    .header__name {
+        display: inline-block;
+        padding: 9px 86px;
+        border: 2px solid $yellow;
+        color: $white;
+        white-space: pre-wrap;
+        text-transform: uppercase;
+        @include f-montserrat-light(60px);
+    }
 
-        .header__name {
+    .header__position {
+        margin-top: 17px;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        @include f-montserrat-light(20px);
+    }
+
+    .contacts {
+        margin-top: 73px;
+        font-size: 0;
+
+        .info {
             display: inline-block;
-            padding: 9px 86px;
-            border: 2px solid $yellow;
-            color: $white;
-            white-space: pre-wrap;
-            text-transform: uppercase;
-            @include f-montserrat-light(60px);
-        }
+            padding-left: 10px;
+            padding-right: 10px;
 
-        .header__position {
-            margin-top: 17px;
-            color: $white;
-            text-transform: uppercase;
-            letter-spacing: 6px;
-            @include f-montserrat-light(20px);
-        }
+            &:not(:last-child) {
+                border-right: 1px solid $white;
 
-        .contacts {
-            margin-top: 73px;
-            font-size: 0;
-
-            .info {
-                display: inline-block;
-                padding-left: 10px;
-                padding-right: 10px;
-
-                &:not(:last-child) {
-                    border-right: 1px solid $white;
-
-                }
-
-                a {
-                    color: $white;
-                    text-decoration: none;
-                    letter-spacing: 1px;
-                    font: 16px "Open Sans Light", Arial,sans-serif;
-                }
-
-                &__location {
-                    color: $white;
-                    letter-spacing: 1px;
-                    cursor: default;
-                    font: 16px "Open Sans Light", Arial,sans-serif;
-                }
             }
 
+            a {
+                color: $white;
+                text-decoration: none;
+                letter-spacing: 1px;
+                font: 16px "Open Sans Light", Arial,sans-serif;
+            }
+
+            &__location {
+                color: $white;
+                letter-spacing: 1px;
+                cursor: default;
+                font: 16px "Open Sans Light", Arial,sans-serif;
+            }
         }
 
     }
-    .main-left {
-        display: inline-block;
-        width: 30%;
-        margin-top: 33px;
-        padding-right: 27px;
-        padding-bottom: 20px;
-        border-right: 2px solid rgba($black222, .7);
 
-        .about-me {
-            position: relative;
-            width: 100%;
+}
 
-            .about-me__title {
-                margin-bottom: 15px;
-                padding: 16px 0;
-                border-bottom: 1px solid $yellow;
+.main-left {
+    float: left;
+    display: inline-block;
+    width: 30%;
+    margin-top: 33px;
+    padding-right: 27px;
+    padding-bottom: 70px;
+    border-right: 2px solid rgba($black222, .7);
+
+    .info-block {
+        position: relative;
+        width: 100%;
+
+        .info-block__title {
+            margin-bottom: 15px;
+            padding: 16px 0;
+            border-bottom: 1px solid $yellow;
+            color: $yellow;
+            text-transform: uppercase;
+            @include f-montserrat-light(22px);
+
+            &:after {
+                content: "+";
+                position: absolute;
+                top: 17px;
+                right: 0;
                 color: $yellow;
-                text-transform: uppercase;
-                @include f-montserrat-light(22px);
-
-                &:after {
-                    content: "+";
-                    position: absolute;
-                    top: 17px;
-                    right: 0;
-                    color: $yellow;
-                    font: 22px Arial, sans-serif;
-                }
-            }
-
-            .inner-left {
-                display: inline-block;
-                width: 40%;
-
-                .inner-left__title {
-                    margin-bottom: 10px;
-                    color: $black222;
-                    @include f-montserrat-regular(13px);
-                }
-            }
-
-            .inner-right {
-                display: inline-block;
-                position: relative;
-                top: -3px;
-                width: 58%;
-
-                .inner-right__title {
-                    margin-bottom: 10px;
-                    color: $black222;
-                    @include f-montserrat-light(13px);
-                }
+                font: 22px Arial, sans-serif;
             }
         }
 
-        .my-skills {
-            position: relative;
-            width: 100%;
-            margin-top: 28px;
+        .info-block__subtitle {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: $black222;
+            @include f-montserrat-regular(13px);
+        }
 
-            .my-skills__main-title {
-                margin-bottom: 15px;
-                padding: 16px 0;
-                border-bottom: 1px solid $yellow;
-                color: $yellow;
-                text-transform: uppercase;
-                @include f-montserrat-light(22px);
+        .info-block__describe {
+            margin-bottom: 10px;
+            color: $black222;
+            line-height: 18px;
+            @include f-montserrat-light(13px);
+        }
 
-                &:after {
-                    content: "+";
-                    position: absolute;
-                    top: 17px;
-                    right: 0;
-                    color: $yellow;
-                    font: 22px Arial, sans-serif;
-                }
-            }
+        .inner-left {
+            display: inline-block;
+            width: 40%;
 
-            .my-skills__title {
-                display: inline-block;
+            .inner-left__title {
                 margin-bottom: 10px;
                 color: $black222;
                 @include f-montserrat-regular(13px);
-
-
-            }
-
-            .my-skills__describe {
-                margin-bottom: 10px;
-                color: $black222;
-                line-height: 18px;
-                @include f-montserrat-light(13px);
             }
         }
 
-        .languages {
+        .inner-right {
+            display: inline-block;
             position: relative;
-            width: 100%;
-            margin-top: 28px;
+            top: -3px;
+            width: 58%;
 
-            .languages__title {
-                margin-bottom: 15px;
-                padding: 16px 0;
-                border-bottom: 1px solid $yellow;
-                color: $yellow;
-                text-transform: uppercase;
-                @include f-montserrat-light(22px);
-
-                &:after {
-                    content: "+";
-                    position: absolute;
-                    top: 17px;
-                    right: 0;
-                    color: $yellow;
-                    font: 22px Arial, sans-serif;
-                }
-            }
-
-            .inner-left {
-                display: inline-block;
-                width: 40%;
-
-                .inner-left__title {
-                    margin-bottom: 10px;
-                    color: $black222;
-                    @include f-montserrat-regular(13px);
-                }
-            }
-
-            .inner-right {
-                display: inline-block;
-                position: relative;
-                top: -3px;
-                width: 58%;
-
-                .inner-right__title {
-                    margin-bottom: 10px;
-                    color: $black222;
-                    text-align: right;
-                    @include f-montserrat-light(13px);
-
-                    &:last-child {
-                        padding-right: 6px;
-                    }
-                }
+            .inner-right__title {
+                margin-bottom: 10px;
+                color: $black222;
+                @include f-montserrat-light(13px);
             }
         }
     }
+}
 
-    .main-right {
+.main-right {
+    position: relative;
+    float: right;
+    display: inline-block;
+    width: 69%;
+    margin-top: 33px;
+    padding-left: 27px;
+    padding-right: 65px;
+
+    .info-block {
         position: relative;
-        top: -89px;
-        display: inline-block;
-        width: 69%;
-        padding-left: 27px;
-        padding-right: 65px;
+        width: 100%;
 
-        .objective {
-            position: relative;
-            width: 100%;
+        .info-block__title {
+            margin-bottom: 15px;
+            padding: 16px 0;
+            border-bottom: 1px solid $yellow;
+            color: $yellow;
+            text-transform: uppercase;
+            @include f-montserrat-light(22px);
 
-            .objective__title {
-                margin-bottom: 15px;
-                padding: 16px 0;
-                border-bottom: 1px solid $yellow;
+            &:after {
+                content: "+";
+                position: absolute;
+                top: 17px;
+                right: 0;
                 color: $yellow;
-                text-transform: uppercase;
-                @include f-montserrat-light(22px);
-
-                &:after {
-                    content: "+";
-                    position: absolute;
-                    top: 17px;
-                    right: 0;
-                    color: $yellow;
-                    font: 22px Arial, sans-serif;
-                }
-            }
-
-            .objective__describe {
-                margin-bottom: 10px;
-                color: $black222;
-                line-height: 18px;
-                @include f-montserrat-light(13px);
+                font: 22px Arial, sans-serif;
             }
         }
 
-        .courses {
-            position: relative;
-            width: 100%;
-            margin-top: 28px;
+        .info-block__describe {
+            margin-bottom: 10px;
+            color: $black222;
+            line-height: 18px;
+            @include f-montserrat-light(13px);
+        }
 
-            .courses__title {
-                margin-bottom: 15px;
-                padding: 16px 0;
-                border-bottom: 1px solid $yellow;
-                color: $yellow;
-                text-transform: uppercase;
-                @include f-montserrat-light(22px);
-
-                &:after {
-                    content: "+";
-                    position: absolute;
-                    top: 17px;
-                    right: 0;
-                    color: $yellow;
-                    font: 22px Arial, sans-serif;
-                }
-            }
+        .inner-row {
+            margin-bottom: 13px;
 
             .inner-left {
+                float: left;
                 display: inline-block;
-                position: relative;
-                top: -20px;
                 width: 33%;
 
                 .inner-left__title {
-                    margin-bottom: 52px;
                     color: $black222;
                     @include f-montserrat-semibold(14px);
                 }
@@ -322,6 +232,7 @@ body {
             .inner-right {
                 display: inline-block;
                 width: 66%;
+                padding-left: 64px;
 
                 .inner-right__title {
                     margin-bottom: 0;
@@ -347,75 +258,10 @@ body {
                 }
 
                 .inner-right__describe {
-                    margin-bottom: 36px;
                     color: $black222;
                     @include f-montserrat-light(14px);
                 }
             }
         }
-
-        .education {
-            position: relative;
-            width: 100%;
-
-            .education__title {
-                margin-bottom: 15px;
-                padding: 16px 0;
-                border-bottom: 1px solid $yellow;
-                color: $yellow;
-                text-transform: uppercase;
-                @include f-montserrat-light(22px);
-
-                &:after {
-                    content: "+";
-                    position: absolute;
-                    top: 17px;
-                    right: 0;
-                    color: $yellow;
-                    font: 22px Arial, sans-serif;
-                }
-            }
-
-            .inner-left {
-                display: inline-block;
-                width: 28%;
-
-                .inner-left__title {
-                    color: $black222;
-                    line-height: 20px;
-                    @include f-montserrat-semibold(14px);
-                }
-
-                .inner-left__date {
-                    color: $black222;
-                    @include f-montserrat-light(13px);
-                }
-            }
-
-            .inner-right {
-                display: inline-block;
-                position: relative;
-                top: -15px;
-                width: 71%;
-                padding-left: 20px;
-
-                .inner-right__title {
-                    margin-bottom: 0;
-                    color: $black222;
-                    @include f-montserrat-semibold(15px);
-
-                    &:last-child {
-                        padding-right: 6px;
-                    }
-                }
-
-                .inner-right__describe {
-                    margin-bottom: 36px;
-                    color: $black222;
-                    @include f-montserrat-light(14px);
-                }
-            }
-        }
-
     }
 }
