@@ -431,7 +431,7 @@ body {
   color: #fefefe; }
 
 .about-product {
-  background: #000 url(/dist/img/about-product--bg.jpg) center top no-repeat; }
+  background: #000 url(/dist/img/about-product-bg.jpg) center top no-repeat; }
   .about-product .content {
     padding-top: 3.57143rem;
     padding-bottom: 6.85714rem; }
