@@ -59,8 +59,8 @@ a {
 
 @font-face {
   font-family: 'Againts';
-  src: url("./fonts/Againts.eot");
-  src: url("./fonts/Againts.eot?#iefix") format("embedded-opentype"), url("./fonts/Againts.woff2") format("woff2"), url("./fonts/Againts.woff") format("woff"), url("./fonts/Againts.ttf") format("truetype");
+  src: url("../fonts/Againts.eot");
+  src: url("../fonts/Againts.eot?#iefix") format("embedded-opentype"), url("../fonts/Againts.woff2") format("woff2"), url("../fonts/Againts.woff") format("woff"), url("../fonts/Againts.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -431,7 +431,7 @@ body {
   color: #fefefe; }
 
 .about-product {
-  background: #000 url(./dist/img/about-product-bg.jpg) center top no-repeat; }
+  background: #000 url(../dist/img/about-product-bg.jpg) center top no-repeat; }
   .about-product .content {
     padding-top: 3.57143rem;
     padding-bottom: 6.85714rem; }
