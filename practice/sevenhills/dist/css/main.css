@@ -59,8 +59,8 @@ a {
 
 @font-face {
   font-family: 'Againts';
-  src: url("../fonts/Againts.eot");
-  src: url("../fonts/Againts.eot?#iefix") format("embedded-opentype"), url("../fonts/Againts.woff2") format("woff2"), url("../fonts/Againts.woff") format("woff"), url("../fonts/Againts.ttf") format("truetype");
+  src: url("../../fonts/Againts.eot");
+  src: url("../../fonts/Againts.eot?#iefix") format("embedded-opentype"), url("../../fonts/Againts.woff2") format("woff2"), url("../../fonts/Againts.woff") format("woff"), url("../../fonts/Againts.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
