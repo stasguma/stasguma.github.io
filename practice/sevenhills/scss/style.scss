@@ -1,0 +1,14 @@
+@import "reset", "fonts";
+
+@import "vars", "mixins", "base";
+
+@import "scss/components/header",
+		"scss/components/about-company",
+		"scss/components/about-product",
+		"scss/components/statistics",
+		"scss/components/instagram",
+		"scss/components/form-section",
+		"scss/components/feedbacks",
+		"scss/components/footer",
+		"scss/components/overlay-callback",
+		"scss/components/overlay-navmenu";

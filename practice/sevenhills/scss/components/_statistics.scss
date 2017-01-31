@@ -1,0 +1,236 @@
+.statistics {
+    background-color: $white;
+
+    .content {
+        padding-top: rem(100px);
+
+        @include tablet {
+            padding-top: 50px;
+        };
+    }
+}
+
+.stat-list {
+    margin-top: rem(65px);
+}
+
+.stat-list__item {
+    position: relative;
+    min-height: 305px;
+    padding: 0 rem(57px) rem(109px);
+
+    @include tablet {
+        padding-bottom: rem(80px);
+    };
+
+    @include phone {
+        padding-left: 45px;
+        padding-bottom: 70px;
+    };
+
+    @media screen and (max-width: 360px) {
+        padding-left: 20px;
+        padding-right: 20px;
+	}
+
+    &:before, &:after {
+        position: absolute;
+        left: 50%;
+        content: '';
+        width: 2px;
+        height: 50%;
+        background-color: $red;
+
+        @include tablet {
+            left: 100%;
+            margin-left: -57px;
+        };
+    }
+    &:before {
+        top: 0;
+        margin-top: 21px;
+
+        @media screen and (max-width: 360px) {
+            margin-left: -12px;
+    	}
+    }
+    &:after {
+        bottom: 0;
+
+        @media screen and (max-width: 360px) {
+            margin-left: -12px;
+        }
+    }
+
+    &:last-of-type {
+        &:before, &:after {
+            width: 0;
+
+            @include tablet {
+                width: 2px;
+            };
+        }
+
+        &:before {
+            @include tablet {
+                height: 75%;
+            };
+        }
+
+        &:after {
+            @include tablet {
+                width: 0;
+            };
+        }
+    }
+
+    &.left {
+        text-align: left;
+
+        .stat-list__title:before {
+            left: 100%;
+            margin-left: 35px;
+
+            @media screen and (max-width: 360px) {
+                margin-left: -3px;
+        	}
+        }
+        .stat-list__content {
+            padding-right: rem(45px);
+
+            @media screen and (max-width: 360px) {
+                padding-right: 0;
+            }
+        }
+    }
+    &.right {
+        text-align: right;
+
+        .stat-list__title:before {
+            left: -55px;
+
+            @include tablet {
+                left: 100%;
+                margin-left: -10px;
+            };
+
+            @include phone {
+                margin-left: 20px;
+            };
+
+            @media screen and (max-width: 360px) {
+                margin-left: 27px;
+        	}
+        }
+        .stat-list__content {
+            padding-left: rem(45px);
+            text-align: left;
+
+            @include tablet {
+                padding-left: 0;
+            };
+
+            @include phone {
+                padding-right: 30px;
+            };
+        }
+    }
+}
+
+.stat-list__content {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+
+    @include tablet {
+        width: 100%;
+    };
+}
+
+.stat-list__title {
+    position: relative;
+    color: $black;
+    @include calibri-bold(25px);
+    font-size: rem(25px);
+    line-height: 1;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        content: '';
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 2px solid $red;
+    }
+}
+
+.stat-list__text {
+    margin-top: 13px;
+    color: $black;
+    @include calibri-regular(16px);
+    font-size: rem(16px);
+    line-height: 1.2;
+}
+
+.stat-list__digit {
+    display: inline-block;
+    position: absolute;
+    top: -40px;
+    color: #b81f1f;
+    @include gotham-pro-bold(300px);
+    font-size: rem(300px);
+    line-height: .8;
+
+    @include tablet {
+        position: relative;
+        top: 0;
+        margin-top: 23px;
+    };
+
+    @media screen and (max-width: 600px) {
+        font-size: rem(248px);
+    }
+
+    @include phone {
+        font-size: 235px;
+        margin-top: 10px;
+    };
+
+    @media screen and (max-width: 360px) {
+        font-size: 193px;
+	}
+
+    &.left {
+        left: rem(39px);
+
+        @include laptop {
+            left: 0;
+            letter-spacing: -14px;
+        };
+
+        @include tablet {
+            left: -7px;
+        };
+
+        @include phone {
+            left: -16px;
+            letter-spacing: -20px;
+        };
+
+        @media screen and (max-width: 360px) {
+            left: -22px;
+        }
+    }
+    &.right {
+        right: rem(58px);
+
+        @include laptop {
+            right: 1%;
+        }
+
+        @include tablet {
+            right: 15px;
+        };
+    }
+}

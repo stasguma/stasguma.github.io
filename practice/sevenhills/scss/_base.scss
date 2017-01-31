@@ -1,0 +1,77 @@
+::selection {
+	color: $white;
+	background-color: $red;
+}
+
+html {
+	font-size: 14px;
+
+	@media screen and (max-width: 360px) {
+		font-size: 12px;
+	}
+}
+
+body {
+	font-family: "Calibri", Arial, sans-serif;
+}
+
+.content {
+	max-width: 1024px;
+	margin: 0 auto;
+
+	@include laptop {
+		max-width: 960px;
+	};
+
+	@include tablet {
+		max-width: 768px;
+	};
+
+	@include phone {
+		max-width: 460px;
+	};
+
+	@media screen and (max-width: 360px) {
+		max-width: 320px;
+	}
+}
+
+.btn {
+	width: 160px;
+	height: 40px;
+	@extend %btn;
+	padding: 10px;
+	border-radius: 2px;
+	background-color: $red;
+	color: $white;
+	transition: all .3s;
+
+	&:hover, &:active {
+		background-color: #b51413;
+	}
+}
+
+.btn-secondary {
+	width: 135px;
+	height: 32px;
+	@extend %btn;
+	border: 2px solid $red;
+	border-radius: 2px;
+	background-color: transparent;
+	color: $white;
+	@include calibri-regular(13px);
+	transition: .2s;
+
+	@media screen and (max-width: 360px) {
+		width: 114px;
+	}
+
+	&:hover, &:active {
+		background-color: $red;
+	}
+}
+
+@keyframes floating {
+	from {top: 0px;}
+	to {top: 8px;}
+}

@@ -1,0 +1,224 @@
+.about-product {
+    background: $black url(/dist/img/about-product--bg.jpg) center top no-repeat;
+
+    .content {
+        padding-top: rem(50px);
+        padding-bottom: rem(96px);
+
+        @include tablet {
+            padding-bottom: rem(56px);
+        };
+    }
+
+    .center-block--margin-top {
+        margin-top: rem(185px);
+
+        @include phone {
+            margin-top: rem(60px);
+        };
+    }
+    .center-block__text {margin-top: rem(8px);}
+}
+
+.about-product__items {
+    margin-top: rem(58px);
+    text-align: center;
+}
+
+.about-product__item {
+    overflow: hidden;
+    display: inline-block;
+    width: 27.35%;
+    height: 440px;
+    margin: 0 1% rem(23px);
+    padding: rem(30px) rem(30px) 0;
+    vertical-align: top;
+    border-radius: 5px;
+    background-color: rgba($black, .7);
+
+    @include tablet {
+        min-width: 220px;
+        margin-left: 10px;
+        margin-right: 10px;
+    };
+}
+
+.about-product__pic {
+    height: 264px;
+}
+
+.about-product__img {
+    max-height: 100%;
+}
+
+.about-product__title {
+    margin-top: rem(23px);
+    color: $white;
+    @include calibri-bold(30px);
+    font-size: rem(30px);
+}
+
+.about-product__description {
+    overflow: hidden;
+    max-height: 60px;
+    margin-top: 5px;
+    color: $white;
+    @include calibri-regular(16px);
+    font-size: rem(16px);
+}
+
+.form {
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    margin: rem(53px) auto 0;
+
+    @include tablet {
+        width: 80%;
+        margin-top: rem(30px);
+    };
+
+    &.success {
+
+        .form__form {transform: translateX(-100%);}
+        .form__success {transform: translateX(0%);}
+    }
+}
+.form__form {
+    padding-bottom: rem(30px);
+    transform: translateX(0%);
+    transition: transform .8s .5s;
+    font-size: 0;
+    text-align: center;
+
+    @include phone {
+        .btn {
+            width: 63%;
+            margin-top: 25px;
+        }
+    };
+
+    @media screen and (max-width: 360px) {
+        .btn {
+            width: 79%;
+        }
+	}
+}
+.form__title {
+    color: $white;
+    @include gotham-pro-bold(20px);
+    font-size: rem(20px);
+    text-align: center;
+
+    @include phone {
+        margin-bottom: 20px;
+    };
+}
+.form__field {
+    position: relative;
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    margin-top: rem(36px);
+    padding: 0 5px;
+
+    @include phone {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 66%;
+        margin-top: 26px;
+    };
+
+    @media screen and (max-width: 360px) {
+		width: 83%;
+	}
+
+    &:first-of-type {
+        text-align: right;
+
+        input {
+            &:focus ~ label {
+                top: -20px;
+                left: 6px;
+                color: $white;
+            }
+
+        }
+        label {
+            left: 25px;
+        }
+    }
+
+    label {
+        position: absolute;
+        top: 27%;
+        left: 25px;
+        cursor: text;
+        transition: all .3s;
+        color: $black;
+        @include calibri-regular(15px);
+        font-size: rem(15px);
+
+        @media screen and (max-width: 360px) {
+    		font-size: 14px;
+    	}
+
+        &.hidden {
+            font-size: 0;
+        }
+    }
+
+    input {
+        width: 220px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 2px;
+        background-color: $white;
+
+        &:focus ~ label {
+            top: -20px;
+            left: 6px;
+            color: $white;
+        }
+
+        @include laptop {
+            width: 100%;
+        };
+    }
+}
+
+.form__submit {
+    margin-top: 10px;
+}
+
+.form__success {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    transform: translateX(100%);
+    transition: transform .8s .5s;
+    text-align: center;
+}
+
+.form__markcheck {
+    width: 70px;
+    height: 70px;
+}
+
+.form__success-title {
+    color: $white;
+    @include gotham-pro-bold(50px);
+}
+
+.form__success-text {
+    color: $white;
+    @include gotham-pro-bold(30px);
+
+    @include phone {
+        font-size: rem(25px);
+    };
+}

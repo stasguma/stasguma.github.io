@@ -1,0 +1,35 @@
+.instagram {
+    background-color: $white;
+
+    .content {
+        padding-top: 21px;
+        padding-bottom: rem(108px);
+    }
+}
+
+.photo-list {
+    margin-top: 61px;
+    text-align: center;
+}
+
+.photo-list__item {
+    display: inline-block;
+    width: 32.3%;
+    height: 333px;
+    vertical-align: top;
+    margin: 0 .4% 11px;
+
+    background-color: tomato;
+
+    @include laptop {
+        width: 333px;
+    };
+
+    @media screen and (max-width: 360px) {
+        width: 100%;
+	}
+}
+
+.photo-list__link {
+    display: inline-block;
+}

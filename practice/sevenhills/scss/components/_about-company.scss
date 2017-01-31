@@ -1,0 +1,41 @@
+.about-company {
+    background-color: $white;
+
+    .content {
+        padding-top: rem(50px);
+        padding-bottom: rem(128px);
+
+        @include phone {
+            padding-bottom: rem(70px);
+        };
+    }
+
+    .center-block {margin-top: rem(65px);}
+}
+
+.center-block {
+    width: 60%;
+    margin: rem(50px) auto 0;
+    text-align: center;
+
+    @include phone {
+        width: 90%;
+    };
+}
+
+.center-block__title {
+    color: $black;
+    @include calibri-bold(20px);
+    font-size: rem(20px);
+}
+
+.center-block__text {
+    color: $black;
+    @include calibri-regular(14px);
+    font-size: rem(14px);
+}
+
+.center-block__text--color,
+.center-block__title--color {
+    color: $white;
+}

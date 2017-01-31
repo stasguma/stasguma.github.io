@@ -1,0 +1,134 @@
+.overlay-nav-menu {
+    width: 0;
+    visibility: hidden;
+    transition: width .6s .4s, visibility 0s 1s;
+    background-color: transparentize($black, .05);
+
+    &.open {
+        width: 100%;
+        visibility: visible;
+        transition: width .6s .4s;
+
+        .overlay-menu {
+            opacity: 1;
+            transform: translateY(0);
+            transition: .5s 1s;
+        }
+    }
+    .close-btn {
+        @extend %btn;
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        z-index: 150;
+        opacity: .6;
+        background-color: transparent;
+        color: $white;
+        transition: opacity .2s;
+
+        @media screen and (max-width: 600px) {
+            width: 40px;
+            height: 40px;
+        }
+
+        @include phone {
+            width: 35px;
+            height: 35px;
+        };
+
+        @media screen and (max-width: 360px) {
+            width: 32px;
+            height: 33px;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        span {
+            position: absolute;
+            left: 2px;
+            display: inline-block;
+            width: 126%;
+            height: 5px;
+            background-color: $white;
+
+            &:first-of-type {
+                top: 0;
+                transform: rotate(45deg);
+                transform-origin: left;
+            }
+            &:last-of-type {
+                bottom: 0;
+                transform: rotate(-45deg);
+                transform-origin: left;
+            }
+        }
+    }
+}
+
+.overlay-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(-40px);
+    text-align: center;
+    transition: .5s;
+}
+
+.overlay-menu__list {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.overlay-menu__item {
+    display: block;
+    margin: 17px auto;
+}
+
+.overlay-menu__link {
+    position: relative;
+    display: inline-block;
+    color: transparentize($white, .6);
+    text-transform: uppercase;
+    @include gotham-pro-bold(50px);
+    font-size: rem(50px);
+    transition: .5s;
+
+    @media screen and (max-width: 600px) {
+        font-size: rem(40px);
+    }
+
+    @include phone {
+        font-size: 35px;
+    };
+
+    @media screen and (max-width: 360px) {
+        font-size: 30px;
+    }
+
+    &:before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        content: '';
+        width: 0%;
+        height: 30%;
+        background-color: $red;
+        transition: .5s;
+    }
+
+    &:hover {
+        color: $white;
+
+        &:before {
+            width: 100%;
+        }
+    }
+}

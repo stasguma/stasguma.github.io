@@ -1,0 +1,306 @@
+.header {
+    background-color: $black;
+
+    .content {
+        padding-top: rem(15px);
+        padding-bottom: rem(24px);
+    }
+    .logo {
+        @include tablet {
+            display: none;
+        };
+    }
+
+    .menu__list {
+        @include tablet {
+            display: none;
+        };
+    }
+}
+
+.header-top-row {
+    font-size: 0;
+}
+
+.logo-block {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    padding-left: 29px;
+
+    @include laptop {
+        width: 25%;
+    };
+
+    @media screen and (max-width: 360px) {
+        width: 15%;
+		padding-left: 14px;
+	}
+}
+
+.logo {
+    display: inline-block;
+    color: $white;
+    @include againts(22px);
+    font-size: rem(22px);
+}
+
+.menu-bars-btn {
+    @extend %btn;
+    display: none;
+    width: 23px;
+    padding: 0;
+    cursor: pointer;
+    transition: .2s;
+    background-color: transparent;
+
+    &:hover, &:active {
+        span:first-of-type {
+            transform: translateY(-2px);
+        }
+        span:last-of-type {
+            transform: translateY(2px);
+        }
+    }
+
+    @include tablet {
+        display: inline-block;
+    };
+
+    span {
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        margin-bottom: 4px;
+        transition: .5s;
+        background-color: $white;
+    }
+}
+
+.menu {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+    text-align: center;
+
+    @include tablet {
+        width: auto;
+    };
+}
+
+.menu__list {
+    font-size: 0;
+}
+
+.menu__item {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.menu__link {
+    padding: 4px 0;
+    transition: color .2s;
+    color: $white;
+    @include calibri-regular(13px);
+    font-size: rem(13px);
+
+    &:hover {
+        color: $red;
+    }
+}
+
+.contacts {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 26px;
+
+    @include laptop {
+        width: 35%;
+        padding-right: 15px;
+    };
+
+    @include tablet {
+        width: 70%;
+    };
+
+    @media screen and (max-width: 360px) {
+		width: 85%;
+        padding-right: 12px;
+	}
+
+    .number {
+        display: inline-block;
+        margin-right: 17px;
+        color: $white;
+        @include calibri-bold(13px);
+        font-size: rem(13px);
+        letter-spacing: .3px;
+
+        @media screen and (max-width: 360px) {
+    		margin-right: 10px;
+    	}
+    }
+}
+
+.main-title {
+    margin-top: rem(141px);
+    color: $white;
+    text-align: center;
+    @include againts(210px);
+    font-size: rem(210px);
+
+    @include tablet {
+        margin-top: rem(110px);
+        font-size: rem(153px);
+    };
+
+    @media screen and (max-width: 600px) {
+        font-size: rem(120px);
+    }
+
+    @include phone {
+        font-size: rem(100px);
+    };
+
+    @media screen and (max-width: 360px) {
+		font-size: rem(83px);
+	}
+}
+
+.title {
+    position: relative;
+    color: $black;
+    text-align: center;
+    text-transform: uppercase;
+    @include gotham-pro-bold(25px);
+    font-size: rem(25px);
+
+    &:after {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        content: '';
+        width: 35px;
+        height: 2px;
+        margin: 8px auto 0;
+        background-color: $red;
+    }
+}
+
+.title--color {color: $white;}
+
+.text-block {
+    width: 49%;
+    margin: 0 auto;
+    text-align: center;
+
+    @include tablet {
+        width: 80%;
+    };
+
+    @media screen and (max-width: 360px) {
+		width: 90%;
+	}
+
+    .title {
+        margin-top: rem(19px);
+        color: $white;
+        font-size: rem(30px);
+
+        @include tablet {
+            font-size: rem(35px);
+        };
+
+        @media screen and (max-width: 600px) {
+            font-size: rem(22px);
+        }
+
+        @include phone {
+            font-size: rem(20px);
+        };
+
+        &:after {
+            content: "";
+            height: 0;
+        }
+    }
+
+    .text {
+        margin-top: 15px;
+        padding: 0 20px;
+        text-align: center;
+        color: $white;
+        @include calibri-regular(18px);
+        font-size: rem(18px);
+        line-height: 1;
+
+        @include tablet {
+            font-size: rem(21px);
+        };
+
+        @media screen and (max-width: 600px) {
+            padding: 0;
+            font-size: rem(16px);
+        }
+    }
+}
+
+.scroll-down {
+    width: 65px;
+    margin: rem(128px) auto 0;
+    text-align: center;
+
+    @include tablet {
+        margin-top: rem(97px);
+    };
+
+    @include phone {
+        margin-top: rem(60px);
+    };
+
+    .scroll-down__svg {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .arrows {
+        position: relative;
+        display: block;
+        animation: floating .8s ease-out infinite alternate;
+
+        .arrow-down {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            width: 16px;
+            height: 1px;
+            margin-top: 6px;
+
+            &:before, &:after {
+                position: absolute;
+                top: 0;
+                width: 50%;
+                height: 1px;
+                content: '';
+                background-color: $red;
+            }
+            &:before {
+                left: 0;
+                transform: rotate(45deg);
+                transform-origin: right;
+                border-bottom-right-radius: 1px;
+            }
+            &:after {
+                right: 0;
+                transform: rotate(-45deg);
+                transform-origin: left;
+                border-bottom-left-radius: 1px;
+            }
+        }
+    }
+}

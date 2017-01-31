@@ -1,0 +1,102 @@
+.feedbacks {
+
+    .content {
+        padding-top: rem(94px);
+        padding-bottom: rem(55px);
+
+        @include phone {
+            padding-top: 50px;
+        };
+    }
+}
+
+.slider {
+    width: 83%;
+    margin: rem(58px) auto 0;
+}
+
+.feedback-block {
+    position: relative;
+    margin: 49px 10px 0;
+    padding: 63px 20px 33px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+    text-align: center;
+}
+
+.feedback-block__photo-block {
+    overflow: hidden;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+
+    background-color: tomato;
+}
+
+.feedback-block__name {
+    color: $black;
+    @include calibri-bold(16px);
+    font-size: rem(16px);
+}
+
+.feedback-block__surname {
+    color: $black;
+    @include calibri-regular(15px);
+    font-size: rem(15px);
+}
+
+.feedback-block__comment {
+    margin-top: 22px;
+    color: #808080;
+    @include calibri-regular(15px);
+    font-size: rem(15px);
+}
+
+.wh{
+    max-height:100%!important;
+    max-width: none;
+}
+.ww{
+    max-width:100%!important;
+    max-height: none;
+}
+
+.slick-dots {
+    margin-top: 10px;
+    text-align: center;
+
+    li {
+        position: relative;
+        display: inline-block;
+        margin: 0 1px;
+        padding: 9px;
+        cursor: pointer;
+
+        &.slick-active button {
+            background-color: #666666;
+        }
+
+        button {
+            @extend %btn;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 8px;
+            height: 8px;
+            padding: 0;
+            vertical-align: top;
+            border-radius: 50%;
+            border: 1px solid #999;
+            background-color: transparent;
+            font-size: 0;
+        }
+    }
+}
