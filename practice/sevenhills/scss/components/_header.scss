@@ -20,6 +20,13 @@
 
 .header-top-row {
     font-size: 0;
+    opacity: 1;
+    transition: 2s;
+
+    &.unvis {
+        opacity: 0;
+        transition: 2s;
+    }
 }
 
 .logo-block {
@@ -150,6 +157,8 @@
     text-align: center;
     @include againts(210px);
     font-size: rem(210px);
+    opacity: 1;
+    transition: 4s;
 
     @include tablet {
         margin-top: rem(110px);
@@ -167,6 +176,11 @@
     @media screen and (max-width: 360px) {
 		font-size: rem(83px);
 	}
+
+    &.unvis {
+        opacity: 0;
+        transition: 2s;
+    }
 }
 
 .title {
@@ -196,6 +210,13 @@
     width: 49%;
     margin: 0 auto;
     text-align: center;
+    opacity: 1;
+    transition: 2s;
+
+    &.unvis {
+        opacity: 0;
+        transition: 2s;
+    }
 
     @include tablet {
         width: 80%;
@@ -252,6 +273,13 @@
     width: 65px;
     margin: rem(128px) auto 0;
     text-align: center;
+    opacity: 1;
+    transition: 2s;
+
+    &.unvis {
+        opacity: 0;
+        transition: 2s;
+    }
 
     @include tablet {
         margin-top: rem(97px);

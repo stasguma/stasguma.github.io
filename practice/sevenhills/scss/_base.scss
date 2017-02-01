@@ -13,6 +13,11 @@ html {
 
 body {
 	font-family: "Calibri", Arial, sans-serif;
+	// overflow: auto;
+
+	&.ov-hid {
+		overflow: hidden;
+	}
 }
 
 .content {

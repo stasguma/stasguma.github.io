@@ -93,6 +93,8 @@ html {
 
 body {
   font-family: "Calibri", Arial, sans-serif; }
+  body.ov-hid {
+    overflow: hidden; }
 
 .content {
   max-width: 1024px;
@@ -161,7 +163,12 @@ body {
       display: none; } }
 
 .header-top-row {
-  font-size: 0; }
+  font-size: 0;
+  opacity: 1;
+  transition: 2s; }
+  .header-top-row.unvis {
+    opacity: 0;
+    transition: 2s; }
 
 .logo-block {
   display: inline-block;
@@ -266,7 +273,9 @@ body {
   color: #fefefe;
   text-align: center;
   font: 15rem "Againts", Arial, sans-serif;
-  font-size: 15rem; }
+  font-size: 15rem;
+  opacity: 1;
+  transition: 4s; }
   @media screen and (max-width: 800px) {
     .main-title {
       margin-top: 7.85714rem;
@@ -280,6 +289,9 @@ body {
   @media screen and (max-width: 360px) {
     .main-title {
       font-size: 5.92857rem; } }
+  .main-title.unvis {
+    opacity: 0;
+    transition: 2s; }
 
 .title {
   position: relative;
@@ -305,7 +317,12 @@ body {
 .text-block {
   width: 49%;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  opacity: 1;
+  transition: 2s; }
+  .text-block.unvis {
+    opacity: 0;
+    transition: 2s; }
   @media screen and (max-width: 800px) {
     .text-block {
       width: 80%; } }
@@ -347,7 +364,12 @@ body {
 .scroll-down {
   width: 65px;
   margin: 9.14286rem auto 0;
-  text-align: center; }
+  text-align: center;
+  opacity: 1;
+  transition: 2s; }
+  .scroll-down.unvis {
+    opacity: 0;
+    transition: 2s; }
   @media screen and (max-width: 800px) {
     .scroll-down {
       margin-top: 6.92857rem; } }
