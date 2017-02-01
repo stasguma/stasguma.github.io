@@ -227,7 +227,7 @@ $(function (){
         main_title.classList.remove('unvis');
 
         setTimeout(function () {
-            // document.body.classList.remove('ov-hid');
+            document.body.classList.remove('ov-hid');
 
             header_top_row.classList.remove('unvis');
             text_block.classList.remove('unvis');
