@@ -188,7 +188,28 @@ $(function (){
             });
         });
 }());
-
+// (function() {
+//     'use strict';
+//
+//     REGEXP = {
+//     		'first_name': /^[a-zA-Z]+$/,
+//     		'email': /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+//     		'mobile_phone': /^((\+|00)33\s?|0)[679](\s?\d{2}){4}$/
+//     };
+//
+//     	$('input[type=text], input[type=email], textarea').on('keyup', function() {
+//     		var field = $(this);
+//     		var id = field.attr('id');
+//     		var value = field.val();
+//     		var regexp = REGEXP[id];
+//
+//     		if (regexp.test(value)) {
+//     			field.parent().removeClass('has-error').addClass('has-success');
+//     		} else {
+//     			field.parent().removeClass('has-success').addClass('has-error');
+//     		}
+//     	});
+// }());
 
 (function() {
     'use strict';
@@ -203,10 +224,10 @@ $(function (){
     document.addEventListener('DOMContentLoaded', function () {
 
 
-        // main_title.classList.remove('unvis');
+        main_title.classList.remove('unvis');
 
         setTimeout(function () {
-            document.body.classList.remove('ov-hid');
+            // document.body.classList.remove('ov-hid');
 
             header_top_row.classList.remove('unvis');
             text_block.classList.remove('unvis');
