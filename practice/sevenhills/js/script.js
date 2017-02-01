@@ -200,9 +200,10 @@ $(function (){
         scroll_down = document.querySelector('.scroll-down');
 
 
-    window.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () {
 
-        main_title.classList.remove('unvis');
+
+        // main_title.classList.remove('unvis');
 
         setTimeout(function () {
             document.body.classList.remove('ov-hid');
