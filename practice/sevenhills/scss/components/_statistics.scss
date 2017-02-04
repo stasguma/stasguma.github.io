@@ -1,5 +1,10 @@
 .statistics {
+    transition: .5s;
     background-color: $white;
+
+    &.unvis {
+        opacity: 0;
+    }
 
     .content {
         padding-top: rem(100px);
@@ -111,7 +116,7 @@
 
             @include tablet {
                 left: 100%;
-                margin-left: -10px;
+                margin-left: 30px;
             };
 
             @include phone {
@@ -128,6 +133,7 @@
 
             @include tablet {
                 padding-left: 0;
+                padding-right: 40px;
             };
 
             @include phone {
@@ -181,7 +187,11 @@
     @include gotham-pro-bold(300px);
     font-size: rem(300px);
     line-height: .8;
+    letter-spacing: -8px;
 
+    @include laptop {
+        letter-spacing: -18px;
+    };
     @include tablet {
         position: relative;
         top: 0;
@@ -193,7 +203,7 @@
     }
 
     @include phone {
-        font-size: 235px;
+        font-size: 228px;
         margin-top: 10px;
     };
 
@@ -205,12 +215,12 @@
         left: rem(39px);
 
         @include laptop {
-            left: 0;
-            letter-spacing: -14px;
+            left: -6px;
+            letter-spacing: -25px;
         };
 
         @include tablet {
-            left: -7px;
+            left: -10px;
         };
 
         @include phone {

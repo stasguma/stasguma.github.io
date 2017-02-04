@@ -92,7 +92,8 @@ html {
       font-size: 12px; } }
 
 body {
-  font-family: "Calibri", Arial, sans-serif; }
+  font-family: "Calibri", Arial, sans-serif;
+  background-color: #000; }
   body.ov-hid {
     overflow: hidden; }
 
@@ -178,6 +179,9 @@ body {
   @media screen and (max-width: 992px) {
     .logo-block {
       width: 25%; } }
+  @media screen and (max-width: 480px) {
+    .logo-block {
+      width: 20%; } }
   @media screen and (max-width: 360px) {
     .logo-block {
       width: 15%;
@@ -253,6 +257,9 @@ body {
   @media screen and (max-width: 800px) {
     .contacts {
       width: 70%; } }
+  @media screen and (max-width: 480px) {
+    .contacts {
+      width: 75%; } }
   @media screen and (max-width: 360px) {
     .contacts {
       width: 85%;
@@ -420,7 +427,10 @@ body {
         border-bottom-left-radius: 1px; }
 
 .about-company {
-  background-color: #fefefe; }
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/dist/img/about-company--bg.jpg) center top/cover no-repeat;
+  transition: .5s; }
+  .about-company.unvis {
+    opacity: 0; }
   .about-company .content {
     padding-top: 3.57143rem;
     padding-bottom: 9.14286rem; }
@@ -453,7 +463,10 @@ body {
   color: #fefefe; }
 
 .about-product {
-  background: #000 url(../img/about-product-bg.jpg) center top no-repeat; }
+  transition: .5s;
+  background: #000 url(/dist/img/about-product--bg.jpg) center top no-repeat; }
+  .about-product.unvis {
+    opacity: 0; }
   .about-product .content {
     padding-top: 3.57143rem;
     padding-bottom: 6.85714rem; }
@@ -482,14 +495,24 @@ body {
   vertical-align: top;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.7); }
+  @media screen and (max-width: 992px) {
+    .about-product__item {
+      height: 415px; } }
   @media screen and (max-width: 800px) {
     .about-product__item {
       min-width: 220px;
+      height: 371px;
       margin-left: 10px;
       margin-right: 10px; } }
+  @media screen and (max-width: 360px) {
+    .about-product__item {
+      max-height: 361px; } }
 
 .about-product__pic {
-  height: 264px; }
+  height: 255px; }
+  @media screen and (max-width: 800px) {
+    .about-product__pic {
+      height: 172px; } }
 
 .about-product__img {
   max-height: 100%; }
@@ -502,11 +525,17 @@ body {
 
 .about-product__description {
   overflow: hidden;
-  max-height: 60px;
+  max-height: 61px;
   margin-top: 5px;
   color: #fefefe;
   font: 1.14286rem "Calibri", Arial, sans-serif;
   font-size: 1.14286rem; }
+  @media screen and (max-width: 992px) {
+    .about-product__description {
+      max-height: 80px; } }
+  @media screen and (max-width: 360px) {
+    .about-product__description {
+      max-height: 87px; } }
 
 .form {
   overflow: hidden;
@@ -640,7 +669,10 @@ body {
       font-size: 1.78571rem; } }
 
 .statistics {
+  transition: .5s;
   background-color: #fefefe; }
+  .statistics.unvis {
+    opacity: 0; }
   .statistics .content {
     padding-top: 7.14286rem; }
     @media screen and (max-width: 800px) {
@@ -718,7 +750,7 @@ body {
       @media screen and (max-width: 800px) {
         .stat-list__item.right .stat-list__title:before {
           left: 100%;
-          margin-left: -10px; } }
+          margin-left: 30px; } }
       @media screen and (max-width: 480px) {
         .stat-list__item.right .stat-list__title:before {
           margin-left: 20px; } }
@@ -730,7 +762,8 @@ body {
       text-align: left; }
       @media screen and (max-width: 800px) {
         .stat-list__item.right .stat-list__content {
-          padding-left: 0; } }
+          padding-left: 0;
+          padding-right: 40px; } }
       @media screen and (max-width: 480px) {
         .stat-list__item.right .stat-list__content {
           padding-right: 30px; } }
@@ -772,7 +805,11 @@ body {
   color: #b81f1f;
   font: bold 21.42857rem "Gotham Pro", Arial, sans-serif;
   font-size: 21.42857rem;
-  line-height: .8; }
+  line-height: .8;
+  letter-spacing: -8px; }
+  @media screen and (max-width: 992px) {
+    .stat-list__digit {
+      letter-spacing: -18px; } }
   @media screen and (max-width: 800px) {
     .stat-list__digit {
       position: relative;
@@ -783,7 +820,7 @@ body {
       font-size: 17.71429rem; } }
   @media screen and (max-width: 480px) {
     .stat-list__digit {
-      font-size: 235px;
+      font-size: 228px;
       margin-top: 10px; } }
   @media screen and (max-width: 360px) {
     .stat-list__digit {
@@ -792,11 +829,11 @@ body {
     left: 2.78571rem; }
     @media screen and (max-width: 992px) {
       .stat-list__digit.left {
-        left: 0;
-        letter-spacing: -14px; } }
+        left: -6px;
+        letter-spacing: -25px; } }
     @media screen and (max-width: 800px) {
       .stat-list__digit.left {
-        left: -7px; } }
+        left: -10px; } }
     @media screen and (max-width: 480px) {
       .stat-list__digit.left {
         left: -16px;
@@ -814,7 +851,10 @@ body {
         right: 15px; } }
 
 .instagram {
+  transition: .5s;
   background-color: #fefefe; }
+  .instagram.unvis {
+    opacity: 0; }
   .instagram .content {
     padding-top: 21px;
     padding-bottom: 7.71429rem; }
@@ -841,7 +881,10 @@ body {
   display: inline-block; }
 
 .form-section {
+  transition: .5s;
   background-color: #000; }
+  .form-section.unvis {
+    opacity: 0; }
   .form-section .content {
     padding: 5rem 0; }
   .form-section .title {
@@ -864,12 +907,17 @@ body {
       .form-section .text {
         padding: 0; } }
 
-.feedbacks .content {
-  padding-top: 6.71429rem;
-  padding-bottom: 3.92857rem; }
-  @media screen and (max-width: 480px) {
-    .feedbacks .content {
-      padding-top: 50px; } }
+.feedbacks {
+  transition: .5s;
+  background-color: #fefefe; }
+  .feedbacks.unvis {
+    opacity: 0; }
+  .feedbacks .content {
+    padding-top: 6.71429rem;
+    padding-bottom: 3.92857rem; }
+    @media screen and (max-width: 480px) {
+      .feedbacks .content {
+        padding-top: 50px; } }
 
 .slider {
   width: 83%;
@@ -949,7 +997,10 @@ body {
       font-size: 0; }
 
 .footer {
+  transition: .5s;
   background-color: #000; }
+  .footer.unvis {
+    opacity: 0; }
   .footer .content {
     padding-top: 1.92857rem;
     padding-bottom: 1.42857rem; }
@@ -1146,15 +1197,16 @@ body {
     transition: width .6s .4s; }
     .overlay-nav-menu.open .overlay-menu {
       opacity: 1;
-      -webkit-transform: translateY(0);
-          -ms-transform: translateY(0);
-              transform: translateY(0);
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
       transition: .5s 1s; }
   .overlay-nav-menu .close-btn {
+    top: 16px;
+    right: 13px;
     width: 45px;
     height: 45px;
     padding: 0;
-    z-index: 150;
     opacity: .6;
     background-color: transparent;
     color: #fefefe;
@@ -1198,25 +1250,16 @@ body {
                 transform-origin: left; }
 
 .overlay-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  opacity: 0;
-  -webkit-transform: translateY(-40px);
-      -ms-transform: translateY(-40px);
-          transform: translateY(-40px);
-  text-align: center;
-  transition: .5s; }
-
-.overlay-menu__list {
+  display: inline-block;
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%); }
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -60%);
+      -ms-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  text-align: center;
+  transition: .5s; }
 
 .overlay-menu__item {
   display: block;
@@ -1230,15 +1273,27 @@ body {
   font: bold 3.57143rem "Gotham Pro", Arial, sans-serif;
   font-size: 3.57143rem;
   transition: .5s; }
+  @media screen and (max-width: 800px) {
+    .overlay-menu__link {
+      font-size: 80px; } }
   @media screen and (max-width: 600px) {
     .overlay-menu__link {
-      font-size: 2.85714rem; } }
+      font-size: 60px; } }
   @media screen and (max-width: 480px) {
     .overlay-menu__link {
-      font-size: 35px; } }
+      font-size: 42px; } }
   @media screen and (max-width: 360px) {
     .overlay-menu__link {
-      font-size: 30px; } }
+      font-size: 38px; } }
+  @media screen and (max-height: 480px) and (orientation: landscape) {
+    .overlay-menu__link {
+      font-size: 48px; } }
+  @media screen and (max-height: 360px) and (orientation: landscape) {
+    .overlay-menu__link {
+      font-size: 42px; } }
+  @media screen and (max-height: 320px) and (orientation: landscape) {
+    .overlay-menu__link {
+      font-size: 38px; } }
   .overlay-menu__link:before {
     position: absolute;
     top: 50%;

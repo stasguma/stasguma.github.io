@@ -1,5 +1,10 @@
 .footer {
+    transition: .5s;
     background-color: $black;
+
+    &.unvis {
+        opacity: 0;
+    }
 
     .content {
         padding-top: rem(27px);

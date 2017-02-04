@@ -1,5 +1,10 @@
 .form-section {
+    transition: .5s;
     background-color: $black;
+
+    &.unvis {
+        opacity: 0;
+    }
 
     .content {
         padding: rem(70px) 0;

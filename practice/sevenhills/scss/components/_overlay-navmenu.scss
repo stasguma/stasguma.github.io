@@ -11,16 +11,17 @@
 
         .overlay-menu {
             opacity: 1;
-            transform: translateY(0);
+            transform: translate(-50%, -50%);
             transition: .5s 1s;
         }
     }
     .close-btn {
         @extend %btn;
+        top: 16px;
+        right: 13px;
         width: 45px;
         height: 45px;
         padding: 0;
-        z-index: 150;
         opacity: .6;
         background-color: transparent;
         color: $white;
@@ -68,22 +69,20 @@
 }
 
 .overlay-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
     opacity: 0;
-    transform: translateY(-40px);
+    transform: translate(-50%, -60%);
     text-align: center;
     transition: .5s;
 }
 
 .overlay-menu__list {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-60%);
 }
 
 .overlay-menu__item {
@@ -100,16 +99,58 @@
     font-size: rem(50px);
     transition: .5s;
 
+    @include tablet {
+        font-size: 80px;
+    };
+
+
+
+    // @media screen and (min-height: 900px) {
+    //     font-size: 40px;
+    // }
+    // @media screen and (min-height: 800px) {
+    //     font-size: 80px;
+    // }
+    //
+    // @media screen and (max-height: 480px) {
+    //     font-size: 44px;
+    // }
+    //
+    // @media screen and (max-height: 360px) {
+    //     font-size: 42px;
+    // }
+
     @media screen and (max-width: 600px) {
-        font-size: rem(40px);
+        font-size: 60px;
     }
 
     @include phone {
-        font-size: 35px;
+        font-size: 42px;
     };
 
     @media screen and (max-width: 360px) {
-        font-size: 30px;
+        font-size: 38px;
+    }
+
+    @media screen
+        and (max-height: 480px)
+        and (orientation: landscape) {
+
+        font-size: 48px;
+    }
+
+    @media screen
+        and (max-height: 360px)
+        and (orientation: landscape) {
+
+        font-size: 42px;
+    }
+
+    @media screen
+        and (max-height: 320px)
+        and (orientation: landscape) {
+
+        font-size: 38px;
     }
 
     &:before {

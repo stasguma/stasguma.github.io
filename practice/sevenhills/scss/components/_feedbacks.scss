@@ -1,4 +1,10 @@
 .feedbacks {
+    transition: .5s;
+    background-color: $white;
+
+    &.unvis {
+        opacity: 0;
+    }
 
     .content {
         padding-top: rem(94px);

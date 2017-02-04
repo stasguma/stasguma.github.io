@@ -39,6 +39,10 @@
         width: 25%;
     };
 
+    @include phone {
+        width: 20%;
+    };
+
     @media screen and (max-width: 360px) {
         width: 15%;
 		padding-left: 14px;
@@ -130,6 +134,10 @@
 
     @include tablet {
         width: 70%;
+    };
+
+    @include phone {
+        width: 75%;
     };
 
     @media screen and (max-width: 360px) {

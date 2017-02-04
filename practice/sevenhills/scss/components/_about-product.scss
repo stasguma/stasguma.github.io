@@ -1,5 +1,10 @@
 .about-product {
-    background: $black url(../img/about-product-bg.jpg) center top no-repeat;
+    transition: .5s;
+    background: $black url(/dist/img/about-product--bg.jpg) center top no-repeat;
+
+    &.unvis {
+        opacity: 0;
+    }
 
     .content {
         padding-top: rem(50px);
@@ -36,15 +41,28 @@
     border-radius: 5px;
     background-color: rgba($black, .7);
 
+    @include laptop {
+        height: 415px;
+    };
+
     @include tablet {
         min-width: 220px;
+        height: 371px;
         margin-left: 10px;
         margin-right: 10px;
     };
+
+    @media screen and (max-width: 360px) {
+        max-height: 361px;
+    }
 }
 
 .about-product__pic {
-    height: 264px;
+    height: 255px;
+
+    @include tablet {
+        height: 172px;
+    };
 }
 
 .about-product__img {
@@ -60,11 +78,19 @@
 
 .about-product__description {
     overflow: hidden;
-    max-height: 60px;
+    max-height: 61px;
     margin-top: 5px;
     color: $white;
     @include calibri-regular(16px);
     font-size: rem(16px);
+
+    @include laptop {
+        max-height: 80px;
+    };
+
+    @media screen and (max-width: 360px) {
+        max-height: 87px;
+    }
 }
 
 .form {

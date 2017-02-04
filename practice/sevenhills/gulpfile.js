@@ -54,4 +54,4 @@ gulp.task('watch', function () {
         gulp.watch(['index.html', 'scss/style.scss', 'scss/components/*'], ['html', 'css']);
 });
 
-gulp.task('default', ['connect', 'html', 'css', 'javascript', 'watch']);
+gulp.task('default', ['connect', 'html', 'css', 'watch']);

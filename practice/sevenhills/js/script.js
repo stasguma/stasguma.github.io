@@ -1,5 +1,4 @@
 $(function (){
-
     $('#slider').slick({
         arrows: false,
         dots: true
@@ -188,28 +187,6 @@ $(function (){
             });
         });
 }());
-// (function() {
-//     'use strict';
-//
-//     REGEXP = {
-//     		'first_name': /^[a-zA-Z]+$/,
-//     		'email': /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
-//     		'mobile_phone': /^((\+|00)33\s?|0)[679](\s?\d{2}){4}$/
-//     };
-//
-//     	$('input[type=text], input[type=email], textarea').on('keyup', function() {
-//     		var field = $(this);
-//     		var id = field.attr('id');
-//     		var value = field.val();
-//     		var regexp = REGEXP[id];
-//
-//     		if (regexp.test(value)) {
-//     			field.parent().removeClass('has-error').addClass('has-success');
-//     		} else {
-//     			field.parent().removeClass('has-success').addClass('has-error');
-//     		}
-//     	});
-// }());
 
 (function() {
     'use strict';
@@ -218,20 +195,37 @@ $(function (){
         header_top_row = document.querySelector('.header-top-row'),
         main_title = document.querySelector('.main-title'),
         text_block = document.querySelector('.text-block'),
-        scroll_down = document.querySelector('.scroll-down');
+        scroll_down = document.querySelector('.scroll-down'),
+        unvis = document.querySelectorAll('.unvis');
 
+    var width = window.innerWidth;
 
     document.addEventListener('DOMContentLoaded', function () {
 
-
-        main_title.classList.remove('unvis');
-
         setTimeout(function () {
+            main_title.classList.remove('unvis');
+        }, 200);
+
+        var header_anim_off = function () {
             document.body.classList.remove('ov-hid');
 
-            header_top_row.classList.remove('unvis');
-            text_block.classList.remove('unvis');
-            scroll_down.classList.remove('unvis');
-        }, 3000);
+            unvis.forEach(function (item) {
+                item.style.transition = "none";
+                item.classList.remove('unvis');
+            });
+        };
+        var header_anim_on = function () {
+
+            setTimeout(function () {
+                document.body.classList.remove('ov-hid');
+
+                unvis.forEach(function (item) {
+                    item.classList.remove('unvis');
+                });
+            }, 3000);
+        };
+
+        if (width < 801) header_anim_off();
+        else header_anim_on();
     });
 }());
