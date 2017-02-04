@@ -1,6 +1,6 @@
 .about-product {
     transition: .5s;
-    background: $black url(/dist/img/about-product--bg.jpg) center top no-repeat;
+    background: $black url(../img/about-product--bg.jpg) center top no-repeat;
 
     &.unvis {
         opacity: 0;

@@ -427,7 +427,7 @@ body {
         border-bottom-left-radius: 1px; }
 
 .about-company {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/dist/img/about-company--bg.jpg) center top/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/about-company--bg.jpg) center top/cover no-repeat;
   transition: .5s; }
   .about-company.unvis {
     opacity: 0; }
@@ -464,7 +464,7 @@ body {
 
 .about-product {
   transition: .5s;
-  background: #000 url(/dist/img/about-product--bg.jpg) center top no-repeat; }
+  background: #000 url(../img/about-product--bg.jpg) center top no-repeat; }
   .about-product.unvis {
     opacity: 0; }
   .about-product .content {
