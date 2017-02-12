@@ -81,7 +81,7 @@ body {
   width: 100%;
   opacity: 0;
   color: #222222;
-  transition: all .3s;
+  transition: .3s;
   font: 15px "Montserrat Light", Arial, sans-serif; }
 
 .clearfix:after {
@@ -147,7 +147,7 @@ body {
   width: 30%;
   margin-top: 33px;
   padding-right: 27px;
-  padding-bottom: 70px;
+  padding-bottom: 163px;
   border-right: 2px solid rgba(34, 34, 34, 0.7); }
   .main-left .info-block {
     position: relative;

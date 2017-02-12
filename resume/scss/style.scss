@@ -20,7 +20,7 @@ body {
     width: 100%;
     opacity: 0;
     color: $black222;
-    transition: all .3s;
+    transition: .3s;
     @include f-montserrat-light(15px);
 }
 
@@ -112,7 +112,7 @@ body {
     width: 30%;
     margin-top: 33px;
     padding-right: 27px;
-    padding-bottom: 70px;
+    padding-bottom: 163px;
     border-right: 2px solid rgba($black222, .7);
 
     .info-block {

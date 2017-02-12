@@ -1,21 +1,23 @@
 {
-  "name": "StasGuma_resume",
+  "name": "name",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "latest",
-    "gulp-rename": "latest",
-    "gulp-concat-css": "latest",
+	"gulp": "^3.9.1",
+	"gulp-autoprefixer": "^3.1.1",
     "gulp-clean-css": "latest",
     "gulp-concat": "latest",
-    "gulp-uncss": "latest",
-    "gulp-uglify": "latest",
-    "pump": "latest",
+    "gulp-connect": "^5.0.0",
     "gulp-imagemin": "latest",
-    "gulp.spritesmith": "latest",
-    "gulp-watch": "latest"
+    "gulp-live-server": "0.0.30",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "latest",
+    "gulp-rename": "latest",
+    "gulp-uglify": "latest",
+	"gulp-uncss": "latest",
+    "gulp-watch": "latest",
+    "pump": "latest"
   }
 }
