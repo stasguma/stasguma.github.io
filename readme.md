@@ -2,7 +2,7 @@
 
 latest
 
-![](https://im.ezgif.com/tmp/ezgif-1-6009b042a2.gif)
+![](https://im.ezgif.com/tmp/ezgif-1-bf3a39adb5.gif)
 
 1. [One](https://stasguma.github.io/practice/hipsweet/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/hipsweet)) - html5, scss, js, adaptive
 2. [Two](https://stasguma.github.io/practice/sevenhills/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/sevenhills)) - html5, scss, js, ajax, adaptive
