@@ -464,13 +464,13 @@ body {
       .header-icon ~ .header-icon {
         margin-left: 12px; } }
   .header-icon .header-icon__account {
-    background: url(/dist/img/icon-account.png) center -18px no-repeat; }
+    background: url(../img/icon-account.png) center -18px no-repeat; }
   .header-icon .header-icon__search {
-    background: url(/dist/img/icon-search.png) center -18px no-repeat; }
+    background: url(../img/icon-search.png) center -18px no-repeat; }
   .header-icon .header-icon__ingredients {
     width: 18px;
     height: 19px;
-    background: url(../../img/icon-ingredients.png) center -18px no-repeat; }
+    background: url(../img/icon-ingredients.png) center -18px no-repeat; }
 
 .slider {
   margin-top: 65px; }
