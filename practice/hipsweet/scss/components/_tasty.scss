@@ -1,0 +1,143 @@
+.tasty {
+    background: linear-gradient(to right, rgba(199,201,201,1) 0%, rgba(199,201,201,1) 20%, rgba(237,237,237,1) 62%, rgba(237,237,237,1) 100%);
+
+    .content {
+        padding-top: 116px;
+        padding-bottom: 118px;
+        background: url(../img/why-so-tasty--cook.png) right bottom/384px auto no-repeat;
+
+        @include laptop {
+            background: none;
+            padding: 60px 0;
+        };
+
+        @include tablet {padding: 40px 0;};
+        @include media600 {padding: 30px 0;};
+        @include phone {padding-bottom: 5px;};
+    }
+}
+
+.tasty-block {
+    display: inline-block;
+    width: 63%;
+    padding-left: 70px;
+
+    @include laptop {width: 80%;};
+    @include tablet {width: 85%;};
+
+    @include media600 {
+        width: 100%;
+        padding-left: 35px;
+    };
+
+    @include phone {padding-left: 22px;};
+
+    .title-block {
+        padding-right: 28%;
+        color: $title-blue;
+        font-size: rem(62px);
+        line-height: 1.2;
+
+        @include tablet {font-size: rem(50px);};
+        @include media600 {padding-right: 20%;};
+
+        @include phone {
+            padding-right: 10%;
+            font-size: rem(40px);
+        };
+    }
+
+    .text-block {
+        margin-top: 30px;
+        padding-right: 40%;
+        color: $text-grey;
+
+        p {line-height: 1.5;}
+
+        @include media600 {padding-right: 22%;};
+
+        @include phone {
+            padding-right: 6%;
+            font-size: rem(15px);
+        };
+    }
+}
+
+.advantages {
+    margin-top: 65px;
+    text-align: center;
+    font-size: 0;
+
+    @include laptop {margin-top: 40px;};
+}
+
+.advantage {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% / 3);
+    margin-bottom: 27px;
+
+    &:nth-of-type(3n+1) {margin-left: 0;}
+
+    &:nth-of-type(1) {
+        img {
+            max-width: 98px;
+            margin-left: -6px;
+        }
+    };
+    &:nth-of-type(2) {
+        img {
+            max-width: 118px;
+            margin-left: -13px;
+        }
+    };
+    &:nth-of-type(3) {
+        img {
+            max-width: 106px;
+            margin-top: -4px;
+            margin-left: -10px;
+        }
+    };
+
+    @include phone {
+        width: 173px;
+        margin-bottom: 38px;
+    };
+
+    @include media360 {width: 167px;};
+}
+
+.advantage__img-block {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    background-color: rgba(#000, .2);
+
+    @include phone {margin: 0 auto;};
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.advantage__discription {
+    margin-top: 17px;
+    color: $text-grey;
+    text-align: left;
+    @include alsmalina(16px);
+    font-size: rem(16px);
+
+    @include laptop {padding-right: 32px;};
+    @include tablet {font-size: rem(14px);};
+
+    @include phone {
+        padding-left: 27px;
+        padding-right: 0;
+    };
+
+    @include media360 {padding-left: 40px;};
+}

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipsweet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="dist/css/main.min.css">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="dist/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="dist/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="dist/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="dist/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="dist/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="dist/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="dist/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="dist/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="dist/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="dist/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="dist/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--[if IE]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="content">
+            <div class="top-row">
+                <div class="logo-block">
+                    <a href="#">
+                        <img src="img/logo.png" alt="лого" class="logo-block__img">
+                        <h3 class="logo-block__title">Hipsweet</h3>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Сладости <span>‹</span></a>
+                            <ul class="dropdown">
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Торты</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Кексы</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Мафины</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Торты</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Торты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Доставка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Компания</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Команда <span>‹</span></a>
+                            <ul class="dropdown">
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Тони Ройтерс</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Ричард Джейс</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Марти Модстер</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Тони Ройтерс</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Ричард Джейс</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Марти Модстер</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="#" class="dropdown__link">Тони Ройтерс</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="bars-menu">
+                        <div class="bars-menu__bars">
+                            <div class="bars-menu__bar"></div>
+                            <div class="bars-menu__bar"></div>
+                            <div class="bars-menu__bar"></div>
+                        </div>
+                        <ul class="bars-menu__list">
+                            <li class="bars-menu__item">
+                                <a class="bars-menu__link">Сладости <span>‹</span></a>
+                                <ul class="bars-menu__dropdown">
+                                    <li class="bars-menu__dropdown-item">
+                                        <a href="#" class="bars-menu__dropdown-link">Торты</a>
+                                    </li>
+                                    <li class="bars-menu__dropdown-item">
+                                        <a href="#" class="bars-menu__dropdown-link">Кексы</a>
+                                    </li>
+                                    <li class="bars-menu__dropdown-item">
+                                        <a href="#" class="bars-menu__dropdown-link">Мафины</a>
+                                    </li>
+                                    <li class="bars-menu__dropdown-item">
+                                        <a href="#" class="bars-menu__dropdown-link">Торты</a>
+                                    </li>
+                                    <li class="bars-menu__dropdown-item">
+                                        <a href="#" class="bars-menu__dropdown-link">Торты</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="bars-menu__item">
+                                <a href="#" class="bars-menu__link">Доставка</a>
+                            </li>
+                            <li class="bars-menu__item">
+                                <a href="#" class="bars-menu__link">Компания</a>
+                            </li>
+                            <li class="bars-menu__item">
+                                <a  class="bars-menu__link">Команда <span>‹</span></a>
+                                <ul class="bars-menu__dropdown">
+                                    <li class="bars-menu__dropdown-item">
+                                        <a href="#" class="bars-menu__dropdown-link">Тони Ройтерс</a>
+                                    </li>
+                                    <li class="bars-menu__dropdown-item">
+                                        <a href="#" class="bars-menu__dropdown-link">Ричард Джейс</a>
+                                    </li>
+                                    <li class="bars-menu__dropdown-item">
+                                        <a href="#" class="bars-menu__dropdown-link">Марти Модстер</a>
+                                    </li>
+                                    <li class="bars-menu__dropdown-item">
+                                        <a href="#" class="bars-menu__dropdown-link">Тони Ройтерс</a>
+                                    </li>
+                                    <li class="bars-menu__dropdown-item">
+                                        <a href="#" class="bars-menu__dropdown-link">Ричард Джейс</a>
+                                    </li>
+                                    <li class="bars-menu__dropdown-item">
+                                        <a href="#" class="bars-menu__dropdown-link">Марти Модстер</a>
+                                    </li>
+                                    <li class="bars-menu__dropdown-item">
+                                        <a href="#" class="bars-menu__dropdown-link">Тони Ройтерс</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="account-block">
+                    <button type="button" class=" btn header-icon">
+                        <span class="header-icon__account"></span>
+                    </button>
+                    <button type="button" class="btn header-icon">
+                        <span class="header-icon__search"></span>
+                    </button>
+                </div>
+            </div>
+            <div id="slider" class="slider">
+                <div class="slide">
+                    <div class="add-info">
+                        <div class="ingredients">
+                            <button type="button" class="btn header-icon ingredients__btn">
+                                <span class="header-icon__ingredients"></span>
+                            </button>
+                            <div class="text-block">
+                                <p>Ингредиенты</p>
+                            </div>
+                            <ul class="dd-ingredients">
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon flour"></span>
+                                    <p class="dd-ingredients__text">мука пшеничная</p>
+                                    <span class="dd-ingredients__weight">200 г.</span>
+                                </li>
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon eggs"></span>
+                                    <p class="dd-ingredients__text">яйце продукты</p>
+                                    <span class="dd-ingredients__weight">3 шт.</span>
+                                </li>
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon sugar"></span>
+                                    <p class="dd-ingredients__text">сахарный песок</p>
+                                    <span class="dd-ingredients__weight">20 г.</span>
+                                </li>
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon butter"></span>
+                                    <p class="dd-ingredients__text">масло сливочное</p>
+                                    <span class="dd-ingredients__weight">50 г.</span>
+                                </li>
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon milk"></span>
+                                    <p class="dd-ingredients__text">молоко сгущеное</p>
+                                    <span class="dd-ingredients__weight">100 г.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shelf-life">
+                            <p class="shelf-life__text">Срок хранения: <span>120 часов</span></p>
+                        </div>
+                    </div>
+                    <div class="img-block">
+                        <img src="img/slider-pastry.png" alt="pastry" class="img-block__img">
+                    </div>
+                    <div class="desciption">
+                        <div class="title-block">
+                            <h2>Sweet Cupcake</h2>
+                        </div>
+                        <div class="text-block">
+                            <p>В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури</p>
+                        </div>
+                        <div class="description-bottom">
+                            <p class="description-bottom__price">100 <span>грн</span></p>
+                            <button type="button" class="btn btn-primary">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="background-text">
+                        <p>Пирожинка</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="add-info">
+                        <div class="ingredients">
+                            <button type="button" class="btn header-icon ingredients__btn">
+                                <span class="header-icon__ingredients"></span>
+                            </button>
+                            <div class="text-block">
+                                <p>Ингредиенты</p>
+                            </div>
+                            <ul class="dd-ingredients">
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon flour"></span>
+                                    <p class="dd-ingredients__text">мука пшеничная</p>
+                                    <span class="dd-ingredients__weight">200 г.</span>
+                                </li>
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon eggs"></span>
+                                    <p class="dd-ingredients__text">яйце продукты</p>
+                                    <span class="dd-ingredients__weight">3 шт.</span>
+                                </li>
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon sugar"></span>
+                                    <p class="dd-ingredients__text">сахарный песок</p>
+                                    <span class="dd-ingredients__weight">20 г.</span>
+                                </li>
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon butter"></span>
+                                    <p class="dd-ingredients__text">масло сливочное</p>
+                                    <span class="dd-ingredients__weight">50 г.</span>
+                                </li>
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon milk"></span>
+                                    <p class="dd-ingredients__text">молоко сгущеное</p>
+                                    <span class="dd-ingredients__weight">100 г.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shelf-life">
+                            <p class="shelf-life__text">Срок хранения: <span>120 часов</span></p>
+                        </div>
+                    </div>
+                    <div class="img-block">
+                        <img src="img/slider-pastry.png" alt="pastry" class="img-block__img">
+                    </div>
+                    <div class="desciption">
+                        <div class="title-block">
+                            <h2>Sweet Cupcake</h2>
+                        </div>
+                        <div class="text-block">
+                            <p>В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури</p>
+                        </div>
+                        <div class="description-bottom">
+                            <p class="description-bottom__price">100 <span>грн</span></p>
+                            <button type="button" class="btn btn-primary">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="background-text">
+                        <p>Пирожинка</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="add-info">
+                        <div class="ingredients">
+                            <button type="button" class="btn header-icon ingredients__btn">
+                                <span class="header-icon__ingredients"></span>
+                            </button>
+                            <div class="text-block">
+                                <p>Ингредиенты</p>
+                            </div>
+                            <ul class="dd-ingredients">
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon flour"></span>
+                                    <p class="dd-ingredients__text">мука пшеничная</p>
+                                    <span class="dd-ingredients__weight">200 г.</span>
+                                </li>
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon eggs"></span>
+                                    <p class="dd-ingredients__text">яйце продукты</p>
+                                    <span class="dd-ingredients__weight">3 шт.</span>
+                                </li>
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon sugar"></span>
+                                    <p class="dd-ingredients__text">сахарный песок</p>
+                                    <span class="dd-ingredients__weight">20 г.</span>
+                                </li>
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon butter"></span>
+                                    <p class="dd-ingredients__text">масло сливочное</p>
+                                    <span class="dd-ingredients__weight">50 г.</span>
+                                </li>
+                                <li class="dd-ingredients__item">
+                                    <span class="dd-ingredients__icon milk"></span>
+                                    <p class="dd-ingredients__text">молоко сгущеное</p>
+                                    <span class="dd-ingredients__weight">100 г.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shelf-life">
+                            <p class="shelf-life__text">Срок хранения: <span>120 часов</span></p>
+                        </div>
+                    </div>
+                    <div class="img-block">
+                        <img src="img/slider-pastry.png" alt="pastry" class="img-block__img">
+                    </div>
+                    <div class="desciption">
+                        <div class="title-block">
+                            <h2>Sweet Cupcake</h2>
+                        </div>
+                        <div class="text-block">
+                            <p>В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури</p>
+                        </div>
+                        <div class="description-bottom">
+                            <p class="description-bottom__price">100 <span>грн</span></p>
+                            <button type="button" class="btn btn-primary">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="background-text">
+                        <p>Пирожинка</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- TASTY -->
+    <section class="tasty">
+        <div class="content">
+            <div class="tasty-block">
+                <div class="title-block">
+                    <h2>Почему так вкусно?</h2>
+                </div>
+                <div class="text-block">
+                    <p>В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом (калоризатор). Заглазировано шоколадной глазурью с нанесением сеточки из белой шоколадной глазури</p>
+                </div>
+                <div class="advantages">
+                    <figure class="advantage">
+                        <div class="advantage__img-block">
+                            <img src="dist/img/icon-hat.png" alt="hat">
+                        </div>
+                        <figcaption class="advantage__discription">Лучшие повара своего дела</figcaption>
+                    </figure>
+                    <figure class="advantage">
+                        <div class="advantage__img-block">
+                            <img src="dist/img/icon-foliage.png" alt="foliage">
+                        </div>
+                        <figcaption class="advantage__discription">Свежие ингредиенты</figcaption>
+                    </figure>
+                    <figure class="advantage">
+                        <div class="advantage__img-block">
+                            <img src="dist/img/icon-heart.png" alt="heart">
+                        </div>
+                        <figcaption class="advantage__discription">Приготовлено с любовью</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PRODUCTS -->
+    <section class="products">
+        <div class="content">
+            <div class="title-block">
+                <h2>Мы поставляем</h2>
+            </div>
+            <div class="text-block">
+                <p>Также мы делаем выпечку под заказ для различных праздников и банкетов. Заказать индивидуальную выпечку вы можете заполнив <a class="js-scroll">форму</a>. После с Вами свяжется один из наших поваров и обсудит заказ более детально.</p>
+            </div>
+            <div class="products-block">
+                <div class="product">
+                    <div class="product__img-container">
+                        <img src="dist/img/cake.png" alt="" class="product__img">
+                    </div>
+                    <dl>
+                        <dt class="product__title">Торты</dt>
+                        <dd class="product__description">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</dd>
+                    </dl>
+                </div>
+                <div class="product">
+                    <div class="product__img-container">
+                        <img src="dist/img/cookie.png" alt="" class="product__img"></div>
+                    <dl>
+                        <dt class="product__title">Печенье</dt>
+                        <dd class="product__description">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</dd>
+                    </dl>
+                </div>
+                <div class="product">
+                    <div class="product__img-container">
+                        <img src="dist/img/doughnut.png" alt="" class="product__img">
+                    </div>
+                    <dl>
+                        <dt class="product__title">Пончики</dt>
+                        <dd class="product__description">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</dd>
+                    </dl>
+                </div>
+                <div class="product">
+                    <div class="product__img-container">
+                        <img src="dist/img/roll.png" alt="" class="product__img">
+                    </div>
+                    <dl>
+                        <dt class="product__title">Рулеты</dt>
+                        <dd class="product__description">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</dd>
+                    </dl>
+                </div>
+                <div class="product">
+                    <div class="product__img-container">
+                        <img src="dist/img/zephyr.png" alt="" class="product__img">
+                    </div>
+                    <dl>
+                        <dt class="product__title">Зефир</dt>
+                        <dd class="product__description">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</dd>
+                    </dl>
+                </div>
+                <div class="product">
+                    <div class="product__img-container">
+                        <img src="dist/img/chocolate.png" alt="" class="product__img">
+                    </div>
+                    <dl>
+                        <dt class="product__title">Шоколад</dt>
+                        <dd class="product__description">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</dd>
+                    </dl>
+                </div>
+                <div class="product">
+                    <div class="product__img-container">
+                        <img src="dist/img/muffin.png" alt="" class="product__img">
+                    </div>
+                    <dl>
+                        <dt class="product__title">Пирожные</dt>
+                        <dd class="product__description">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</dd>
+                    </dl>
+                </div>
+                <div class="product">
+                    <div class="product__img-container">
+                        <img src="dist/img/candy.png" alt="" class="product__img">
+                    </div>
+                    <dl>
+                        <dt class="product__title">Конфеты</dt>
+                        <dd class="product__description">Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TEAM -->
+    <section class="team">
+        <div class="content">
+            <div class="tabs">
+                <h2 class="title-block">Наша команда</h2>
+                <ul class="tabs__controls">
+                    <li class="tabs__control-item">
+                        <a href="#" class="tabs__control-link active">
+                            <h3 class="title-block">Тони Ройстер</h3>
+                            <p>Главный шеф повар</p>
+                        </a>
+                    </li>
+                    <li class="tabs__control-item">
+                        <a href="#" class="tabs__control-link">
+                            <h3 class="title-block">Ричард Джейс</h3>
+                            <p>Главный кондитер</p>
+                        </a>
+                    </li>
+                    <li class="tabs__control-item">
+                        <a href="#" class="tabs__control-link">
+                            <h3 class="title-block">Майти Модрес</h3>
+                            <p>Дегустатор</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="tabs__list">
+                    <li class="tabs__item active">
+                        <div class="tabs__bio-block">
+                            <p>Тони родился в Ленинграде  в 1985 году. Учился в Морском техническом колледже по специальности «судовой повар». В кулинарную жизнь окунулся в 2005, когда попал к Фабрицио Фатуччи (ресторан Sculptors) и стал его правой рукой. Нередко они вместе лично обслуживали Президента России Дмитрия Медведева на открытых и закрытых мероприятия.</p>
+                            <p>Тони неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.</p>
+                        </div>
+                        <img class="tabs__photo" src="dist/img/our-team--cook.png" alt="">
+                        <div class="tabs__bio-block">
+                            <p>Шеф-повар является постоянным участником различных номинаций и фестивалей: выступал в Париже на мировом фестивале Omnivore Paris в команде с Иваном Березуцким; представлял Россию на неделе русской кухни в Эстонии; регулярно участвовал в «Мадрид Фьюжн», съезде шеф-поваров со всего мира, где представляются новые гастрономические техники. В 2012 г. на Экономическом форуме обеспечивал работу кухни для высокопоставленных лиц. Не так давно был участником экспедиции на Белое море, где узнал все о региональных продуктах и особенностях кухни. В 2013 участвовал в фестивале «Северная кухня»; выезжал на гастроли в Москву, открывая «pop-up» проект DOOR 19.</p>
+                            <p>Тони занимается развитием и инновациями в русской гастрономии, а также увлекается искусством — пишет картины.</p>
+                        </div>
+                    </li>
+                    <li class="tabs__item">
+                        <div class="tabs__bio-block">
+                            <p>22222222 2 222 2 222 222 2222 22222 222 2222 222 Морском техническом колледже по специальности «судовой повар». В кулинарную жизнь окунулся в 2005, когда попал к Фабрицио Фатуччи (ресторан Sculptors) и стал его правой рукой. Нередко они вместе лично обслуживали Президента России Дмитрия Медведева на открытых и закрытых мероприятия.</p>
+                            <p>Тони неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.</p>
+                        </div>
+                        <img class="tabs__photo" src="dist/img/our-team--cook.png" alt="">
+                        <div class="tabs__bio-block">
+                            <p>Шеф-повар является постоянным участником различных номинаций и фестивалей: выступал в Париже на мировом фестивале Omnivore Paris в команде с Иваном Березуцким; представлял Россию на неделе русской кухни в Эстонии; регулярно участвовал в «Мадрид Фьюжн», съезде шеф-поваров со всего мира, где представляются новые гастрономические техники. В 2012 г. на Экономическом форуме обеспечивал работу кухни для высокопоставленных лиц. Не так давно был участником экспедиции на Белое море, где узнал все о региональных продуктах и особенностях кухни. В 2013 участвовал в фестивале «Северная кухня»; выезжал на гастроли в Москву, открывая «pop-up» проект DOOR 19.</p>
+                            <p>Тони занимается развитием и инновациями в русской гастрономии, а также увлекается искусством — пишет картины.</p>
+                        </div>
+                    </li>
+                    <li class="tabs__item">
+                        <div class="tabs__bio-block">
+                            <p>3333333 3 333333 3333 333 33333 33333 3333 3 33 3333333 3333 3333 33 3 333333. В кулинарную жизнь окунулся в 2005, когда попал к Фабрицио Фатуччи (ресторан Sculptors) и стал его правой рукой. Нередко они вместе лично обслуживали Президента России Дмитрия Медведева на открытых и закрытых мероприятия.</p>
+                            <p>Тони неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.</p>
+                        </div>
+                        <img class="tabs__photo" src="dist/img/our-team--cook.png" alt="">
+                        <div class="tabs__bio-block">
+                            <p>Шеф-повар является постоянным участником различных номинаций и фестивалей: выступал в Париже на мировом фестивале Omnivore Paris в команде с Иваном Березуцким; представлял Россию на неделе русской кухни в Эстонии; регулярно участвовал в «Мадрид Фьюжн», съезде шеф-поваров со всего мира, где представляются новые гастрономические техники. В 2012 г. на Экономическом форуме обеспечивал работу кухни для высокопоставленных лиц. Не так давно был участником экспедиции на Белое море, где узнал все о региональных продуктах и особенностях кухни. В 2013 участвовал в фестивале «Северная кухня»; выезжал на гастроли в Москву, открывая «pop-up» проект DOOR 19.</p>
+                            <p>Тони занимается развитием и инновациями в русской гастрономии, а также увлекается искусством — пишет картины.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="purchase-block">
+                <div class="container">
+                    <h2 class="title-block">Закажи сейчас</h2>
+                </div>
+                <div class="container">
+                    <form action="" class="form">
+                        <div class="form__field">
+                            <input type="text" name="name">
+                            <label for="">Введите ваше Имя</label>
+                        </div>
+                        <div class="form__field">
+                            <input type="email" name="email">
+                            <label for="">Введите ваш Email</label>
+                        </div>
+                        <div class="form__field">
+                            <input class="js-mask" type="text" name="number">
+                            <label for="">+380 (__) ___-__-__</label>
+                        </div>
+                        <div class="form__field">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="callback">Заказать обратный звонок
+                            </label>
+                        </div>
+                        <button class="btn form__submit">
+                            <svg viewBox="0 0 76 76">
+                                <g>
+                                    <polygon points="36.586,0 36.582,19.137 1.5,19.133 1.5,56.898 36.586,56.898 36.582,76 74.5,37.998         "/>
+                                </g>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="content">
+            <div class="title-block">
+                <h2>Часто задаваемые вопросы</h2>
+            </div>
+            <ol class="accordion">
+                <li class="accordion__item">
+                    <h3 class="accordion__question">Сколько по времени курьер доставляет заказ?</h3>
+                    <p class="accordion__answer">В античное время и средние века курьерами называли посыльных, конных гонцов, доставлявших секретную и дипломатическую почту. ”аковой, например, была введенная в Римской империи Августом государственная курьерская служба, называвшаяся cursus publicus. В допетровской России рассыльные (гонцы) были служилыми людьми, «по прибору» и содержались за счет государственной казны. Особая курьерская почтовая служба была основана в 1701 году Петром I на Смоленском и Архангельском трактах для доставки чрезвычайных скорых посылок с царскими грамотами. Военных посыльных называют фельдъегерями, (начиная с середины XVIII века), а доставляющих дипломатическую почту — дипкурьерами.</p>
+                </li>
+                <li class="accordion__item">
+                    <h3 class="accordion__question">Если курьер опоздал, будут ли какие то бонусы?</h3>
+                    <p class="accordion__answer">В античное время и средние века курьерами называли посыльных, конных гонцов, доставлявших секретную и дипломатическую почту. ”аковой, например, была введенная в Римской империи Августом государственная курьерская служба, называвшаяся cursus publicus. В допетровской России рассыльные (гонцы) были служилыми людьми, «по прибору» и содержались за счет государственной казны. Особая курьерская почтовая служба была основана в 1701 году Петром I на Смоленском и Архангельском трактах для доставки чрезвычайных скорых посылок с царскими грамотами. Военных посыльных называют фельдъегерями, (начиная с середины XVIII века), а доставляющих дипломатическую почту — дипкурьерами.</p>
+                </li>
+                <li class="accordion__item">
+                    <h3 class="accordion__question">Добавляете ли вы какие либо консерванты в вашу продукцию?</h3>
+                    <p class="accordion__answer">В античное время и средние века курьерами называли посыльных, конных гонцов, доставлявших секретную и дипломатическую почту. ”аковой, например, была введенная в Римской империи Августом государственная курьерская служба, называвшаяся cursus publicus. В допетровской России рассыльные (гонцы) были служилыми людьми, «по прибору» и содержались за счет государственной казны. Особая курьерская почтовая служба была основана в 1701 году Петром I на Смоленском и Архангельском трактах для доставки чрезвычайных скорых посылок с царскими грамотами. Военных посыльных называют фельдъегерями, (начиная с середины XVIII века), а доставляющих дипломатическую почту — дипкурьерами.</p>
+                </li>
+                <li class="accordion__item">
+                    <h3 class="accordion__question">Как долго готовиться у вас индивидуальный торт?</h3>
+                    <p class="accordion__answer">В античное время и средние века курьерами называли посыльных, конных гонцов, доставлявших секретную и дипломатическую почту. ”аковой, например, была введенная в Римской империи Августом государственная курьерская служба, называвшаяся cursus publicus. В допетровской России рассыльные (гонцы) были служилыми людьми, «по прибору» и содержались за счет государственной казны. Особая курьерская почтовая служба была основана в 1701 году Петром I на Смоленском и Архангельском трактах для доставки чрезвычайных скорых посылок с царскими грамотами. Военных посыльных называют фельдъегерями, (начиная с середины XVIII века), а доставляющих дипломатическую почту — дипкурьерами.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <!-- MAP -->
+    <section id="map" class="map"></section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="content">
+            <div class="logo-block logo-block--width">
+                <a href="#">
+                    <img src="img/logo.png" alt="лого" class="logo-block__img logo-block__img--size">
+                    <h3 class="logo-block__title logo-block__title--fs">Hipsweet</h3>
+                </a>
+            </div>
+            <div class="address-col">
+                <address>г. Киев, ул. Большая Васильковская, 29</address>
+                <p class="copyright">© 2016 Все права защищены.</p>
+            </div>
+            <div class="socials-col">
+                <a href="#">
+                    <svg class="icon icon--fb">
+                        <use xlink:href="dist/img/svg/sprite-socials.svg#icon-fb"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon icon--instagram">
+                        <use xlink:href="dist/img/svg/sprite-socials.svg#icon-instagram"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon icon--ok">
+                        <use xlink:href="dist/img/svg/sprite-socials.svg#icon-ok"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon icon--twitter">
+                        <use xlink:href="dist/img/svg/sprite-socials.svg#icon-twitter"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon icon--vk">
+                        <use xlink:href="dist/img/svg/sprite-socials.svg#icon-vk"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
+    <script src="dist/js/smoothscroll-polyfill.min.js"></script>
+    <script defer src="dist/js/main.min.js"></script>
+</body>
+</html>

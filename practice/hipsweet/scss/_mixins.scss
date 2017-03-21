@@ -1,0 +1,67 @@
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@function rem($px) {
+	@return $px / 15px + 0rem;
+}
+
+@mixin desktop {
+	@media screen and (max-width: 1150px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (max-width: 800px) {
+		@content;
+	}
+}
+
+@mixin media600 {
+	@media screen and (max-width: 600px) {
+		@content;
+	}
+}
+
+@mixin phone {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}
+
+@mixin media360 {
+	@media screen and (max-width: 360px) {
+		@content;
+	}
+}
+
+@mixin alsmalina($size) {
+	font: rem($size) "ALSMalina", Arial,sans-serif;
+}
+@mixin arial($size) {
+	font: rem($size) "Arial", Arial,sans-serif;
+}
+@mixin helvetica($size) {
+	font: rem($size) "Helvetica", Arial,sans-serif;
+}
+@mixin myriadpro($size) {
+	font: rem($size) "MyriadPro", Arial,sans-serif;
+}
+
+%btn {
+	padding: 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+};

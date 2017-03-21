@@ -1,0 +1,61 @@
+html {
+	font-size: 15px;
+}
+
+body {
+	min-width: 320px;
+	color: $white;
+	font-family: Arial;
+}
+
+.content {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.btn {
+	@extend %btn;
+}
+
+.btn-primary {
+	display: inline-block;
+	width: 107px;
+	height: 40px;
+	border-radius: 20px;
+	border: 2px solid $yellow;
+	background-color: $yellow;
+	color: #a4151c;
+	@include arial(15px);
+	font-size: rem(15px);
+	transition: .3s;
+
+	&:hover {
+		color: $yellow;
+		background-color: transparent;
+	}
+
+	@include tablet {
+		width: 92px;
+		height: 35px;
+	};
+
+	@include media600 {
+		width: 84px;
+		height: 30px;
+		font-size: rem(14px);
+	};
+
+	@include media360 {
+		width: 77px;
+		height: 26px;
+	};
+}
+
+.title-block {
+	font-family: "ALSMalina";
+}
+
+.text-block {
+	@include arial(15px);
+	font-size: rem(15px);
+}

@@ -1,0 +1,150 @@
+.faq {
+    background: linear-gradient(45deg,rgba(210,54,58,.9),rgba(169,26,31,.9) 100%),
+                url(../img/faq-bg--muffin.jpg) bottom left/150px auto no-repeat,
+                url(../img/faq-bg--chocolate.jpg) top left no-repeat,
+                url(../img/faq-bg--croissant.jpg) top right/auto 202px no-repeat,
+                url(../img/faq-bg--muffin2.jpg) bottom right no-repeat,
+                url(../img/faq-bg--chocolate2.jpg) bottom no-repeat,
+                url(../img/faq-bg--cookies.jpg) 13% 31%/auto 183px no-repeat,
+                url(../img/faq-bg--caramel.jpg) 68% top/264px auto no-repeat;
+
+    @include desktop {
+        background: linear-gradient(45deg,rgba(210,54,58,.9),rgba(169,26,31,.9) 100%),
+                    url(../img/faq-bg--muffin.jpg) bottom left/147px auto no-repeat,
+                    url(../img/faq-bg--chocolate.jpg) top left/auto 148px no-repeat,
+                    url(../img/faq-bg--croissant.jpg) top right/auto 196px no-repeat,
+                    url(../img/faq-bg--muffin2.jpg) bottom right no-repeat,
+                    url(../img/faq-bg--chocolate2.jpg) bottom no-repeat,
+                    url(../img/faq-bg--cookies.jpg) 13% 31%/auto 188px no-repeat,
+                    url(../img/faq-bg--caramel.jpg) 65% top/218px auto no-repeat;
+    };
+
+    @include laptop {
+        background: linear-gradient(45deg,rgba(210,54,58,.9),rgba(169,26,31,.9) 100%),
+                    url(../img/faq-bg--muffin.jpg) bottom left/126px auto no-repeat,
+                    url(../img/faq-bg--chocolate.jpg) top left/auto 127px no-repeat,
+                    url(../img/faq-bg--croissant.jpg) top right/auto 166px no-repeat,
+                    url(../img/faq-bg--muffin2.jpg) bottom right/171px auto no-repeat,
+                    url(../img/faq-bg--chocolate2.jpg) bottom no-repeat,
+                    url(../img/faq-bg--cookies.jpg) 13% 31%/auto 164px no-repeat,
+                    url(../img/faq-bg--caramel.jpg) 56% top/181px auto no-repeat;
+    };
+
+    @include tablet {
+        background: linear-gradient(45deg,rgba(210,54,58,.9),rgba(169,26,31,.9) 100%),
+                    url(../img/faq-bg--muffin.jpg) bottom left/133px auto no-repeat,
+                    url(../img/faq-bg--chocolate.jpg) top left/auto 106px no-repeat,
+                    url(../img/faq-bg--croissant.jpg) top right/auto 143px no-repeat,
+                    url(../img/faq-bg--muffin2.jpg) bottom right/169px auto no-repeat;
+    };
+
+    @include phone {
+        background: linear-gradient(45deg,rgba(210,54,58,.9),rgba(169,26,31,.9) 100%),
+                    url(../img/faq-bg--muffin.jpg) bottom left/97px auto no-repeat,
+                    url(../img/faq-bg--chocolate.jpg) top left/auto 92px no-repeat,
+                    url(../img/faq-bg--croissant.jpg) top right/auto 97px no-repeat,
+                    url(../img/faq-bg--muffin2.jpg) bottom right/118px auto no-repeat;
+    };
+
+    .content {
+        padding-top: 103px;
+        padding-bottom: 98px;
+
+        @include tablet {
+            padding-top: 63px;
+            padding-bottom: 33px;
+        };
+    }
+
+    .title-block {
+        color: $white;
+        text-align: center;
+        font-size: rem(40px);
+
+        @include tablet {font-size: rem(37px);};
+
+        @include media600 {
+            font-size: rem(38px);
+            line-height: 1.3;
+        };
+
+        @include phone {font-size: rem(35px);};
+        @include media360 {font-size: rem(29px);};
+    }
+}
+
+.accordion {
+    width: 80%;
+    margin: 57px auto 0;
+    list-style-type: decimal;
+    font-size: rem(22px);
+
+    @include tablet {
+        max-width: 90%;
+        width: auto;
+        margin-top: 30px;
+    };
+
+    @include media600 {
+        max-width: 95%;
+    };
+}
+
+.accordion__item {
+    margin-bottom: 34px;
+
+    @include media600 {
+        list-style-position: inside;
+    };
+
+    @include phone {
+        margin-bottom: 20px;
+        list-style: none;
+    };
+
+    &.active {
+        color: #ffb100;
+
+        .accordion__question {
+            padding-bottom: 0;
+            border-bottom: 0;
+            color: #ffb100;
+        }
+
+        .accordion__answer {
+            max-height: 600px;
+            margin-top: 19px;
+            transition: max-height 1s;
+
+            @include phone {
+                margin-top: 10px
+            };
+        }
+    }
+}
+
+.accordion__question {
+    display: inline-block;
+    padding-bottom: 8px;
+    cursor: pointer;
+    border-bottom: 2px dashed $white;
+    color: $white;
+    @include arial(22px);
+    font-size: rem(22px);
+
+    @include media600 {font-size: rem(19px);};
+    @include phone {font-size: rem(18px);};
+}
+
+.accordion__answer {
+    overflow: hidden;
+    max-height: 0;
+    margin-left: 43px;
+    color: $white;
+    @include arial(15px);
+    font-size: rem(15px);
+    transition: max-height 1s, margin-top 1s;
+
+    @include media600 {font-size: rem(17px);};
+    @include phone {margin-left: rem(25px);};
+}

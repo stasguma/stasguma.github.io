@@ -1,0 +1,11 @@
+@import "reset", "fonts";
+
+@import "vars", "mixins", "base";
+
+@import "scss/components/header",
+		"scss/components/tasty",
+		"scss/components/products",
+		"scss/components/team",
+		"scss/components/faq",
+		"scss/components/map",
+		"scss/components/footer";

@@ -1,0 +1,8 @@
+#map {
+    width: 100%;
+    height: 536px;
+
+    @include phone {
+        height: 450px;
+    };
+}
