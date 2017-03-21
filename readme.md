@@ -20,4 +20,6 @@ latest
 
 5. [Five](https://stasguma.github.io/GoIT/JavaScript/lesson%2019-20/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/GoIT/JavaScript/lesson%2019-20)) - html5, css3, js, jquery, lodash template engine
 
+![](https://im.ezgif.com/tmp/ezgif-1-3a5e9360fd.gif)
+
 older
