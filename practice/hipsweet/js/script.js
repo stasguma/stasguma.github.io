@@ -174,7 +174,7 @@ window.addEventListener('DOMContentLoaded', function () {
             },
             {
                 iconLayout: 'default#image',
-                iconImageHref: 'dist/img/marker.png',
+                iconImageHref: '/dist/img/marker.png',
                 iconImageSize: [42, 59],
                 iconImageOffset: [-18, -65]
             });
