@@ -1019,7 +1019,7 @@ img.img-block__img {
         max-width: 169px; } }
     @media screen and (max-width: 360px) {
       .product:nth-of-type(2) img {
-        min-width: 160px; } }
+        max-width: 160px; } }
   .product:nth-of-type(3) img {
     max-width: 165px; }
     @media screen and (max-width: 800px) {
