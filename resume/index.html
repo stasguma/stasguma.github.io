@@ -3,161 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gumenyuk Oleksandr || Resume</title>
-    <link rel="stylesheet" href="dist/css/main.css">
+    <base href="https://stasguma.github.io/resume/" />
+    <title>Oleksandr Gumenyuk || Resume</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans:300" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="dist/css/animate.min.css">
+    <link rel="stylesheet" href="dist/css/main.css">
     <!--[if IE]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body class="loading">
     <div class="wrapper">
         <header class="header">
             <div class="header__bg"></div>
-            <h1 class="header__name">GUMENYUK   O.</h1>
-            <h2 class="header__position">JUNIOR FRONT-END DEVELOPER</h2>
-            <div class="contacts">
-                <ul class="contacts__wrapper">
-                    <li class="info">
-                        <a class="info__phone" href="tel:+380508008686">
-                            <i class="fa fa-phone fa-lg" aria-hidden="true"></i>&nbsp;+38 (050) 800 86 86
-                        </a>
-                    </li>
-                    <li class="info">
-                        <a class="info__mail" href="mailto:aleks.gumenyuk@gmail.com">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;aleks.gumenyuk@gmail.com
-                        </a>
-                    </li>
-                    <li class="info">
-                        <a class="info__skype" href="skype:aleks.gumenyuk?call">
-                            <i class="fa fa-skype" aria-hidden="true"></i>&nbsp;aleks.gumenyuk
-                        </a>
-                    </li>
-                    <li class="info">
-                        <span class="info__location">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Kyiv, Ukraine
-                        </span>
-                    </li>
-                </ul>
+            <div class="header__name loading">
+                <div class="border-lines">
+                    <span class="border-lines__top"></span>
+                    <span class="border-lines__right"></span>
+                    <span class="border-lines__bottom"></span>
+                    <span class="border-lines__left"></span>
+                </div>
+                <h1>GUMENYUK   O.</h1>
             </div>
+            <div class="header__position loading">
+                <h2>Junior front-end developer</h2>
+            </div>
+            <ul class="header__contacts loading">
+                <li class="header__contacts-item">
+                    <a class="header__contacts-link" href="tel:+380508008686">
+                        <i class="fa fa-phone fa-lg" aria-hidden="true"></i>&nbsp;+38 (050) 800 86 86
+                    </a>
+                </li>
+                <li class="header__contacts-item">
+                    <a class="header__contacts-link" href="mailto:aleks.gumenyuk@gmail.com">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;aleks.gumenyuk@gmail.com
+                    </a>
+                </li>
+                <li class="header__contacts-item">
+                    <a class="header__contacts-link" href="skype:aleks.gumenyuk?call">
+                        <i class="fa fa-skype" aria-hidden="true"></i>&nbsp;aleks.gumenyuk
+                    </a>
+                </li>
+                <li class="header__contacts-item">
+                    <span class="header__contacts-link">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Kyiv, Ukraine
+                    </span>
+                </li>
+            </ul>
         </header>
-        <div class="clearfix">
-            <div class="main-left">
-                <section class="info-block wow fadeInLeft" data-wow-offset="100" data-wow-delay="1s">
-                    <h3 class="info-block__title">About Me</h3>
-                    <div class="inner-left">
-                        <h4 class="inner-left__title">Name:</h4>
-                        <h4 class="inner-left__title">Date of Birth:</h4>
-                        <h4 class="inner-left__title">Relationship:</h4>
-                        <h4 class="inner-left__title">Nationality:</h4>
+        <main class="main-wrapper loading">
+            <div class="main-block-left">
+                <div class="info-block">
+                    <div class="info-block__title">
+                        <h3>About Me</h3>
                     </div>
-                    <div class="inner-right">
-                        <p class="inner-right__title">Oleksandr Gumenyuk</p>
-                        <p class="inner-right__title">20th Mar, 1994</p>
-                        <p class="inner-right__title">Single</p>
-                        <p class="inner-right__title">Ukraine</p>
+                    <div class="info-block__row">
+                        <div class="info-block__left">
+                            <h4>Name:</h4>
+                        </div>
+                        <div class="info-block__right">
+                            <p>Oleksandr Gumenyuk</p>
+                        </div>
                     </div>
-                </section>
-                <section class="info-block wow fadeInLeft" data-wow-offset="100">
-                    <h3 class="info-block__title">My Skills</h3>
-                    <h4 class="info-block__subtitle">Technologies:</h4>
-                    <p class="info-block__describe">
-                        HTML5, CSS3(SCSS, PostCSS), JavaScript, jQuery, AJAX, Bootstrap, RESTful API, Template engines
-                    </p>
-                    <h4 class="info-block__subtitle">Tools:</h4>
-                    <span class="info-block__describe">Git, GitHub, Gulp, console</span>
-                    <h4 class="info-block__subtitle">Methodology:</h4>
-                    <span class="info-block__describe">BEM</span>
-                </section>
-                <section class="info-block wow fadeInLeft" data-wow-offset="100">
-                    <h3 class="info-block__title">Languages</h3>
-                    <div class="inner-left">
-                        <h4 class="inner-left__title">Russian</h4>
-                        <h4 class="inner-left__title">Ukrainian</h4>
-                        <h4 class="inner-left__title">English</h4>
+                    <div class="info-block__row">
+                        <div class="info-block__left">
+                            <h4>Date of Birth:</h4>
+                        </div>
+                        <div class="info-block__right">
+                            <p>20th Mar, 1994</p>
+                        </div>
                     </div>
-                    <div class="inner-right">
-                        <p class="inner-right__title">native</p>
-                        <p class="inner-right__title">native</p>
-                        <p class="inner-right__title">elementary</p>
+                    <div class="info-block__row">
+                        <div class="info-block__left">
+                            <h4>Relationship:</h4>
+                        </div>
+                        <div class="info-block__right">
+                            <p>Single</p>
+                        </div>
                     </div>
-                </section>
+                    <div class="info-block__row">
+                        <div class="info-block__left">
+                            <h4>Nationality:</h4>
+                        </div>
+                        <div class="info-block__right">
+                            <p>Ukraine</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-block wow fadeInLeft" data-wow-offset="100">
+                    <div class="info-block__title">
+                        <h3>My Skills</h3>
+                    </div>
+                    <div class="info-block__row">
+                        <p><span>Technologies: </span>HTML5, CSS3(scss, postCSS), JavaScript, jQuery, AJAX, Bootstrap, RESTful API, Template engines</p>
+                    </div>
+                    <div class="info-block__row">
+                        <p><span>Tools: </span>Git, GitHub, Gulp, console</p>
+                    </div>
+                    <div class="info-block__row">
+                        <p><span>Methodology: </span>BEM</p>
+                    </div>
+                </div>
+                <div class="info-block wow fadeInLeft" data-wow-offset="100">
+                    <div class="info-block__title">
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="info-block__row">
+                        <div class="info-block__left">
+                            <h4>Russian</h4>
+                        </div>
+                        <div class="info-block__right">
+                            <p>native</p>
+                        </div>
+                    </div>
+                    <div class="info-block__row">
+                        <div class="info-block__left">
+                            <h4>Ukrainian</h4>
+                        </div>
+                        <div class="info-block__right">
+                            <p>native</p>
+                        </div>
+                    </div>
+                    <div class="info-block__row">
+                        <div class="info-block__left">
+                            <h4>English</h4>
+                        </div>
+                        <div class="info-block__right">
+                            <p>elementary</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="main-right">
-                <section class="info-block wow fadeInRight" data-wow-offset="100" data-wow-delay="1s">
-                    <h3 class="info-block__title">Objective</h3>
-                    <p class="info-block__describe">
-                        To obtain the position of Junior Front-end developer. Work in team with more skilled guys. Find a company which interested in career growth of its employees.
-                    </p>
-                </section>
-                <section class="info-block wow fadeInRight" data-wow-offset="100">
-                    <h3 class="info-block__title">Experience</h3>
-                    <div class="inner-row clearfix">
-                        <div class="inner-left">
-                            <h4 class="inner-left__title">Freelance</h4>
-                            <p class="inner-left__date">(Jun 2016 - current)</p>
+            <div class="main-block-right">
+                <div class="info-block">
+                    <div class="info-block__title">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="info-block__description">
+                        <p>To obtain the position of Junior Front-end developer. Work in team with more skilled guys. Find a company which interested in career growth of its employees.</p>
+                    </div>
+                </div>
+                <div class="info-block wow fadeInRight" data-wow-offset="100" data-wow-delay="0.3s">
+                    <div class="info-block__title">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="info-block__row">
+                        <div class="info-block__left">
+                            <h4>Freelance</h4>
+                        </div>
+                        <div class="info-block__right">
+                            <p>Jun 2016 - current</p>
                         </div>
                     </div>
-                </section>
-                <section class="info-block wow fadeInRight" data-wow-offset="100">
-                    <h3 class="info-block__title">Additional information</h3>
-                    <div class="inner-row clearfix">
-                        <div class="inner-left">
-                            <h4 class="inner-left__title">Oct 28, 2016 – Oct 31, 2016</h4>
+                </div>
+                <div class="info-block wow fadeInRight" data-wow-offset="100" data-wow-delay="0.3s">
+                    <div class="info-block__title">
+                        <h3>Additional information</h3>
+                    </div>
+                    <div class="info-block__row">
+                        <div class="info-block__left">
+                            <h4>Oct 28, 2016 – Oct 31, 2016</h4>
                         </div>
-                        <div class="inner-right">
-                            <p class="inner-right__title">
-                                <a href="https://yecommunity.com/en/blog/ukraine-ye-training-hackathon-applications/" target="_blank">Ye! Boost Training & Hackathon (Ukraine)</a>
-                            </p>
-                            <p class="inner-right__describe">1 place of 12 teams</p>
-                            <p class="inner-right__describe">The name of project – Action Department</p>
+                        <div class="info-block__right">
+                            <a href="https://yecommunity.com/en/blog/ukraine-ye-training-hackathon-applications/" target="_blank">Ye! Boost Training & Hackathon (Ukraine)</a>
+                            <p>1 place of 12 teams</p>
+                            <p>The name of project – Action Department</p>
                         </div>
                     </div>
-                </section>
-                <section class="info-block wow fadeInRight" data-wow-offset="100">
-                    <h3 class="info-block__title">Courses</h3>
-                    <div class="inner-row clearfix">
-                        <div class="inner-left">
-                            <h4 class="inner-left__title">Oct 2015 – Mar 2016</h4>
+                </div>
+                <div class="info-block wow fadeInRight" data-wow-offset="100" data-wow-delay="0.3s">
+                    <div class="info-block__title">
+                        <h3>Courses</h3>
+                    </div>
+                    <div class="info-block__row">
+                        <div class="info-block__left">
+                            <h4>Oct 2015 – Mar 2016</h4>
                         </div>
-                        <div class="inner-right">
-                            <p class="inner-right__title">
-                                <a href="https://goit.ua/" target="_blank">GoIT</a>
-                            </p>
-                            <p class="inner-right__describe">Junior Front-end developer</p>
+                        <div class="info-block__right">
+                            <a href="https://goit.ua/" target="_blank">GoIT</a>
+                            <p>Junior Front-end developer</p>
                         </div>
                     </div>
-                    <div class="inner-row clearfix">
-                        <div class="inner-left">
-                            <h4 class="inner-left__title">Jul 2015 – Aug 2015</h4>
+                    <div class="info-block__row">
+                        <div class="info-block__left">
+                            <h4>Jul 2015 – Aug 2015</h4>
                         </div>
-                        <div class="inner-right">
-                            <p class="inner-right__title">
-                                <a href="https://1popov.ru/" target="_blank">video-course Eugene Popov</a>
-                            </p>
-                            <p class="inner-right__describe">Basics of HTM+CSS.</p>
+                        <div class="info-block__right">
+                            <a href="https://1popov.ru/" target="_blank">video-course Eugene Popov</a>
+                            <p>Basics of HTM+CSS.</p>
                         </div>
                     </div>
-                </section>
-                <section class="info-block wow fadeInRight" data-wow-offset="100">
-                    <h3 class="info-block__title">Education</h3>
-                    <div class="inner-row clearfix">
-                        <div class="inner-left">
-                            <h4 class="inner-left__title">BACHELOR OF SCIENCE DEGREE</h4>
-                            <p class="inner-left__date">(2013 - 2016)</p>
+                </div>
+                <div class="info-block wow fadeInRight" data-wow-offset="100">
+                    <div class="info-block__title">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="info-block__row">
+                        <div class="info-block__left">
+                            <h4>BACHELOR OF SCIENCE DEGREE</h4>
+                            <p>(2013 - 2016)</p>
                         </div>
-                        <div class="inner-right">
-                            <h4 class="inner-right__title">Donetsk National University</h4>
-                            <p class="inner-right__describe">Information and Communication Systems Security.</p>
+                        <div class="info-block__right">
+                            <h4>Donetsk National University</h4>
+                            <p>Information and Communication Systems Security.</p>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
-        </div>
+        </main>
     </div>
     <!-- SCRIPTS -->
     <script src="https://use.fontawesome.com/648c0a4557.js"></script>
-    <script src="js/lib/wow.min.js"></script>
-    <script defer src="js/main.js"></script>
+    <script src="dist/js/wow.min.js"></script>
+    <script defer src="js/script.js"></script>
 </body>
 </html>

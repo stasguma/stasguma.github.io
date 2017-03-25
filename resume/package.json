@@ -16,7 +16,6 @@
     "gulp-sass": "latest",
     "gulp-rename": "latest",
     "gulp-uglify": "latest",
-	"gulp-uncss": "latest",
     "gulp-watch": "latest",
     "pump": "latest"
   }

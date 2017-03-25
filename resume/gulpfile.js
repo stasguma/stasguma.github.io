@@ -17,20 +17,20 @@ gulp.task('html', function () {
 });
 
 gulp.task('css', function() {
-   return gulp.src(['scss/style.scss', 'scss/components/*'])
+   return gulp.src(['scss/*.scss'])
    .pipe(sass().on('error', sass.logError))
-   .pipe(autoprefixer({
-            browsers: ['last 5 versions', 'IE >= 9']
-    }))
+   // .pipe(autoprefixer({
+   //          browsers: ['last 5 versions', 'IE >= 9']
+   //  }))
    .pipe(rename ('main.css') )
    .pipe(gulp.dest('dist/css'))
-   .pipe( cleanCSS() )
-   .pipe(rename ('main.min.css') )
-   .pipe(gulp.dest('dist/css'))
+   // .pipe( cleanCSS() )
+   // .pipe(rename ('main.min.css') )
+   // .pipe(gulp.dest('dist/css'))
    .pipe(connect.reload());
 });
-gulp.task('css2', function() {
-   return gulp.src(['scss/lib/animate.scss'])
+gulp.task('csslibs', function() {
+   return gulp.src(['scss/libs/*.scss'])
    .pipe(sass().on('error', sass.logError))
    .pipe(autoprefixer({
             browsers: ['last 5 versions', 'IE >= 9']
@@ -41,7 +41,7 @@ gulp.task('css2', function() {
 });
 
 gulp.task('javascript', function() {
-  return gulp.src('js/main.js')
+  return gulp.src('js/script.js')
     .pipe(uglify())
     .pipe(rename('main.min.js'))
     .pipe(gulp.dest('dist/js'))
@@ -62,7 +62,9 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', function () {
-        gulp.watch(['index.html', 'scss/style.scss', 'scss/components/*'], ['html', 'css']);
+	gulp.watch(['*.html', 'js/script.js'], ['html']);
+	gulp.watch('scss/**/*.scss', ['css']);
 });
 
 gulp.task('default', ['connect', 'html', 'css', 'watch']);
+gulp.task('prod', ['html', 'css', 'javascript', 'imagemin']);

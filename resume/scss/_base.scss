@@ -1,0 +1,14 @@
+html {
+	font-size: 15px;
+}
+
+body {
+	min-width: 320px;
+	background-color: $white;
+	color: $black222;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 300;
+	transition: background-color 1s 5.6s;
+
+	&.loading {background-color: #333333;}
+}

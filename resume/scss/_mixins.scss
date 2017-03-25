@@ -1,0 +1,59 @@
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@function rem($px) {
+	@return $px / 15px + 0rem;
+}
+
+@mixin desktop {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (max-width: 800px) {
+		@content;
+	}
+}
+
+@mixin phone {
+	@media screen and (max-width: 480px) {
+		@content;
+	}
+}
+
+@mixin montserrat-l($size) {
+	font: 300 rem($size) "Montserrat", Arial, sans-serif;
+}
+
+@mixin montserrat($size) {
+	font: 400 rem($size) "Montserrat", Arial, sans-serif;
+}
+
+@mixin montserrat-sb($size) {
+    font: 600 rem($size) "Montserrat", Arial, sans-serif;
+}
+
+@mixin opensans-l($size) {
+    font: 300 rem($size) "Open Sans", Arial, sans-serif;
+}
+
+
+%btn {
+	padding: 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
