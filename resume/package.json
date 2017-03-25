@@ -5,17 +5,19 @@
   "main": "gulpfile.js",
   "license": "ISC",
   "devDependencies": {
-	"gulp": "^3.9.1",
-	"gulp-autoprefixer": "^3.1.1",
+    "critical": "^0.8.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-clean-css": "latest",
     "gulp-concat": "latest",
     "gulp-connect": "^5.0.0",
     "gulp-imagemin": "latest",
     "gulp-live-server": "0.0.30",
     "gulp-livereload": "^3.8.1",
-    "gulp-sass": "latest",
     "gulp-rename": "latest",
+    "gulp-sass": "latest",
     "gulp-uglify": "latest",
+    "gulp-util": "^3.0.8",
     "gulp-watch": "latest",
     "pump": "latest"
   }

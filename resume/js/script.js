@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+// window.addEventListener('DOMContentLoaded', function () {
     (function() {
         // SCROLL TO TOP ON REFRESH PAGE
         var url = window.location.href;
@@ -32,9 +32,9 @@ window.addEventListener('DOMContentLoaded', function () {
         });
 
     }());
-});
+// });
 
-window.addEventListener('load', function () {
+// window.addEventListener('load', function () {
 //     (function() {
 //         'use strict';
 //
@@ -54,4 +54,4 @@ window.addEventListener('load', function () {
     arr.forEach(function (item) {
         item.classList.remove("loading");
     });
-});
+// });
