@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function () {
+// window.addEventListener('DOMContentLoaded', function () {
     (function() {
         // SCROLL TO TOP ON REFRESH PAGE
         var url = window.location.href;
@@ -32,26 +32,26 @@ window.addEventListener('DOMContentLoaded', function () {
         });
 
     }());
-});
+// });
 
-window.addEventListener('load', function () {
-//     (function() {
+// window.addEventListener('load', function () {
+    (function() {
 //         'use strict';
 //
 //         window.scrollTo(0,0);
 //
-//     }());
 
-    // ANIMATION ON START
-    var
-        header_name = document.querySelector('.header__name'),
-        header_pos = document.querySelector('.header__position'),
-        header_contacts = document.querySelector('.header__contacts'),
-        main_wrapper = document.querySelector('.main-wrapper');
+        // ANIMATION ON START
+        var
+            header_name = document.querySelector('.header__name'),
+            header_pos = document.querySelector('.header__position'),
+            header_contacts = document.querySelector('.header__contacts'),
+            main_wrapper = document.querySelector('.main-wrapper');
 
-    var arr = [document.body, header_name, header_pos, header_contacts, main_wrapper];
+        var arr = [document.body, header_name, header_pos, header_contacts, main_wrapper];
 
-    arr.forEach(function (item) {
-        item.classList.remove("loading");
-    });
-});
+        arr.forEach(function (item) {
+            item.classList.remove("loading");
+        });
+    }());
+// });
