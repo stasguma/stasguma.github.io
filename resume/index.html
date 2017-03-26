@@ -213,18 +213,10 @@
     <!--[if IE]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
-    <script>
-        window.addEventListener('DOMContentLoaded', function(){
-            console.log("DOMContentLoaded");
-        });
-        window.addEventListener('load', function(){
-            console.log("load");
-        });
-    </script>
     <script>function loadCSS(h){
             var l=document.createElement("link");l.rel="stylesheet";
-            l.href=h;document.getElementsByTagName("head")[0].appendChild(l);};
-        window.onload = function(){
+            l.href=h;document.getElementsByTagName("head")[0].appendChild(l);}
+        window.addEventListener('load',function(){)
             loadCSS("https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans:300");
             loadCSS("dist/css/animate.min.css");
             loadCSS("dist/css/main.min.css");};
