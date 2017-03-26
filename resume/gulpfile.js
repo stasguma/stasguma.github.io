@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	cleanCSS = require('gulp-clean-css'),
+	concat = require('gulp-concat'),
 	connect = require('gulp-connect'),
 	critical = require('critical').stream,
 	imagemin = require('gulp-imagemin'),
@@ -22,7 +23,7 @@ gulp.task('css', function() {
    return gulp.src(['scss/*.scss'])
    .pipe(sass().on('error', sass.logError))
    .pipe(autoprefixer({
-            browsers: ['last 5 versions', 'IE >= 9']
+        browsers: ['last 5 versions', 'IE >= 9']
     }))
    .pipe(rename ('main.css') )
    .pipe(gulp.dest('dist/css'))
@@ -33,24 +34,25 @@ gulp.task('css', function() {
 });
 
 gulp.task('csslibs', function() {
-   return gulp.src(['scss/libs/*.scss'])
-   .pipe(sass().on('error', sass.logError))
-   .pipe(autoprefixer({
-            browsers: ['last 5 versions', 'IE >= 9']
-    }))
-   .pipe( cleanCSS() )
-   .pipe(rename ('animate.min.css') )
-   .pipe(gulp.dest('dist/css'));
+	return gulp.src(['scss/libs/*.scss'])
+	.pipe(sass().on('error', sass.logError))
+	.pipe(autoprefixer({
+		browsers: ['last 5 versions', 'IE >= 9']
+	}))
+	.pipe(concat('libs.css'))
+	.pipe( cleanCSS() )
+	.pipe(rename ('libs.min.css') )
+	.pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('critical', function() {
 	return gulp.src('index.html')
 		.pipe(critical({
-			base: 'C:/Users/Admin/Desktop/github/stasguma.github.io/resume',
+			base: 'C:/Users/Admin/Desktop/github/stasguma.github.io/resume/',
 			src: 'index.html',
 			css: ['dist/css/main.css'],
 			height: 800,
-			dest: 'critical.css'
+			dest: 'dist/css/critical.css'
 			// minify: true
 		}))
 		.on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
