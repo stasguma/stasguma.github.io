@@ -16,14 +16,14 @@ latest
 
 4. [Four](https://stasguma.github.io/practice/hipsweet/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/hipsweet)) - html5, scss, js, adaptive
 
-![](https://image.ibb.co/eCkcgF/hipsweet.gif)
+![](https://image.ibb.co/dDU3GJ/hipsweet.gif)
 
 5. [Five](https://stasguma.github.io/practice/sevenhills/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/sevenhills)) - html5, scss, js, ajax, adaptive
 
-![](https://image.ibb.co/b7Ejva/sevenhills.gif)
+![](https://image.ibb.co/n4acbJ/sevenhills.gif)
 
 6. [Six](https://stasguma.github.io/practice/bakery/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/bakery)) - html5, scss
 
-![](https://image.ibb.co/dmqw8v/bakery.gif)
+![](https://image.ibb.co/mzX13y/bakery.gif)
 
 older
