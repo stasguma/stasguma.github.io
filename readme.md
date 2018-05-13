@@ -2,7 +2,7 @@
 
 latest
 
-1. [bookkeeping](https://bookkeeping-b29d1.firebaseapp.com/login) ([**`source`**](https://github.com/stasguma/bookkeeping)) - html5, scss, angular
+1. [bookkeeping](https://bookkeeping-b29d1.firebaseapp.com/login) ([**`source`**](https://github.com/stasguma/bookkeeping)) - html5, scss, Angular
 
 ![](https://image.ibb.co/eSTwoy/bookkeeping.gif)
 
