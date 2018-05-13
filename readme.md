@@ -4,7 +4,7 @@ latest
 
 1. [shkolanauki](https://shkolanauki.ru) - html5, scss, js, adaptive
 
-![](https://image.ibb.co/gFN6Ld/shkolanauki2.gif)
+![](https://image.ibb.co/j2d5wJ/shkolanauki2.gif)
 
 2. [devITeam](https://deviteam.com) - html5, scss, js, adaptive
 
