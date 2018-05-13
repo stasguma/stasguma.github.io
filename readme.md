@@ -12,7 +12,7 @@ latest
 
 3. [bigsmi](https://bigsmi.com) - html5, scss, js, adaptive
 
-![](https://image.ibb.co/iJ3D0d/bigsmi2.gif)
+![](https://image.ibb.co/iwPQVd/bigsmi2.gif)
 
 4. [One](https://stasguma.github.io/practice/hipsweet/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/hipsweet)) - html5, scss, js, adaptive
 
