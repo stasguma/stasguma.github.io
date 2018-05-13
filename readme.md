@@ -14,15 +14,15 @@ latest
 
 ![](https://image.ibb.co/iwPQVd/bigsmi2.gif)
 
-4. [One](https://stasguma.github.io/practice/hipsweet/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/hipsweet)) - html5, scss, js, adaptive
+4. [Four](https://stasguma.github.io/practice/hipsweet/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/hipsweet)) - html5, scss, js, adaptive
 
 ![](https://image.ibb.co/eCkcgF/hipsweet.gif)
 
-5. [Two](https://stasguma.github.io/practice/sevenhills/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/sevenhills)) - html5, scss, js, ajax, adaptive
+5. [Five](https://stasguma.github.io/practice/sevenhills/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/sevenhills)) - html5, scss, js, ajax, adaptive
 
 ![](https://image.ibb.co/b7Ejva/sevenhills.gif)
 
-6. [Three](https://stasguma.github.io/practice/bakery/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/bakery)) - html5, scss
+6. [Six](https://stasguma.github.io/practice/bakery/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/bakery)) - html5, scss
 
 ![](https://image.ibb.co/dmqw8v/bakery.gif)
 
