@@ -2,25 +2,27 @@
 
 latest
 
-1. [shkolanauki](https://github.com/stasguma/stasguma.github.io/tree/master/practice/hipsweet)) - html5, scss, js, adaptive
+1. [shkolanauki](https://shkolanauki.ru) - html5, scss, js, adaptive
 
 ![](https://image.ibb.co/gFN6Ld/shkolanauki2.gif)
 
-1. [devITeam](https://github.com/stasguma/stasguma.github.io/tree/master/practice/hipsweet)) - html5, scss, js, adaptive
+2. [devITeam](https://deviteam.com) - html5, scss, js, adaptive
 
 ![](https://image.ibb.co/cTkhty/deviteam2.gif)
 
-1. [bigsmi](https://github.com/stasguma/stasguma.github.io/tree/master/practice/hipsweet)) - html5, scss, js, adaptive
+3. [bigsmi](https://bigsmi.com) - html5, scss, js, adaptive
 
-1. [One](https://stasguma.github.io/practice/hipsweet/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/hipsweet)) - html5, scss, js, adaptive
+![](https://image.ibb.co/iJ3D0d/bigsmi2.gif)
+
+4. [One](https://stasguma.github.io/practice/hipsweet/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/hipsweet)) - html5, scss, js, adaptive
 
 ![](https://image.ibb.co/eCkcgF/hipsweet.gif)
 
-2. [Two](https://stasguma.github.io/practice/sevenhills/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/sevenhills)) - html5, scss, js, ajax, adaptive
+5. [Two](https://stasguma.github.io/practice/sevenhills/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/sevenhills)) - html5, scss, js, ajax, adaptive
 
 ![](https://image.ibb.co/b7Ejva/sevenhills.gif)
 
-3. [Three](https://stasguma.github.io/practice/bakery/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/bakery)) - html5, scss
+6. [Three](https://stasguma.github.io/practice/bakery/index.html) ([**`source`**](https://github.com/stasguma/stasguma.github.io/tree/master/practice/bakery)) - html5, scss
 
 ![](https://image.ibb.co/dmqw8v/bakery.gif)
 
