@@ -6,7 +6,7 @@ latest
 
 ![](https://image.ibb.co/eSTwoy/bookkeeping.gif)
 
-2. [shkolanauki](https://shkolanauki.ru) - html5, scss, js, jquery, adaptive
+2. [shkolanauki](https://shkolanauki.ru) - html5, sass, js, jquery, adaptive
 
 ![](https://image.ibb.co/j2d5wJ/shkolanauki2.gif)
 
