@@ -6,6 +6,9 @@ latest
 
 ![](https://image.ibb.co/eSTwoy/bookkeeping.gif)
 
+login: test@gmail.com
+pass: 123456
+
 2. [shkolanauki](https://shkolanauki.ru) - html5, sass, js, jquery, adaptive
 
 ![](https://image.ibb.co/j2d5wJ/shkolanauki2.gif)
