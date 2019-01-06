@@ -4,7 +4,7 @@ latest
 
 1. [fitness-tracker](https://fitness-tracker-5c801.firebaseapp.com/) ([**`source`**](https://github.com/stasguma/fitness-tracker)) - Angular, firebase
 
-![](https://i.ibb.co/BnDTGN1/ezgif-com-video-to-gif-1.gif)
+![](https://i.ibb.co/6XhD8Bd/ezgif-com-video-to-gif-1.gif)
 
 login: test@gmail.com
 pass: 123456
