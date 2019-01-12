@@ -9,7 +9,7 @@ The platform includes a chatbot builder and analytics. The platform serves two k
 The chatbot can be of two formats such as a standalone widget and inline(a side column).
 
 
-2. [fitness-tracker](https://fitness-tracker-5c801.firebaseapp.com/) ([**`source`**](https://github.com/stasguma/fitness-tracker)) - Angular, firebase
+2. [fitness-tracker](https://fitness-tracker-5c801.firebaseapp.com/) ([**`source`**](https://github.com/stasguma/fitness-tracker)) - Angular, Angular Material, firebase
 
 ![](https://i.ibb.co/6XhD8Bd/ezgif-com-video-to-gif-1.gif)
 
