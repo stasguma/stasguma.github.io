@@ -6,7 +6,9 @@ latest
 
 This poject is an advertising platform that enables major advertisers to engage with interested internet users through bespoke chatbot interactions.
 The platform includes a chatbot builder and analytics. The platform serves two kinds of users; planners and clients. Planners mainly use the platform to create new chatbots, and clients use it to access overview tables and approve or disapprove a chatbot.
-The chatbot can be of two formats such as a standalone widget and inline(a side column).
+The chatbot can be of two formats such as a standalone widget and inline.
+
+The main task was to make an implementor. I have used several external jquery plagins, which are designed for building charts, and adapted them to the assigned tasks. I have thought over the connection between the components and provided the communication with a help of websocket.
 
 
 2. [fitness-tracker](https://fitness-tracker-5c801.firebaseapp.com/) ([**`source`**](https://github.com/stasguma/fitness-tracker)) - Angular, Angular Material, firebase
