@@ -10,6 +10,7 @@ The chatbot can be of two formats such as a standalone widget and inline.
 
 The main task was to make an implementor. I have used several external jquery plagins, which are designed for building charts, and adapted them to the assigned tasks. I have thought over the connection between the components and provided the communication with a help of websocket.
 
+[Project review video](https://streamable.com/7xxya)
 
 2. [fitness-tracker](https://fitness-tracker-5c801.firebaseapp.com/) ([**`source`**](https://github.com/stasguma/fitness-tracker)) - Angular, Angular Material, firebase
 
