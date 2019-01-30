@@ -8,7 +8,7 @@ This poject is an advertising platform that enables major advertisers to engage 
 The platform includes a chatbot builder and analytics. The platform serves two kinds of users; planners and clients. Planners mainly use the platform to create new chatbots, and clients use it to access overview tables and approve or disapprove a chatbot.
 The chatbot can be of two formats such as a standalone widget and inline.
 
-The main task was to make an implementor. I have used several external jquery plagins, which are designed for building charts, and adapted them to the assigned tasks. I have thought over the connection between the components and provided the communication with a help of websocket.
+The main task was to make a chatbot builder. I have used several third-party jQuery plugins which are designed for flowcharts and adapted them to the assigned tasks. I have thought over the connection between the components and provided the communication with a help of WebSocket.
 
 [Project review video](https://streamable.com/7xxya)
 
