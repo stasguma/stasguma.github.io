@@ -185,7 +185,10 @@
 
     &:not(:last-of-type) {margin-bottom: 10px;}
 
-    p {@include montserrat-l(13px); line-height: 1.6;}
+    p, ul li {@include montserrat-l(13px); line-height: 1.6;}
+    ul {
+        list-style: disc inside;
+    }
     span {@include montserrat(14px);}
 }
 

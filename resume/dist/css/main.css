@@ -256,9 +256,12 @@ body {
 .info-block__row:not(:last-of-type) {
   margin-bottom: 10px; }
 
-.info-block__row p {
+.info-block__row p, .info-block__row ul li {
   font: 300 0.86667rem "Montserrat", Arial, sans-serif;
   line-height: 1.6; }
+
+.info-block__row ul {
+  list-style: disc inside; }
 
 .info-block__row span {
   font: 400 0.93333rem "Montserrat", Arial, sans-serif; }
