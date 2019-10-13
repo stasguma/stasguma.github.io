@@ -2,7 +2,11 @@
 
 latest
 
-1. Current project - html, css, javascript, websocket.
+1. [CRM](https://morning-ravine-49388.herokuapp.com/) - MongoDB, Express, Angular, Node.js.
+
+Fullstack project uploaded to Heroku.
+
+1. Project - html, css, javascript, websocket.
 
 This poject is an advertising platform that enables major advertisers to engage with interested internet users through bespoke chatbot interactions.
 The platform includes a chatbot builder and analytics. The platform serves two kinds of users; planners and clients. Planners mainly use the platform to create new chatbots, and clients use it to access overview tables and approve or disapprove a chatbot.
