@@ -6,6 +6,9 @@ latest
 
 Fullstack project uploaded to Heroku.
 
+login: admin@ad.com
+pass: qwerty
+
 1. Project - html, css, javascript, websocket.
 
 This poject is an advertising platform that enables major advertisers to engage with interested internet users through bespoke chatbot interactions.
