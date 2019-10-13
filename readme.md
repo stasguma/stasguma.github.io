@@ -10,7 +10,7 @@ The chatbot can be of two formats such as a standalone widget and inline.
 
 The main task was to make a chatbot builder. I have used several third-party jQuery plugins which are designed for flowcharts and adapted them to the assigned tasks. I have thought over the connection between the components and provided the communication with a help of WebSocket.
 
-[Project review video](https://streamable.com/prqx7)
+[Project review video](https://mcguma123.wistia.com/medias/sijwfzscl3)
 
 2. [fitness-tracker](https://fitness-tracker-5c801.firebaseapp.com/) ([**`source`**](https://github.com/stasguma/fitness-tracker)) - Angular, Angular Material, firebase
 
