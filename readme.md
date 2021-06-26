@@ -10,7 +10,7 @@ pass: gnrk7m2mg
 
 Chew is a web based application with the focus of teaching kids between 6-14 years of age about food in a very fun and interactive way using video based content with a connected questionnaire and score based step by step user experience where you earn certificates at the end of the completed lessons.
 
-2. [Trainify](https://trainify.com/) - React, Redux, Klarna Payment, scss, html.
+2. [Trainified](https://trainified.com/) - React, Redux, Klarna Payment, scss, html.
 
 login: null  
 pass: null  
