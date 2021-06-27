@@ -4,6 +4,8 @@ latest
 
 1. [Chew](https://chew.uno/) - React, Redux, Video JS, Klarna Payment, scss, html.
 
+![](https://i.ibb.co/SyGDKCp/chew-video.gif)
+
 login: test@yopmail.com  
 pass: gnrk7m2mg  
 *this acc has a subscription (users without a subscription have limited functionality)*
@@ -17,7 +19,7 @@ Chew is a web based application with the focus of teaching kids between 6-14 yea
 login: null  
 pass: null  
 
-Trainified is the search engine for personal trainers in strength, martial arts, dance, running, crossfit, boxing.
+Trainified is the search engine for personal trainers.
 
 3. [CRM](https://morning-ravine-49388.herokuapp.com/) ([**`source`**](https://github.com/stasguma/crm-fullstack)) - MongoDB, Express, Angular, Node.js.
 
@@ -27,6 +29,8 @@ login: admin@ad.com
 pass: qwerty  
 
 4. Project - html, css, javascript, websocket.
+
+![](https://i.ibb.co/HFfZ7xG/adbotic.gif)
 
 This poject is an advertising platform that enables major advertisers to engage with interested internet users through bespoke chatbot interactions.
 The platform includes a chatbot builder and analytics. The platform serves two kinds of users; planners and clients. Planners mainly use the platform to create new chatbots, and clients use it to access overview tables and approve or disapprove a chatbot.
