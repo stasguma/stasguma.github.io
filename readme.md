@@ -12,6 +12,8 @@ Chew is a web based application with the focus of teaching kids between 6-14 yea
 
 2. [Trainified](https://trainified.com/) - React, Redux, Klarna Payment, scss, html.
 
+![](https://i.ibb.co/NV4Nq6w/trainified-video-2.gif)
+
 login: null  
 pass: null  
 
