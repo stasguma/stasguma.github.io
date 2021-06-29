@@ -23,6 +23,8 @@ Trainified is the search engine for personal trainers.
 
 3. [CRM](https://morning-ravine-49388.herokuapp.com/) ([**`source`**](https://github.com/stasguma/crm-fullstack)) - MongoDB, Express, Angular, Node.js.
 
+![](https://i.ibb.co/wNPc2RD/newborn.gif)
+
 Fullstack project uploaded to Heroku.
 
 login: admin@ad.com  
