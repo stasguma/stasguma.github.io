@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "license": "ISC",
   "devDependencies": {
-    "critical": "^0.8.4",
+    "critical": "^5.0.4",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean-css": "latest",
