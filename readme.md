@@ -26,7 +26,7 @@ latest
 
    Fullstack project uploaded to Heroku.
 
-   login: admin@ad.com  
+   login: admin@fgmail.com  
    pass: qwerty  
 
 5. Project - html, css, javascript, websocket.
