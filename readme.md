@@ -20,11 +20,11 @@ latest
 
    Trainified is the search engine for personal trainers.
 
-4. [CRM](https://morning-ravine-49388.herokuapp.com/) ([**`source`**](https://github.com/stasguma/crm-fullstack)) - MongoDB, Express, Angular, Node.js.
+4. [CRM](https://restrr-frontend.fly.dev/) ([**`source`**](https://github.com/stasguma/crm-fullstack)) - MongoDB, Express, Angular, Node.js.
 
    ![](https://i.ibb.co/wNPc2RD/newborn.gif)
 
-   Fullstack project uploaded to Heroku.
+   Fullstack project deployed as Docker image to Fly.
 
    login: admin@fgmail.com  
    pass: qwerty  
