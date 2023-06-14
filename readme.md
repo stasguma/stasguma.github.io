@@ -55,7 +55,7 @@ latest
    login: test@gmail.com  
    pass: 123456  
 
-8. [shkolanauki](https://shkolanauki.ru) - html5, sass, js, jquery, adaptive
+8. shkolanauki - html5, sass, js, jquery, adaptive
 
    ![](https://image.ibb.co/j2d5wJ/shkolanauki2.gif)
 
