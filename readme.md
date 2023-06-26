@@ -4,7 +4,7 @@
 
 latest
 
-1. [Mimir Quiz]([https://www.mimirquiz.com/](https://web.archive.org/web/20211106073231/https://www.mimirquiz.com/)) - React Native, MobX, Mux Video for stream, Lottie for animations.
+1. [Mimir Quiz](https://web.archive.org/web/20211106073231/https://www.mimirquiz.com/) - React Native, MobX, Mux Video for stream, Lottie for animations.
 
    ![](https://i.ibb.co/WWFy1jZ/mimir-screen.webp)
 
